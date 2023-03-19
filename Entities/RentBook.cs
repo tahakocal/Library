@@ -3,7 +3,8 @@
 namespace Library.Entities
 {
 
-    public enum State {
+    public enum State
+    {
         READY,
         RENTED,
         ARCHIVED
@@ -30,7 +31,7 @@ namespace Library.Entities
         [Required]
         public DateTime To { get; set; }
 
-        public State State {get; set; }
+        public State State { get; set; }
 
     }
 }
