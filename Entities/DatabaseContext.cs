@@ -4,8 +4,9 @@ namespace Library.Entities
 {
     public class DatabaseContext : DbContext
     {
-        public DatabaseContext() : base()//ENTER YOUR SQL SERVER INFO
+        public DatabaseContext() : base(@"Data Source=93.177.102.219;Initial Catalog=LibraryDatabase;User ID=taha;Password=60s9KwSr$HG7m;")
         {
+
         }
 
 

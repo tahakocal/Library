@@ -1,8 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <ItemGroup>
-        <Compile Update="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-    </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Book\BookAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Book\BookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Book\BookRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Book\GiveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Book\ReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\EmployeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\EmployeeRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\EmployeeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Member\MemberAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Member\MemberRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Member\MemberUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reports\ReportAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reports\ReportEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reports\ReportGiveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reports\ReportMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\SpecBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
