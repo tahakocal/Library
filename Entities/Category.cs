@@ -4,10 +4,7 @@ namespace Library.Entities
 {
     public class Category : BaseEntity
     {
-        public long Id { get; set; }
-
-        [Required]
-        [StringLength(64)]
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

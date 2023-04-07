@@ -4,10 +4,7 @@ namespace Library.Entities
 {
     public class Role : BaseEntity
     {
-        public long Id { get; set; }
-
-        [Required]
-        [StringLength(32)]
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

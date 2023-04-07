@@ -28,6 +28,9 @@
     <Compile Update="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Member\MemberAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -35,6 +38,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Member\MemberUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Reports\ReportAuthor.cs">
@@ -49,7 +55,25 @@
     <Compile Update="Reports\ReportMember.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Specification\SpecAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Specification\SpecBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\SpecCabinet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\SpecHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\SpecPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\SpecShelve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
