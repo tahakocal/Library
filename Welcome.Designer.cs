@@ -40,18 +40,19 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 40F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ScrollBar;
-            label1.Location = new Point(281, 87);
+            label1.Location = new Point(265, 73);
             label1.Name = "label1";
-            label1.Size = new Size(481, 89);
+            label1.Size = new Size(387, 72);
             label1.TabIndex = 0;
             label1.Text = "HOŞGELDİNİZ";
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(281, 213);
+            button1.Location = new Point(246, 160);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(481, 78);
+            button1.Size = new Size(421, 58);
             button1.TabIndex = 1;
             button1.Text = "Giriş Yap";
             button1.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(281, 307);
+            button2.Location = new Point(246, 230);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(481, 78);
+            button2.Size = new Size(421, 58);
             button2.TabIndex = 2;
             button2.Text = "Kayıt Ol";
             button2.UseVisualStyleBackColor = true;
@@ -70,14 +72,15 @@
             // 
             // Welcome
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.librarywelcome;
-            ClientSize = new Size(1063, 563);
+            ClientSize = new Size(930, 422);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Welcome";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Welcome";

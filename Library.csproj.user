@@ -34,6 +34,9 @@
     <Compile Update="Member\MemberAdd.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Member\MemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Member\MemberRemove.cs">
       <SubType>Form</SubType>
     </Compile>

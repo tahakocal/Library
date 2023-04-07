@@ -69,3 +69,5 @@ D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.s.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.s1.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.init.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Welcome.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.fixsomething.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Member.MemberList.resources

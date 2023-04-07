@@ -1,3 +1,5 @@
+using Library.Book;
+
 namespace Library
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Library
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Welcome());
+            Application.Run(new BookList());
         }
     }
 }
