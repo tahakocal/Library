@@ -97,6 +97,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

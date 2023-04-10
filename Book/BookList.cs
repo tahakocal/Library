@@ -39,5 +39,23 @@ namespace Library.Book
                     x.Rented,
                 }).ToList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BookAdd add = new BookAdd();
+            add.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BookUpdate update = new BookUpdate();
+            update.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BookRemove remove = new BookRemove();
+            remove.ShowDialog();
+        }
     }
 }

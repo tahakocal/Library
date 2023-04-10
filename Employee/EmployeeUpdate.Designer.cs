@@ -28,12 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "EmployeeUpdate";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeUpdate));
+            label5 = new Label();
+            textBox4 = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(46, 45);
+            label5.Name = "label5";
+            label5.Size = new Size(22, 20);
+            label5.TabIndex = 19;
+            label5.Text = "Id";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(143, 197);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(125, 27);
+            textBox4.TabIndex = 18;
+            textBox4.TextChanged += textBox4_TextChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(46, 197);
+            label3.Name = "label3";
+            label3.Size = new Size(52, 20);
+            label3.TabIndex = 17;
+            label3.Text = "Bölüm";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(46, 143);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 20);
+            label2.TabIndex = 16;
+            label2.Text = "Soyisim";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(46, 93);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 20);
+            label1.TabIndex = 15;
+            label1.Text = "İsim";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(143, 146);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(125, 27);
+            textBox3.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(143, 95);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(125, 27);
+            textBox2.TabIndex = 13;
+            // 
+            // textBox1
+            // 
+            textBox1.Enabled = false;
+            textBox1.Location = new Point(143, 45);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 12;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(100, 265);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 11;
+            button1.Text = "Güncelle";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // EmployeeUpdate
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(314, 344);
+            Controls.Add(label5);
+            Controls.Add(textBox4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "EmployeeUpdate";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "EmployeeUpdate";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label5;
+        public TextBox textBox4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        public TextBox textBox3;
+        public TextBox textBox2;
+        public TextBox textBox1;
+        private Button button1;
     }
 }

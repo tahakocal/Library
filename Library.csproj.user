@@ -10,6 +10,9 @@
     <Compile Update="Book\BookRemove.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Book\BookUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Book\GiveBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Employee\EmployeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\EmployeeList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Employee\EmployeeRemove.cs">

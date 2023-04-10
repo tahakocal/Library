@@ -71,3 +71,7 @@ D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.init.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Welcome.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.fixsomething.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Member.MemberList.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Employee.EmployeeList.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.employeeadded.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Book.BookUpdate.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.fix.resources

@@ -32,6 +32,9 @@
             dataGridView1 = new DataGridView();
             bookBindingSource1 = new BindingSource(components);
             bookBindingSource = new BindingSource(components);
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bookBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bookBindingSource).BeginInit();
@@ -43,11 +46,11 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.BackgroundColor = SystemColors.ButtonFace;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(43, 62);
+            dataGridView1.Location = new Point(12, 33);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1162, 208);
+            dataGridView1.Size = new Size(1326, 501);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -59,11 +62,44 @@
             // 
             bookBindingSource.DataSource = typeof(Entities.Book);
             // 
+            // button3
+            // 
+            button3.Location = new Point(772, 540);
+            button3.Name = "button3";
+            button3.Size = new Size(166, 49);
+            button3.TabIndex = 6;
+            button3.Text = "Sil";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(517, 540);
+            button2.Name = "button2";
+            button2.Size = new Size(166, 49);
+            button2.TabIndex = 5;
+            button2.Text = "Güncelle";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(247, 540);
+            button1.Name = "button1";
+            button1.Size = new Size(166, 49);
+            button1.TabIndex = 4;
+            button1.Text = "Ekle";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // BookList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1350, 601);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(dataGridView1);
             Name = "BookList";
             Text = "BookList";
@@ -79,5 +115,8 @@
         private DataGridView dataGridView1;
         private BindingSource bookBindingSource;
         private BindingSource bookBindingSource1;
+        private Button button3;
+        private Button button2;
+        private Button button1;
     }
 }

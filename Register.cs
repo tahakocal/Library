@@ -23,29 +23,45 @@ namespace Library
         {
             if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox4.Text) || string.IsNullOrEmpty(textBox5.Text))
             {
+                textBox5.BackColor = Color.White;
+                textBox4.BackColor = Color.White;
+                textBox3.BackColor = Color.White;
+                textBox2.BackColor = Color.White;
+                textBox1.BackColor = Color.White;
+
                 if (string.IsNullOrEmpty(textBox5.Text))
                 {
-
+                    textBox5.BackColor = Color.DarkRed;
+                    textBox5.Focus();
                 }
                 if (string.IsNullOrEmpty(textBox4.Text))
                 {
-
+                    textBox4.BackColor = Color.DarkRed;
+                    textBox4.Focus();
                 }
                 if (string.IsNullOrEmpty(textBox3.Text))
                 {
-
+                    textBox3.BackColor = Color.DarkRed;
+                    textBox3.Focus();
                 }
                 if (string.IsNullOrEmpty(textBox2.Text))
                 {
-
+                    textBox2.BackColor = Color.DarkRed;
+                    textBox2.Focus();
                 }
                 if (string.IsNullOrEmpty(textBox1.Text))
                 {
-
+                    textBox1.BackColor = Color.DarkRed;
+                    textBox1.Focus();
                 }
             }
             else
             {
+                textBox5.BackColor = Color.White;
+                textBox4.BackColor = Color.White;
+                textBox3.BackColor = Color.White;
+                textBox2.BackColor = Color.White;
+                textBox1.BackColor = Color.White;
                 try
                 {
                     User user = new User()
