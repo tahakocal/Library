@@ -1,8 +1,7 @@
 ﻿namespace Library.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class fixsomething : DbMigration
     {
         public override void Up()
@@ -18,7 +17,7 @@
             DropColumn("dbo.Categories", "Name");
             DropColumn("dbo.Roles", "Name");
         }
-        
+
         public override void Down()
         {
             AddColumn("dbo.Roles", "Name", c => c.String());

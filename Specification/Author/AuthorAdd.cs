@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Library.Entities;
+﻿using Library.Entities;
 
 namespace Library.Specification.Author
 {
@@ -29,9 +20,9 @@ namespace Library.Specification.Author
                 {
                     Entities.Author author = new Entities.Author()
                     {
-                        AuthorName= textBox1.Text,
-                        AuthorSurname= textBox2.Text,
-                        AuthorDescription= textBox3.Text,
+                        AuthorName = textBox1.Text,
+                        AuthorSurname = textBox2.Text,
+                        AuthorDescription = textBox3.Text,
                         CreatedDate = DateTime.Now,
                     };
 

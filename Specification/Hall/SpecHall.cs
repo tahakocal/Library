@@ -1,20 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Library.Entities;
 
-namespace Library.Specification
+namespace Library.Specification.Hall
 {
     public partial class SpecHall : Form
     {
+        public DatabaseContext _db = new DatabaseContext();
         public SpecHall()
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = _db.Halls
+                .Select(x => new
+                {
+                    x.Id,
+                    x.HallNo,
+                    x.HallName,
+                }).ToList();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HallAdd add = new HallAdd();
+            add.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HallUpdate update = new HallUpdate();
+            update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            update.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            update.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            update.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HallRemove remove = new HallRemove();
+            remove.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            remove.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            remove.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            remove.ShowDialog();
+        }
+
+        private void SpecHall_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = _db.Halls
+                .Select(x => new
+                {
+                    x.Id,
+                    x.HallNo,
+                    x.HallName,
+                }).ToList();
         }
     }
 }

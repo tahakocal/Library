@@ -14,11 +14,11 @@ namespace Library.Entities
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<RentBook> RentBooks { get; set; }
         public virtual DbSet<Section> Sections { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<Subscription> Subscriptions { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Member> Members{ get; set; }
-        public virtual DbSet<UserSubscription> UserSubscriptions { get; set; }
+        public virtual DbSet<Member> Members { get; set; }
+        public virtual DbSet<Shelve> Shelves { get; set; }
+        public virtual DbSet<Hall> Halls { get; set; }
+        public virtual DbSet<Publisher> Publishers { get; set; }
 
     }
 }

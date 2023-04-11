@@ -1,13 +1,4 @@
 ﻿using Library.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Library.Specification.Author
 {
@@ -31,9 +22,9 @@ namespace Library.Specification.Author
                     var toInt = Convert.ToInt32(textBox1.Text);
                     var getData = _db.Authors.Find(toInt);
 
-                    getData.AuthorName= textBox2.Text;
-                    getData.AuthorSurname= textBox3.Text;
-                    getData.AuthorDescription= textBox4.Text;
+                    getData.AuthorName = textBox2.Text;
+                    getData.AuthorSurname = textBox3.Text;
+                    getData.AuthorDescription = textBox4.Text;
                     getData.CreatedDate = DateTime.Now;
 
 

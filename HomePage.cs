@@ -3,6 +3,8 @@ using Library.Employee;
 using Library.Member;
 using Library.Reports;
 using Library.Specification;
+using Library.Specification.Hall;
+using Library.Specification.Publisher;
 
 namespace Library
 {

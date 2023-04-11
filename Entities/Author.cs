@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Library.Entities
+﻿namespace Library.Entities
 {
     public class Author : BaseEntity
     {
@@ -10,7 +8,7 @@ namespace Library.Entities
 
         public string AuthorSurname { get; set; }
 
-        public string AuthorDescription { get; set; }
+        public string? AuthorDescription { get; set; }
 
         public virtual ICollection<Book> Books { get; set; }
     }

@@ -1,0 +1,47 @@
+﻿using Library.Entities;
+
+namespace Library.Specification.Publisher
+{
+    public partial class PublisherUpdate : Form
+    {
+        public DatabaseContext _db = new DatabaseContext();
+
+        public PublisherUpdate()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var answer = MessageBox.Show("Güncellemek istediginizden emin misiniz ?", "Güncelle", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (answer == DialogResult.Yes)
+            {
+                try
+                {
+                    var toInt = Convert.ToInt32(textBox1.Text);
+                    var getData = _db.Publishers.Find(toInt);
+
+                    getData.PublisherName = textBox2.Text;
+                    getData.CreatedDate = DateTime.Now;
+
+
+                    _db.SaveChanges();
+                    MessageBox.Show("Başarıyla güncellendi", "Başarılı", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    this.Hide();
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                    this.Hide();
+                }
+            }
+            else
+            {
+                this.Hide();
+            }
+        }
+    }
+}

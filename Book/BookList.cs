@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Library.Entities;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Library.Employee;
 using System.Data.Entity;
-using Library.Entities;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Library.Book
 {

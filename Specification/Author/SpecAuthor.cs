@@ -1,16 +1,6 @@
-﻿using Library.Book;
-using Library.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Entity;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Library.Entities;
 using Library.Specification.Author;
+using System.Data;
 
 namespace Library.Specification
 {

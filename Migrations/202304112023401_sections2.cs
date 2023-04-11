@@ -1,8 +1,7 @@
 ﻿namespace Library.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class sections2 : DbMigration
     {
         public override void Up()
@@ -13,7 +12,7 @@
             AlterColumn("dbo.Employees", "SectionId", c => c.Int());
             CreateIndex("dbo.Employees", "SectionId");
         }
-        
+
         public override void Down()
         {
             DropIndex("dbo.Employees", new[] { "SectionId" });

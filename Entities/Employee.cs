@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Library.Entities
+﻿namespace Library.Entities
 {
     public class Employee : BaseEntity
     {

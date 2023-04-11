@@ -59,8 +59,6 @@ D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Reports.ReportMember.resour
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.SpecAuthor.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.SpecBook.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.SpecCabinet.resources
-D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.SpecHall.resources
-D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.SpecPublisher.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.SpecShelve.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Login.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Register.resources
@@ -81,3 +79,15 @@ D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.sections2.resour
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Author.AuthorAdd.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Author.AuthorRemove.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Author.AuthorUpdate.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.added.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Hall.HallAdd.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Hall.HallRemove.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Hall.HallUpdate.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Hall.SpecHall.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Publisher.PublisherAdd.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Publisher.PublisherRemove.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Publisher.PublisherUpdate.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Shelve.ShelveAdd.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Shelve.ShelveDelete.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Shelve.ShelveUpdate.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Specification.Publisher.SpecPublisher.resources
