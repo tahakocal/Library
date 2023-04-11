@@ -64,22 +64,31 @@
     <Compile Update="Reports\ReportMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Specification\SpecAuthor.cs">
+    <Compile Update="Specification\Author\AuthorAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Specification\SpecBook.cs">
+    <Compile Update="Specification\Author\AuthorRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Specification\SpecCabinet.cs">
+    <Compile Update="Specification\Author\AuthorUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Specification\SpecHall.cs">
+    <Compile Update="Specification\Author\SpecAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Specification\SpecPublisher.cs">
+    <Compile Update="Specification\Book\SpecBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Specification\SpecShelve.cs">
+    <Compile Update="Specification\Cabinet\SpecCabinet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\Hall\SpecHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\Publisher\SpecPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Specification\Shelve\SpecShelve.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Welcome.cs">

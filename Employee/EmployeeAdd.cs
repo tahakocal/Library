@@ -28,11 +28,14 @@ namespace Library.Employee
             {
                 try
                 {
+                    var allSections = _db.Sections.ToList();
+                    var sectionId = allSections.FirstOrDefault(x => x.SectionName == comboBox1.Text)!.Id;
+
                     Entities.Employee employee = new Entities.Employee()
                     {
                         Name = textBox1.Text,
                         Surname = textBox2.Text,
-                        Section = textBox3.Text,
+                        SectionId = sectionId,
                         CreatedDate = DateTime.Now,
                     };
 
@@ -52,6 +55,15 @@ namespace Library.Employee
             else
             {
                 this.Hide();
+            }
+        }
+
+        private void EmployeeAdd_Load(object sender, EventArgs e)
+        {
+            var sections = _db.Sections.ToList();
+            foreach (var sect in sections)
+            {
+                comboBox1.Items.Add(sect.SectionName);
             }
         }
     }

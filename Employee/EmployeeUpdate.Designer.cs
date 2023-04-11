@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeUpdate));
             label5 = new Label();
-            textBox4 = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -38,6 +37,7 @@
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             button1 = new Button();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // label5
@@ -48,14 +48,6 @@
             label5.Size = new Size(22, 20);
             label5.TabIndex = 19;
             label5.Text = "Id";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(143, 197);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 18;
-            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label3
             // 
@@ -116,13 +108,21 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(143, 197);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(125, 28);
+            comboBox1.TabIndex = 20;
+            // 
             // EmployeeUpdate
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(314, 344);
+            Controls.Add(comboBox1);
             Controls.Add(label5);
-            Controls.Add(textBox4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -134,6 +134,7 @@
             Name = "EmployeeUpdate";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EmployeeUpdate";
+            Load += EmployeeUpdate_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -141,7 +142,6 @@
         #endregion
 
         private Label label5;
-        public TextBox textBox4;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -149,5 +149,6 @@
         public TextBox textBox2;
         public TextBox textBox1;
         private Button button1;
+        public ComboBox comboBox1;
     }
 }

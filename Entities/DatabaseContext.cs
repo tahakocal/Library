@@ -13,6 +13,7 @@ namespace Library.Entities
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<RentBook> RentBooks { get; set; }
+        public virtual DbSet<Section> Sections { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Subscription> Subscriptions { get; set; }
         public virtual DbSet<User> Users { get; set; }

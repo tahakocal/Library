@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Library.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Library.Employee
 {
@@ -37,12 +38,13 @@ namespace Library.Employee
         private void EmployeeList_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Employees
+                .Include(x => x.Section)
                 .Select(x => new
                 {
                     x.Id,
                     x.Name,
                     x.Surname,
-                    x.Section,
+                    x.Section.SectionName,
                     x.CreatedDate
                 }).ToList();
 
@@ -54,19 +56,20 @@ namespace Library.Employee
             update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             update.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             update.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            update.textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            update.comboBox1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             update.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Employees
+                .Include(x => x.Section)
                 .Select(x => new
                 {
                     x.Id,
                     x.Name,
                     x.Surname,
-                    x.Section,
+                    x.Section.SectionName,
                     x.CreatedDate
                 }).ToList();
         }

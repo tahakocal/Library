@@ -35,7 +35,7 @@
             label3 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // button1
@@ -89,19 +89,20 @@
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 5;
             // 
-            // textBox3
+            // comboBox1
             // 
-            textBox3.Location = new Point(138, 207);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 6;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(138, 204);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(125, 28);
+            comboBox1.TabIndex = 6;
             // 
             // EmployeeAdd
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(355, 413);
-            Controls.Add(textBox3);
+            Controls.Add(comboBox1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -112,6 +113,7 @@
             Name = "EmployeeAdd";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EmployeeAdd";
+            Load += EmployeeAdd_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,6 +126,6 @@
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
-        private TextBox textBox3;
+        public ComboBox comboBox1;
     }
 }

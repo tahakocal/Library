@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Library.Entities;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Library.Employee
 {
@@ -32,12 +33,15 @@ namespace Library.Employee
             {
                 try
                 {
+                    var allSections = _db.Sections.ToList();
+                    var sectionId = allSections.FirstOrDefault(x => x.SectionName == comboBox1.Text)!.Id;
+
                     var toInt = Convert.ToInt32(textBox1.Text);
                     var getData = _db.Employees.Find(toInt);
 
                     getData.Name = textBox2.Text;
                     getData.Surname = textBox3.Text;
-                    getData.Section = textBox4.Text;
+                    getData.SectionId = sectionId;
                     getData.CreatedDate = DateTime.Now;
 
 
@@ -56,6 +60,15 @@ namespace Library.Employee
             else
             {
                 this.Hide();
+            }
+        }
+
+        private void EmployeeUpdate_Load(object sender, EventArgs e)
+        {
+            var sections = _db.Sections.ToList();
+            foreach (var sect in sections)
+            {
+                comboBox1.Items.Add(sect.SectionName);
             }
         }
     }
