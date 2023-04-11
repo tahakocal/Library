@@ -32,15 +32,9 @@
             menuStrip1 = new MenuStrip();
             üyelerToolStripMenuItem = new ToolStripMenuItem();
             üyeEkleToolStripMenuItem = new ToolStripMenuItem();
-            üyeSilToolStripMenuItem = new ToolStripMenuItem();
-            üyeGüncelleToolStripMenuItem = new ToolStripMenuItem();
             personelToolStripMenuItem = new ToolStripMenuItem();
             personelEkleToolStripMenuItem = new ToolStripMenuItem();
-            personelToolStripMenuItem1 = new ToolStripMenuItem();
-            personelGüncelleToolStripMenuItem = new ToolStripMenuItem();
             kitapKayıtToolStripMenuItem = new ToolStripMenuItem();
-            kitapEkleToolStripMenuItem = new ToolStripMenuItem();
-            kitapSilToolStripMenuItem = new ToolStripMenuItem();
             kitapListeleToolStripMenuItem = new ToolStripMenuItem();
             kitapÖdünçAlmaToolStripMenuItem = new ToolStripMenuItem();
             kitapVerToolStripMenuItem = new ToolStripMenuItem();
@@ -72,7 +66,7 @@
             // 
             // üyelerToolStripMenuItem
             // 
-            üyelerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { üyeEkleToolStripMenuItem, üyeSilToolStripMenuItem, üyeGüncelleToolStripMenuItem });
+            üyelerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { üyeEkleToolStripMenuItem });
             üyelerToolStripMenuItem.Name = "üyelerToolStripMenuItem";
             üyelerToolStripMenuItem.Size = new Size(65, 24);
             üyelerToolStripMenuItem.Text = "Üyeler";
@@ -80,27 +74,13 @@
             // üyeEkleToolStripMenuItem
             // 
             üyeEkleToolStripMenuItem.Name = "üyeEkleToolStripMenuItem";
-            üyeEkleToolStripMenuItem.Size = new Size(178, 26);
-            üyeEkleToolStripMenuItem.Text = "Üye Ekle";
+            üyeEkleToolStripMenuItem.Size = new Size(224, 26);
+            üyeEkleToolStripMenuItem.Text = "Üye İşlemleri";
             üyeEkleToolStripMenuItem.Click += üyeEkleToolStripMenuItem_Click;
-            // 
-            // üyeSilToolStripMenuItem
-            // 
-            üyeSilToolStripMenuItem.Name = "üyeSilToolStripMenuItem";
-            üyeSilToolStripMenuItem.Size = new Size(178, 26);
-            üyeSilToolStripMenuItem.Text = "Üye Sil";
-            üyeSilToolStripMenuItem.Click += üyeSilToolStripMenuItem_Click;
-            // 
-            // üyeGüncelleToolStripMenuItem
-            // 
-            üyeGüncelleToolStripMenuItem.Name = "üyeGüncelleToolStripMenuItem";
-            üyeGüncelleToolStripMenuItem.Size = new Size(178, 26);
-            üyeGüncelleToolStripMenuItem.Text = "Üye Güncelle";
-            üyeGüncelleToolStripMenuItem.Click += üyeGüncelleToolStripMenuItem_Click;
             // 
             // personelToolStripMenuItem
             // 
-            personelToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { personelEkleToolStripMenuItem, personelToolStripMenuItem1, personelGüncelleToolStripMenuItem });
+            personelToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { personelEkleToolStripMenuItem });
             personelToolStripMenuItem.Name = "personelToolStripMenuItem";
             personelToolStripMenuItem.Size = new Size(78, 24);
             personelToolStripMenuItem.Text = "Personel";
@@ -108,49 +88,21 @@
             // personelEkleToolStripMenuItem
             // 
             personelEkleToolStripMenuItem.Name = "personelEkleToolStripMenuItem";
-            personelEkleToolStripMenuItem.Size = new Size(208, 26);
-            personelEkleToolStripMenuItem.Text = "Personel Ekle";
+            personelEkleToolStripMenuItem.Size = new Size(224, 26);
+            personelEkleToolStripMenuItem.Text = "Personel İşlemleri";
             personelEkleToolStripMenuItem.Click += personelEkleToolStripMenuItem_Click;
-            // 
-            // personelToolStripMenuItem1
-            // 
-            personelToolStripMenuItem1.Name = "personelToolStripMenuItem1";
-            personelToolStripMenuItem1.Size = new Size(208, 26);
-            personelToolStripMenuItem1.Text = "Personel Sil";
-            personelToolStripMenuItem1.Click += personelToolStripMenuItem1_Click;
-            // 
-            // personelGüncelleToolStripMenuItem
-            // 
-            personelGüncelleToolStripMenuItem.Name = "personelGüncelleToolStripMenuItem";
-            personelGüncelleToolStripMenuItem.Size = new Size(208, 26);
-            personelGüncelleToolStripMenuItem.Text = "Personel Güncelle";
-            personelGüncelleToolStripMenuItem.Click += personelGüncelleToolStripMenuItem_Click;
             // 
             // kitapKayıtToolStripMenuItem
             // 
-            kitapKayıtToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { kitapEkleToolStripMenuItem, kitapSilToolStripMenuItem, kitapListeleToolStripMenuItem });
+            kitapKayıtToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { kitapListeleToolStripMenuItem });
             kitapKayıtToolStripMenuItem.Name = "kitapKayıtToolStripMenuItem";
             kitapKayıtToolStripMenuItem.Size = new Size(118, 24);
             kitapKayıtToolStripMenuItem.Text = "Kitap İşlemleri";
             // 
-            // kitapEkleToolStripMenuItem
-            // 
-            kitapEkleToolStripMenuItem.Name = "kitapEkleToolStripMenuItem";
-            kitapEkleToolStripMenuItem.Size = new Size(173, 26);
-            kitapEkleToolStripMenuItem.Text = "Kitap Ekle";
-            kitapEkleToolStripMenuItem.Click += kitapEkleToolStripMenuItem_Click;
-            // 
-            // kitapSilToolStripMenuItem
-            // 
-            kitapSilToolStripMenuItem.Name = "kitapSilToolStripMenuItem";
-            kitapSilToolStripMenuItem.Size = new Size(173, 26);
-            kitapSilToolStripMenuItem.Text = "Kitap Sil";
-            kitapSilToolStripMenuItem.Click += kitapSilToolStripMenuItem_Click;
-            // 
             // kitapListeleToolStripMenuItem
             // 
             kitapListeleToolStripMenuItem.Name = "kitapListeleToolStripMenuItem";
-            kitapListeleToolStripMenuItem.Size = new Size(173, 26);
+            kitapListeleToolStripMenuItem.Size = new Size(224, 26);
             kitapListeleToolStripMenuItem.Text = "Kitap Listele";
             kitapListeleToolStripMenuItem.Click += kitapListeleToolStripMenuItem_Click;
             // 
@@ -283,15 +235,9 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem üyelerToolStripMenuItem;
         private ToolStripMenuItem üyeEkleToolStripMenuItem;
-        private ToolStripMenuItem üyeSilToolStripMenuItem;
-        private ToolStripMenuItem üyeGüncelleToolStripMenuItem;
         private ToolStripMenuItem personelToolStripMenuItem;
         private ToolStripMenuItem personelEkleToolStripMenuItem;
-        private ToolStripMenuItem personelToolStripMenuItem1;
-        private ToolStripMenuItem personelGüncelleToolStripMenuItem;
         private ToolStripMenuItem kitapKayıtToolStripMenuItem;
-        private ToolStripMenuItem kitapEkleToolStripMenuItem;
-        private ToolStripMenuItem kitapSilToolStripMenuItem;
         private ToolStripMenuItem kitapListeleToolStripMenuItem;
         private ToolStripMenuItem kitapÖdünçAlmaToolStripMenuItem;
         private ToolStripMenuItem kitapVerToolStripMenuItem;

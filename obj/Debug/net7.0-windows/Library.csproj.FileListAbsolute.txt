@@ -75,3 +75,4 @@ D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Employee.EmployeeList.resou
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.employeeadded.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Book.BookUpdate.resources
 D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.fix.resources
+D:\My Codes\Library\obj\Debug\net7.0-windows\Library.Migrations.members.resources

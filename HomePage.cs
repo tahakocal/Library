@@ -1,5 +1,6 @@
 using Library.Book;
 using Library.Employee;
+using Library.Member;
 using Library.Reports;
 using Library.Specification;
 
@@ -19,7 +20,7 @@ namespace Library
 
         private void üyeEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MemberAdd member = new MemberAdd();
+            MemberList member = new MemberList();
             member.Show();
         }
 
@@ -38,7 +39,7 @@ namespace Library
 
         private void personelEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EmployeeAdd employee = new EmployeeAdd();
+            EmployeeList employee = new EmployeeList();
             employee.Show();
         }
 

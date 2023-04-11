@@ -1,5 +1,6 @@
 using Library.Book;
 using Library.Employee;
+using Library.Member;
 
 namespace Library
 {
@@ -14,7 +15,7 @@ namespace Library
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new EmployeeList());
+            Application.Run(new HomePage());
         }
     }
 }
