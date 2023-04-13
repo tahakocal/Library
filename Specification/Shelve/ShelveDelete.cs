@@ -1,6 +1,8 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Specification.Shelve
+namespace LibraryAutomation.Specification.Shelve
 {
     public partial class ShelveDelete : Form
     {

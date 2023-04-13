@@ -1,7 +1,9 @@
-﻿using Library.Entities;
-using Library.Specification.Shelve;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Specification
+namespace LibraryAutomation.Specification.Shelve
 {
     public partial class SpecShelve : Form
     {

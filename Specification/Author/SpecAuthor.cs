@@ -1,8 +1,9 @@
-﻿using Library.Entities;
-using Library.Specification.Author;
-using System.Data;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Specification
+namespace LibraryAutomation.Specification.Author
 {
     public partial class SpecAuthor : Form
     {

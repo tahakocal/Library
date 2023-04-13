@@ -1,4 +1,7 @@
-﻿namespace Library.Specification.Author
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LibraryAutomation.Specification.Author
 {
     partial class AuthorUpdate
     {

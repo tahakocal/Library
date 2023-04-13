@@ -1,4 +1,6 @@
-﻿namespace Library.Entities
+﻿using System;
+
+namespace LibraryAutomation.Entities
 {
 
     public enum State

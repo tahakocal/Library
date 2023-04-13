@@ -1,6 +1,8 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Specification.Hall
+namespace LibraryAutomation.Specification.Hall
 {
     public partial class HallUpdate : Form
     {

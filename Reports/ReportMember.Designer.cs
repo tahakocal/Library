@@ -1,4 +1,4 @@
-﻿namespace Library.Reports
+﻿namespace LibraryAutomation.Reports
 {
     partial class ReportMember
     {

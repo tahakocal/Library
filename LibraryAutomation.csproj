@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.EntityFrameworkCore.Design.3.1.32\build\net461\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('packages\Microsoft.EntityFrameworkCore.Design.3.1.32\build\net461\Microsoft.EntityFrameworkCore.Design.props')" />
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98A62E22-A585-45D7-B855-FEEDBDE9ACE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibraryAutomation</RootNamespace>
+    <AssemblyName>LibraryAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Design.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Relational.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Memory.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Binder.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.3.1.32\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book\BookAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\BookAdd.Designer.cs">
+      <DependentUpon>BookAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\BookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\BookList.Designer.cs">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\BookRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\BookRemove.Designer.cs">
+      <DependentUpon>BookRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\BookUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\BookUpdate.Designer.cs">
+      <DependentUpon>BookUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\GiveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\GiveBook.Designer.cs">
+      <DependentUpon>GiveBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\ReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\ReturnBook.Designer.cs">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeAdd.Designer.cs">
+      <DependentUpon>EmployeeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeRemove.Designer.cs">
+      <DependentUpon>EmployeeRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeUpdate.Designer.cs">
+      <DependentUpon>EmployeeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Author.cs" />
+    <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Book.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\DatabaseContext.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\Hall.cs" />
+    <Compile Include="Entities\Member.cs" />
+    <Compile Include="Entities\Publisher.cs" />
+    <Compile Include="Entities\RentBook.cs" />
+    <Compile Include="Entities\Section.cs" />
+    <Compile Include="Entities\Shelve.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\MemberAdd.Designer.cs">
+      <DependentUpon>MemberAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\MemberList.Designer.cs">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\MemberRemove.Designer.cs">
+      <DependentUpon>MemberRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\MemberUpdate.Designer.cs">
+      <DependentUpon>MemberUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304070733475_First-init.cs" />
+    <Compile Include="Migrations\202304070733475_First-init.Designer.cs">
+      <DependentUpon>202304070733475_First-init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304070734299_s.cs" />
+    <Compile Include="Migrations\202304070734299_s.designer.cs">
+      <DependentUpon>202304070734299_s.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304070737471_s1.cs" />
+    <Compile Include="Migrations\202304070737471_s1.designer.cs">
+      <DependentUpon>202304070737471_s1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304070754238_init.cs" />
+    <Compile Include="Migrations\202304070754238_init.designer.cs">
+      <DependentUpon>202304070754238_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304071425337_fix-something.cs" />
+    <Compile Include="Migrations\202304071425337_fix-something.designer.cs">
+      <DependentUpon>202304071425337_fix-something.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304091954563_employee-added.cs" />
+    <Compile Include="Migrations\202304091954563_employee-added.designer.cs">
+      <DependentUpon>202304091954563_employee-added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304100855348_fix.cs" />
+    <Compile Include="Migrations\202304100855348_fix.designer.cs">
+      <DependentUpon>202304100855348_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304101007333_members.cs" />
+    <Compile Include="Migrations\202304101007333_members.designer.cs">
+      <DependentUpon>202304101007333_members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304112010216_sections.cs" />
+    <Compile Include="Migrations\202304112010216_sections.designer.cs">
+      <DependentUpon>202304112010216_sections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304112023401_sections2.cs" />
+    <Compile Include="Migrations\202304112023401_sections2.designer.cs">
+      <DependentUpon>202304112023401_sections2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304112127208_added.cs" />
+    <Compile Include="Migrations\202304112127208_added.designer.cs">
+      <DependentUpon>202304112127208_added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304130913421_test.cs" />
+    <Compile Include="Migrations\202304130913421_test.designer.cs">
+      <DependentUpon>202304130913421_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportAuthor.Designer.cs">
+      <DependentUpon>ReportAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportEmployee.Designer.cs">
+      <DependentUpon>ReportEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportGiveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportGiveBook.Designer.cs">
+      <DependentUpon>ReportGiveBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportMember.Designer.cs">
+      <DependentUpon>ReportMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Author\AuthorAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Author\AuthorAdd.Designer.cs">
+      <DependentUpon>AuthorAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Author\AuthorRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Author\AuthorRemove.Designer.cs">
+      <DependentUpon>AuthorRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Author\AuthorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Author\AuthorUpdate.Designer.cs">
+      <DependentUpon>AuthorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Author\SpecAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Author\SpecAuthor.Designer.cs">
+      <DependentUpon>SpecAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Book\SpecBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Book\SpecBook.Designer.cs">
+      <DependentUpon>SpecBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Cabinet\SpecCabinet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Cabinet\SpecCabinet.Designer.cs">
+      <DependentUpon>SpecCabinet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Hall\HallAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Hall\HallAdd.Designer.cs">
+      <DependentUpon>HallAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Hall\HallRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Hall\HallRemove.Designer.cs">
+      <DependentUpon>HallRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Hall\HallUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Hall\HallUpdate.Designer.cs">
+      <DependentUpon>HallUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Hall\SpecHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Hall\SpecHall.Designer.cs">
+      <DependentUpon>SpecHall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Publisher\PublisherAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Publisher\PublisherAdd.Designer.cs">
+      <DependentUpon>PublisherAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Publisher\PublisherRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Publisher\PublisherRemove.Designer.cs">
+      <DependentUpon>PublisherRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Publisher\PublisherUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Publisher\PublisherUpdate.Designer.cs">
+      <DependentUpon>PublisherUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Publisher\SpecPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Publisher\SpecPublisher.Designer.cs">
+      <DependentUpon>SpecPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Shelve\ShelveAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Shelve\ShelveAdd.Designer.cs">
+      <DependentUpon>ShelveAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Shelve\ShelveDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Shelve\ShelveDelete.Designer.cs">
+      <DependentUpon>ShelveDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Shelve\ShelveUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Shelve\ShelveUpdate.Designer.cs">
+      <DependentUpon>ShelveUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Shelve\SpecShelve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Shelve\SpecShelve.Designer.cs">
+      <DependentUpon>SpecShelve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Book\BookAdd.resx">
+      <DependentUpon>BookAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\BookList.resx">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\BookRemove.resx">
+      <DependentUpon>BookRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\BookUpdate.resx">
+      <DependentUpon>BookUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\GiveBook.resx">
+      <DependentUpon>GiveBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\ReturnBook.resx">
+      <DependentUpon>ReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeAdd.resx">
+      <DependentUpon>EmployeeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeRemove.resx">
+      <DependentUpon>EmployeeRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\EmployeeUpdate.resx">
+      <DependentUpon>EmployeeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\MemberAdd.resx">
+      <DependentUpon>MemberAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\MemberList.resx">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\MemberRemove.resx">
+      <DependentUpon>MemberRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\MemberUpdate.resx">
+      <DependentUpon>MemberUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304070733475_First-init.resx">
+      <DependentUpon>202304070733475_First-init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304070734299_s.resx">
+      <DependentUpon>202304070734299_s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304070737471_s1.resx">
+      <DependentUpon>202304070737471_s1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304070754238_init.resx">
+      <DependentUpon>202304070754238_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304071425337_fix-something.resx">
+      <DependentUpon>202304071425337_fix-something.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304091954563_employee-added.resx">
+      <DependentUpon>202304091954563_employee-added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304100855348_fix.resx">
+      <DependentUpon>202304100855348_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304101007333_members.resx">
+      <DependentUpon>202304101007333_members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304112010216_sections.resx">
+      <DependentUpon>202304112010216_sections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304112023401_sections2.resx">
+      <DependentUpon>202304112023401_sections2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304112127208_added.resx">
+      <DependentUpon>202304112127208_added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304130913421_test.resx">
+      <DependentUpon>202304130913421_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportAuthor.resx">
+      <DependentUpon>ReportAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportEmployee.resx">
+      <DependentUpon>ReportEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportGiveBook.resx">
+      <DependentUpon>ReportGiveBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportMember.resx">
+      <DependentUpon>ReportMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Author\AuthorAdd.resx">
+      <DependentUpon>AuthorAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Author\AuthorRemove.resx">
+      <DependentUpon>AuthorRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Author\AuthorUpdate.resx">
+      <DependentUpon>AuthorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Author\SpecAuthor.resx">
+      <DependentUpon>SpecAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Book\SpecBook.resx">
+      <DependentUpon>SpecBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Cabinet\SpecCabinet.resx">
+      <DependentUpon>SpecCabinet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Hall\HallAdd.resx">
+      <DependentUpon>HallAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Hall\HallRemove.resx">
+      <DependentUpon>HallRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Hall\HallUpdate.resx">
+      <DependentUpon>HallUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Hall\SpecHall.resx">
+      <DependentUpon>SpecHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Publisher\PublisherAdd.resx">
+      <DependentUpon>PublisherAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Publisher\PublisherRemove.resx">
+      <DependentUpon>PublisherRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Publisher\PublisherUpdate.resx">
+      <DependentUpon>PublisherUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Publisher\SpecPublisher.resx">
+      <DependentUpon>SpecPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Shelve\ShelveAdd.resx">
+      <DependentUpon>ShelveAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Shelve\ShelveDelete.resx">
+      <DependentUpon>ShelveDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Shelve\ShelveUpdate.resx">
+      <DependentUpon>ShelveUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Shelve\SpecShelve.resx">
+      <DependentUpon>SpecShelve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="global.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="bookshelf.ico" />
+    <Content Include="Resources\libraryLogin.png" />
+    <Content Include="Resources\libraryRegister.jpg" />
+    <Content Include="Resources\librarywelcome.jpg" />
+    <Content Include="Resources\librayHomePage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.EntityFrameworkCore.Design.3.1.32\build\net461\Microsoft.EntityFrameworkCore.Design.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.EntityFrameworkCore.Design.3.1.32\build\net461\Microsoft.EntityFrameworkCore.Design.props'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

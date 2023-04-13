@@ -1,7 +1,9 @@
-﻿using Library.Entities;
-using System.Data;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Member
+namespace LibraryAutomation.Member
 {
     public partial class MemberList : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Library.Entities
+﻿namespace LibraryAutomation.Entities
 {
     public class Category : BaseEntity
     {

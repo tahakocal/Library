@@ -1,6 +1,8 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Specification.Author
+namespace LibraryAutomation.Specification.Author
 {
     public partial class AuthorAdd : Form
     {

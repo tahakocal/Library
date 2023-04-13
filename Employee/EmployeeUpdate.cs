@@ -1,6 +1,9 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Employee
+namespace LibraryAutomation.Employee
 {
     public partial class EmployeeUpdate : Form
     {
@@ -24,7 +27,7 @@ namespace Library.Employee
                 try
                 {
                     var allSections = _db.Sections.ToList();
-                    var sectionId = allSections.FirstOrDefault(x => x.SectionName == comboBox1.Text)!.Id;
+                    var sectionId = allSections.FirstOrDefault(x => x.SectionName == comboBox1.Text).Id;
 
                     var toInt = Convert.ToInt32(textBox1.Text);
                     var getData = _db.Employees.Find(toInt);

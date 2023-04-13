@@ -1,4 +1,7 @@
-﻿namespace Library.Specification.Hall
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LibraryAutomation.Specification.Hall
 {
     partial class HallUpdate
     {

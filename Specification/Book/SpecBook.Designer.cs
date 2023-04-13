@@ -1,4 +1,4 @@
-﻿namespace Library.Specification
+﻿namespace LibraryAutomation.Specification.Book
 {
     partial class SpecBook
     {

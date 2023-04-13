@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Library.Entities
+namespace LibraryAutomation.Entities
 {
     public class DatabaseContext : DbContext
     {

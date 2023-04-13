@@ -1,6 +1,9 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Book
+namespace LibraryAutomation.Book
 {
     public partial class BookUpdate : Form
     {
@@ -37,10 +40,10 @@ namespace Library.Book
                     bool rented;
 
                     var allCategories = _db.Categories.ToList();
-                    var categoryId = allCategories.FirstOrDefault(x => x.CategoryName == comboBox2.Text)!.Id;
+                    var categoryId = allCategories.FirstOrDefault(x => x.CategoryName == comboBox2.Text).Id;
 
                     var authors = _db.Authors.ToList();
-                    var authorId = authors.FirstOrDefault(x => x.AuthorName == comboBox1.Text)!.Id;
+                    var authorId = authors.FirstOrDefault(x => x.AuthorName == comboBox1.Text).Id;
 
                     if (radioButton1.Checked)
                     {

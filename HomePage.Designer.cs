@@ -1,4 +1,8 @@
-﻿namespace Library
+﻿using System.Drawing;
+using System.Windows.Forms;
+using LibraryAutomation.Properties;
+
+namespace LibraryAutomation
 {
     partial class HomePage
     {
@@ -215,7 +219,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.librayHomePage;
+            BackgroundImage = Resources.librayHomePage;
             ClientSize = new Size(1193, 711);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");

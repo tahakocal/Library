@@ -1,4 +1,7 @@
-﻿namespace Library.Book
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LibraryAutomation.Book
 {
     partial class BookAdd
     {

@@ -1,4 +1,4 @@
-﻿namespace Library.Book
+﻿namespace LibraryAutomation.Book
 {
     partial class ReturnBook
     {

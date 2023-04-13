@@ -1,6 +1,9 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library
+namespace LibraryAutomation
 {
     public partial class Register : Form
     {

@@ -1,4 +1,8 @@
-﻿namespace Library
+﻿using System.Drawing;
+using System.Windows.Forms;
+using LibraryAutomation.Properties;
+
+namespace LibraryAutomation
 {
     partial class Welcome
     {
@@ -74,7 +78,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.librarywelcome;
+            BackgroundImage = Resources.librarywelcome;
             ClientSize = new Size(930, 422);
             Controls.Add(button2);
             Controls.Add(button1);

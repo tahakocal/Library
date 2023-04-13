@@ -1,12 +1,17 @@
-using Library.Book;
-using Library.Employee;
-using Library.Member;
-using Library.Reports;
-using Library.Specification;
-using Library.Specification.Hall;
-using Library.Specification.Publisher;
+using System;
+using System.Windows.Forms;
+using LibraryAutomation.Book;
+using LibraryAutomation.Employee;
+using LibraryAutomation.Member;
+using LibraryAutomation.Reports;
+using LibraryAutomation.Specification.Author;
+using LibraryAutomation.Specification.Book;
+using LibraryAutomation.Specification.Cabinet;
+using LibraryAutomation.Specification.Hall;
+using LibraryAutomation.Specification.Publisher;
+using LibraryAutomation.Specification.Shelve;
 
-namespace Library
+namespace LibraryAutomation
 {
     public partial class HomePage : Form
     {
@@ -20,20 +25,20 @@ namespace Library
 
         }
 
-        private void üyeEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Ã¼yeEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MemberList member = new MemberList();
             member.Show();
         }
 
-        private void üyeSilToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Ã¼yeSilToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MemberRemove member = new MemberRemove();
             member.Show();
 
         }
 
-        private void üyeGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Ã¼yeGÃ¼ncelleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MemberRemove member = new MemberRemove();
             member.Show();
@@ -51,7 +56,7 @@ namespace Library
             employee.Show();
         }
 
-        private void personelGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
+        private void personelGÃ¼ncelleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EmployeeUpdate employee = new EmployeeUpdate();
             employee.Show();
@@ -87,13 +92,13 @@ namespace Library
             returnBook.Show();
         }
 
-        private void üyeleriRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Ã¼yeleriRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReportMember report = new ReportMember();
             report.Show();
         }
 
-        private void yazarlarýRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void yazarlarÄ±RaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReportAuthor report = new ReportAuthor();
             report.Show();
@@ -105,19 +110,19 @@ namespace Library
             report.Show();
         }
 
-        private void ödünçVerilenKitaplarýRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Ã¶dÃ¼nÃ§VerilenKitaplarÄ±RaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReportGiveBook report = new ReportGiveBook();
             report.Show();
         }
 
-        private void kitapTürleriToolStripMenuItem_Click(object sender, EventArgs e)
+        private void kitapTÃ¼rleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SpecBook specBook = new SpecBook();
             specBook.Show();
         }
 
-        private void yayýnEviToolStripMenuItem_Click(object sender, EventArgs e)
+        private void yayÄ±nEviToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SpecPublisher publisher = new SpecPublisher();
             publisher.Show();

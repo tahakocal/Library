@@ -1,4 +1,7 @@
-﻿namespace Library.Employee
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LibraryAutomation.Employee
 {
     partial class EmployeeUpdate
     {

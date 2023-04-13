@@ -1,4 +1,8 @@
-﻿namespace Library
+﻿using System.Drawing;
+using System.Windows.Forms;
+using LibraryAutomation.Properties;
+
+namespace LibraryAutomation
 {
     partial class Login
     {
@@ -87,7 +91,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.libraryLogin;
+            BackgroundImage = Resources.libraryLogin;
             ClientSize = new Size(800, 450);
             Controls.Add(textBox2);
             Controls.Add(textBox1);

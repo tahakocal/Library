@@ -1,4 +1,7 @@
-﻿namespace Library.Specification.Publisher
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LibraryAutomation.Specification.Publisher
 {
     partial class PublisherRemove
     {

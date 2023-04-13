@@ -1,6 +1,10 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library
+namespace LibraryAutomation
 {
     public partial class Login : Form
     {

@@ -1,4 +1,6 @@
-﻿namespace Library.Entities
+﻿using System.Collections.Generic;
+
+namespace LibraryAutomation.Entities
 {
     public class Author : BaseEntity
     {
@@ -8,7 +10,7 @@
 
         public string AuthorSurname { get; set; }
 
-        public string? AuthorDescription { get; set; }
+        public string AuthorDescription { get; set; }
 
         public virtual ICollection<Book> Books { get; set; }
     }

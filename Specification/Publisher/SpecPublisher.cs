@@ -1,6 +1,9 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Specification.Publisher
+namespace LibraryAutomation.Specification.Publisher
 {
     public partial class SpecPublisher : Form
     {

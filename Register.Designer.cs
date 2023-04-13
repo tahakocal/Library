@@ -1,4 +1,8 @@
-﻿namespace Library
+﻿using System.Drawing;
+using System.Windows.Forms;
+using LibraryAutomation.Properties;
+
+namespace LibraryAutomation
 {
     partial class Register
     {
@@ -151,7 +155,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.libraryRegister;
+            BackgroundImage = Resources.libraryRegister;
             ClientSize = new Size(800, 450);
             Controls.Add(textBox5);
             Controls.Add(label5);

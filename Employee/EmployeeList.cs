@@ -1,8 +1,10 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Data;
 
-namespace Library.Employee
+namespace LibraryAutomation.Employee
 {
     public partial class EmployeeList : Form
     {

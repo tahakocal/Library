@@ -1,6 +1,8 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Book
+namespace LibraryAutomation.Book
 {
     public partial class BookRemove : Form
     {

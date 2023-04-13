@@ -1,6 +1,8 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library
+namespace LibraryAutomation.Member
 {
     public partial class MemberAdd : Form
     {

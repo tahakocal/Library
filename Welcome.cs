@@ -1,4 +1,7 @@
-﻿namespace Library
+﻿using System;
+using System.Windows.Forms;
+
+namespace LibraryAutomation
 {
     public partial class Welcome : Form
     {

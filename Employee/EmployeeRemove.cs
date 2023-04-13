@@ -1,6 +1,8 @@
-﻿using Library.Entities;
+﻿using System;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Employee
+namespace LibraryAutomation.Employee
 {
     public partial class EmployeeRemove : Form
     {

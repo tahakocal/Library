@@ -1,4 +1,7 @@
-﻿namespace Library.Member
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LibraryAutomation.Member
 {
     partial class MemberList
     {

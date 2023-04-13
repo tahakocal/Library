@@ -1,8 +1,10 @@
-﻿using Library.Entities;
-using System.Data;
+﻿using System;
 using System.Data.Entity;
+using System.Linq;
+using System.Windows.Forms;
+using LibraryAutomation.Entities;
 
-namespace Library.Book
+namespace LibraryAutomation.Book
 {
     public partial class BookList : Form
     {

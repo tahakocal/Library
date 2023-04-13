@@ -1,4 +1,7 @@
-﻿namespace Library.Specification
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LibraryAutomation.Specification.Shelve
 {
     partial class SpecShelve
     {
