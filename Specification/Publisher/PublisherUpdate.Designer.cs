@@ -31,70 +31,75 @@ namespace LibraryAutomation.Specification.Publisher
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            label4 = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(68, 230);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 60;
-            button1.Text = "Guncelle";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Location = new System.Drawing.Point(68, 184);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Guncelle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(14, 83);
-            label4.Name = "label4";
-            label4.Size = new Size(22, 20);
-            label4.TabIndex = 59;
-            label4.Text = "Id";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(18, 16);
+            this.label4.TabIndex = 59;
+            this.label4.Text = "Id";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(95, 122);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 57;
+            this.textBox2.Location = new System.Drawing.Point(95, 98);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(125, 22);
+            this.textBox2.TabIndex = 57;
             // 
             // textBox1
             // 
-            textBox1.Enabled = false;
-            textBox1.Location = new Point(95, 76);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 56;
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(95, 61);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 22);
+            this.textBox1.TabIndex = 56;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(14, 125);
-            label1.Name = "label1";
-            label1.Size = new Size(81, 20);
-            label1.TabIndex = 54;
-            label1.Text = "Yayıncı Adı";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 16);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Yayıncı Adı";
             // 
             // PublisherUpdate
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(274, 450);
-            Controls.Add(button1);
-            Controls.Add(label4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Name = "PublisherUpdate";
-            Text = "PublisherUpdate";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(274, 360);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "PublisherUpdate";
+            this.Text = "PublisherUpdate";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

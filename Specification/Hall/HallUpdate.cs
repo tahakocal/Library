@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using LibraryAutomation.Entities;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Specification.Hall
 {
@@ -13,64 +15,60 @@ namespace LibraryAutomation.Specification.Hall
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            var answer = MessageBox.Show("Güncellemek istediginizden emin misiniz ?", "Güncelle", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
-            if (answer == DialogResult.Yes)
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text))
             {
-                try
+                textBox3.BackColor = Color.White;
+                textBox2.BackColor = Color.White;
+
+                if (string.IsNullOrEmpty(textBox3.Text))
                 {
-                    var hallno = Convert.ToInt32(textBox2.Text);
-                    var toInt = Convert.ToInt32(textBox1.Text);
-                    var getData = _db.Halls.Find(toInt);
-
-                    getData.HallNo = hallno;
-                    getData.HallName = textBox3.Text;
-                    getData.CreatedDate = DateTime.Now;
-
-
-                    _db.SaveChanges();
-                    MessageBox.Show("Başarıyla güncellendi", "Başarılı", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                    this.Hide();
+                    textBox3.BackColor = Color.Red;
+                    textBox3.Focus();
                 }
-                catch (Exception exception)
+
+                if (string.IsNullOrEmpty(textBox2.Text))
                 {
-                    MessageBox.Show("Hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    this.Hide();
+                    textBox2.BackColor = Color.Red;
+                    textBox2.Focus();
                 }
             }
             else
             {
-                this.Hide();
+                var answer = MessageBox.Show("Güncellemek istediginizden emin misiniz ?", "Güncelle",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                if (answer == DialogResult.Yes)
+                {
+                    try
+                    {
+                        var hallNo = Convert.ToInt32(textBox2.Text);
+                        var toInt = Convert.ToInt32(textBox1.Text);
+                        var getData = _db.Halls.Find(toInt);
+
+                        getData.HallNo = hallNo;
+                        getData.HallName = textBox3.Text;
+                        getData.CreatedDate = DateTime.Now;
+
+
+                        _db.SaveChanges();
+                        MessageBox.Show("Başarıyla güncellendi", "Başarılı", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                        this.Hide();
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show("Hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    this.Hide();
+                }
             }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
         }
     }
 }

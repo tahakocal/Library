@@ -82,14 +82,13 @@ namespace LibraryAutomation
 
         private void kitapVerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GiveBook giveBook = new GiveBook();
+            LoanList giveBook = new LoanList();
             giveBook.Show();
         }
 
         private void kitapGeriAlmaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ReturnBook returnBook = new ReturnBook();
-            returnBook.Show();
+            
         }
 
         private void üyeleriRaporlaToolStripMenuItem_Click(object sender, EventArgs e)

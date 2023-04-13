@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using LibraryAutomation.Entities;
 
@@ -13,38 +14,59 @@ namespace LibraryAutomation.Specification.Shelve
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            var answer = MessageBox.Show("Güncellemek istediginizden emin misiniz ?", "Güncelle", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
-            if (answer == DialogResult.Yes)
+            if (string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
-                try
+                textBox3.BackColor = Color.White;
+                textBox2.BackColor = Color.White;
+
+                if (string.IsNullOrEmpty(textBox3.Text))
                 {
-                    var shelveNo = Convert.ToInt32(textBox2.Text);
-                    var toInt = Convert.ToInt32(textBox1.Text);
-                    var getData = _db.Shelves.Find(toInt);
-
-                    getData.ShelveNo = shelveNo;
-                    getData.ShelveName = textBox3.Text;
-                    getData.CreatedDate = DateTime.Now;
-
-
-                    _db.SaveChanges();
-                    MessageBox.Show("Başarıyla güncellendi", "Başarılı", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                    this.Hide();
+                    textBox3.BackColor = Color.Red;
+                    textBox3.Focus();
                 }
-                catch (Exception exception)
+
+                if (string.IsNullOrEmpty(textBox2.Text))
                 {
-                    MessageBox.Show("Hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    this.Hide();
+                    textBox2.BackColor = Color.Red;
+                    textBox2.Focus();
                 }
             }
             else
             {
-                this.Hide();
+                var answer = MessageBox.Show("Güncellemek istediginizden emin misiniz ?", "Güncelle",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                if (answer == DialogResult.Yes)
+                {
+                    try
+                    {
+                        var shelveNo = Convert.ToInt32(textBox2.Text);
+                        var toInt = Convert.ToInt32(textBox1.Text);
+                        var getData = _db.Shelves.Find(toInt);
+
+                        getData.ShelveNo = shelveNo;
+                        getData.ShelveName = textBox3.Text;
+                        getData.CreatedDate = DateTime.Now;
+
+
+                        _db.SaveChanges();
+                        MessageBox.Show("Başarıyla güncellendi", "Başarılı", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                        this.Hide();
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show("Hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    this.Hide();
+                }
             }
         }
     }

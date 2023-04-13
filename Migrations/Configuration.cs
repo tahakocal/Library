@@ -1,16 +1,18 @@
-﻿using System.Data.Entity.Migrations;
-using LibraryAutomation.Entities;
-
-namespace LibraryAutomation.Migrations
+﻿namespace LibraryAutomation.Migrations
 {
-    internal sealed class Configuration : DbMigrationsConfiguration<DatabaseContext>
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Migrations;
+    using System.Linq;
+
+    internal sealed class Configuration : DbMigrationsConfiguration<LibraryAutomation.Entities.DatabaseContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(DatabaseContext context)
+        protected override void Seed(LibraryAutomation.Entities.DatabaseContext context)
         {
             //  This method will be called after migrating to the latest version.
 

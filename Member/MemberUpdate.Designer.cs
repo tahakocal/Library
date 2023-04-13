@@ -32,112 +32,119 @@ namespace LibraryAutomation.Member
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberUpdate));
-            label5 = new Label();
-            textBox4 = new TextBox();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            SuspendLayout();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(35, 42);
-            label5.Name = "label5";
-            label5.Size = new Size(22, 20);
-            label5.TabIndex = 37;
-            label5.Text = "Id";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(18, 16);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Id";
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(132, 194);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 36;
+            this.textBox4.Location = new System.Drawing.Point(132, 155);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(125, 22);
+            this.textBox4.TabIndex = 36;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(35, 194);
-            label3.Name = "label3";
-            label3.Size = new Size(46, 20);
-            label3.TabIndex = 35;
-            label3.Text = "Email";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 155);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Email";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(35, 140);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 20);
-            label2.TabIndex = 34;
-            label2.Text = "Soyisim";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 112);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 16);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Soyisim";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(35, 90);
-            label1.Name = "label1";
-            label1.Size = new Size(36, 20);
-            label1.TabIndex = 33;
-            label1.Text = "İsim";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 16);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "İsim";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(132, 143);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 32;
+            this.textBox3.Location = new System.Drawing.Point(132, 114);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(125, 22);
+            this.textBox3.TabIndex = 32;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(132, 92);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 31;
+            this.textBox2.Location = new System.Drawing.Point(132, 74);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(125, 22);
+            this.textBox2.TabIndex = 31;
             // 
             // textBox1
             // 
-            textBox1.Enabled = false;
-            textBox1.Location = new Point(132, 42);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 30;
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(132, 34);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 22);
+            this.textBox1.TabIndex = 30;
             // 
             // button1
             // 
-            button1.Location = new Point(89, 262);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 29;
-            button1.Text = "Güncelle";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Location = new System.Drawing.Point(89, 210);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Güncelle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MemberUpdate
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(316, 332);
-            Controls.Add(label5);
-            Controls.Add(textBox4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(button1);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "MemberUpdate";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "MemberUpdate";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(316, 266);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "MemberUpdate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "MemberUpdate";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

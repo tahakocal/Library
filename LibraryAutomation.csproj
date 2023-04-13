@@ -157,17 +157,23 @@
     <Compile Include="Book\BookUpdate.Designer.cs">
       <DependentUpon>BookUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\GiveBook.cs">
+    <Compile Include="Book\LoanGiveBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\GiveBook.Designer.cs">
-      <DependentUpon>GiveBook.cs</DependentUpon>
+    <Compile Include="Book\LoanGiveBook.Designer.cs">
+      <DependentUpon>LoanGiveBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\ReturnBook.cs">
+    <Compile Include="Book\LoanList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\ReturnBook.Designer.cs">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
+    <Compile Include="Book\LoanList.Designer.cs">
+      <DependentUpon>LoanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book\LoanTakeBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book\LoanTakeBook.Designer.cs">
+      <DependentUpon>LoanTakeBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee\EmployeeAdd.cs">
       <SubType>Form</SubType>
@@ -206,12 +212,6 @@
     <Compile Include="Entities\Section.cs" />
     <Compile Include="Entities\Shelve.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -292,9 +292,17 @@
     <Compile Include="Migrations\202304112127208_added.designer.cs">
       <DependentUpon>202304112127208_added.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202304130913421_test.cs" />
-    <Compile Include="Migrations\202304130913421_test.designer.cs">
-      <DependentUpon>202304130913421_test.cs</DependentUpon>
+    <Compile Include="Migrations\202304130955536_new-framework2.cs" />
+    <Compile Include="Migrations\202304130955536_new-framework2.designer.cs">
+      <DependentUpon>202304130955536_new-framework2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304131139328_give-book.cs" />
+    <Compile Include="Migrations\202304131139328_give-book.designer.cs">
+      <DependentUpon>202304131139328_give-book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304131155427_give-book3.cs" />
+    <Compile Include="Migrations\202304131155427_give-book3.designer.cs">
+      <DependentUpon>202304131155427_give-book3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -455,11 +463,8 @@
     <EmbeddedResource Include="Book\BookUpdate.resx">
       <DependentUpon>BookUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book\GiveBook.resx">
-      <DependentUpon>GiveBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Book\ReturnBook.resx">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
+    <EmbeddedResource Include="Book\LoanList.resx">
+      <DependentUpon>LoanList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee\EmployeeAdd.resx">
       <DependentUpon>EmployeeAdd.cs</DependentUpon>
@@ -524,8 +529,14 @@
     <EmbeddedResource Include="Migrations\202304112127208_added.resx">
       <DependentUpon>202304112127208_added.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304130913421_test.resx">
-      <DependentUpon>202304130913421_test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202304130955536_new-framework2.resx">
+      <DependentUpon>202304130955536_new-framework2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304131139328_give-book.resx">
+      <DependentUpon>202304131139328_give-book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304131155427_give-book3.resx">
+      <DependentUpon>202304131155427_give-book3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -609,7 +620,6 @@
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="global.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

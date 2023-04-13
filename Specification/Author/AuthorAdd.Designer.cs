@@ -31,89 +31,95 @@ namespace LibraryAutomation.Specification.Author
         /// </summary>
         private void InitializeComponent()
         {
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            button1 = new Button();
-            SuspendLayout();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(111, 165);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 19;
+            this.textBox3.Location = new System.Drawing.Point(111, 132);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(125, 22);
+            this.textBox3.TabIndex = 19;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(110, 104);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 18;
+            this.textBox2.Location = new System.Drawing.Point(110, 83);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(125, 22);
+            this.textBox2.TabIndex = 18;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(110, 46);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 17;
+            this.textBox1.Location = new System.Drawing.Point(110, 37);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(125, 22);
+            this.textBox1.TabIndex = 17;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(35, 168);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 20);
-            label3.TabIndex = 16;
-            label3.Text = "Açıklama";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Açıklama";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(35, 107);
-            label2.Name = "label2";
-            label2.Size = new Size(60, 20);
-            label2.TabIndex = 15;
-            label2.Text = "Soyisim";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 16);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Soyisim";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(35, 49);
-            label1.Name = "label1";
-            label1.Size = new Size(36, 20);
-            label1.TabIndex = 14;
-            label1.Text = "İsim";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(35, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 16);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "İsim";
             // 
             // button1
             // 
-            button1.Location = new Point(88, 290);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 20;
-            button1.Text = "Ekle";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Location = new System.Drawing.Point(88, 232);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Ekle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // AuthorAdd
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(336, 377);
-            Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "AuthorAdd";
-            Text = "AuthorAdd";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(336, 302);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "AuthorAdd";
+            this.Text = "AuthorAdd";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -44,14 +44,14 @@ namespace LibraryAutomation.Book
             update.comboBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             update.comboBox2.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             update.textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            if (dataGridView1.CurrentRow.Cells[5].Value.Equals(true))
-            {
-                update.radioButton1.Checked = true;
-            }
-            else
-            {
-                update.radioButton2.Checked = true;
-            }
+            //if (dataGridView1.CurrentRow.Cells[5].Value.Equals(true))
+            //{
+            //    update.radioButton1.Checked = true;
+            //}
+            //else
+            //{
+            //    update.radioButton2.Checked = true;
+            //}
             update.ShowDialog();
         }
 
@@ -93,6 +93,16 @@ namespace LibraryAutomation.Book
                     x.Description,
                     x.Rented,
                 }).ToList();
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BookList_Load_1(object sender, EventArgs e)
+        {
 
         }
     }

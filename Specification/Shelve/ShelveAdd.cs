@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using LibraryAutomation.Entities;
 
@@ -13,39 +14,59 @@ namespace LibraryAutomation.Specification.Shelve
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            var answer = MessageBox.Show("Eklemek istediginizden emin misiniz ?", "Ekle", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
-            if (answer == DialogResult.Yes)
+            if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
             {
-                try
+                textBox2.BackColor = Color.White;
+                textBox1.BackColor = Color.White;
+
+                if (string.IsNullOrEmpty(textBox2.Text))
                 {
-                    var shelveNo = Convert.ToInt32(textBox1.Text);
-
-                    Entities.Shelve shelve = new Entities.Shelve()
-                    {
-                        ShelveNo = shelveNo,
-                        ShelveName = textBox2.Text,
-                        CreatedDate = DateTime.Now,
-                    };
-
-                    _db.Shelves.Add(shelve);
-                    _db.SaveChanges();
-                    MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                    this.Hide();
+                    textBox2.BackColor = Color.Red;
+                    textBox2.Focus();
                 }
-                catch (Exception exception)
+
+                if (string.IsNullOrEmpty(textBox1.Text))
                 {
-                    MessageBox.Show("Hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,
-                        MessageBoxIcon.Error);
-                    this.Hide();
+                    textBox1.BackColor = Color.Red;
+                    textBox1.Focus();
                 }
             }
             else
             {
-                this.Hide();
+                var answer = MessageBox.Show("Eklemek istediginizden emin misiniz ?", "Ekle", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                if (answer == DialogResult.Yes)
+                {
+                    try
+                    {
+                        var shelveNo = Convert.ToInt32(textBox1.Text);
+
+                        Entities.Shelve shelve = new Entities.Shelve()
+                        {
+                            ShelveNo = shelveNo,
+                            ShelveName = textBox2.Text,
+                            CreatedDate = DateTime.Now,
+                        };
+
+                        _db.Shelves.Add(shelve);
+                        _db.SaveChanges();
+                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                        this.Hide();
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show("Hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    this.Hide();
+                }
             }
         }
     }

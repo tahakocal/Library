@@ -5,9 +5,9 @@ namespace LibraryAutomation.Entities
 
     public enum State
     {
-        READY,
-        RENTED,
-        ARCHIVED
+        HAZIR,
+        KİRALANDI,
+        ARŞİVDE
     }
 
     public class RentBook : BaseEntity
@@ -18,9 +18,9 @@ namespace LibraryAutomation.Entities
 
         public virtual Book Book { get; set; }
 
-        public int UserId { get; set; }
+        public int MemberId { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual Member Member { get; set; }
 
         public DateTime From { get; set; }
 
