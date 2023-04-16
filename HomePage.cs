@@ -1,14 +1,15 @@
-using LibraryAutomation.Book;
-using LibraryAutomation.Employee;
-using LibraryAutomation.Member;
-using LibraryAutomation.Specification.Author;
-using LibraryAutomation.Specification.Cabinet;
-using LibraryAutomation.Specification.Category;
-using LibraryAutomation.Specification.Hall;
-using LibraryAutomation.Specification.Publisher;
-using LibraryAutomation.Specification.Shelve;
 using System;
 using System.Windows.Forms;
+using LibraryAutomation.Pages.Book;
+using LibraryAutomation.Pages.Employee;
+using LibraryAutomation.Pages.Loan;
+using LibraryAutomation.Pages.Member;
+using LibraryAutomation.Pages.Specification.Author;
+using LibraryAutomation.Pages.Specification.Cabinet;
+using LibraryAutomation.Pages.Specification.Category;
+using LibraryAutomation.Pages.Specification.Hall;
+using LibraryAutomation.Pages.Specification.Publisher;
+using LibraryAutomation.Pages.Specification.Shelve;
 
 namespace LibraryAutomation
 {

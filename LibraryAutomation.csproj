@@ -133,70 +133,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book\BookAdd.cs">
+    <Compile Include="Pages\Book\BookAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\BookAdd.Designer.cs">
+    <Compile Include="Pages\Book\BookAdd.Designer.cs">
       <DependentUpon>BookAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\BookList.cs">
+    <Compile Include="Pages\Book\BookList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\BookList.Designer.cs">
+    <Compile Include="Pages\Book\BookList.Designer.cs">
       <DependentUpon>BookList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\BookRemove.cs">
+    <Compile Include="Pages\Book\BookRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\BookRemove.Designer.cs">
+    <Compile Include="Pages\Book\BookRemove.Designer.cs">
       <DependentUpon>BookRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\BookUpdate.cs">
+    <Compile Include="Pages\Book\BookUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\BookUpdate.Designer.cs">
+    <Compile Include="Pages\Book\BookUpdate.Designer.cs">
       <DependentUpon>BookUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\LoanGiveBook.cs">
+    <Compile Include="Pages\Loan\LoanGiveBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\LoanGiveBook.Designer.cs">
+    <Compile Include="Pages\Loan\LoanGiveBook.Designer.cs">
       <DependentUpon>LoanGiveBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\LoanList.cs">
+    <Compile Include="Pages\Loan\LoanList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\LoanList.Designer.cs">
+    <Compile Include="Pages\Loan\LoanList.Designer.cs">
       <DependentUpon>LoanList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Book\LoanTakeBook.cs">
+    <Compile Include="Pages\Loan\LoanTakeBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Book\LoanTakeBook.Designer.cs">
+    <Compile Include="Pages\Loan\LoanTakeBook.Designer.cs">
       <DependentUpon>LoanTakeBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\EmployeeAdd.cs">
+    <Compile Include="Pages\Employee\EmployeeAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\EmployeeAdd.Designer.cs">
+    <Compile Include="Pages\Employee\EmployeeAdd.Designer.cs">
       <DependentUpon>EmployeeAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\EmployeeList.cs">
+    <Compile Include="Pages\Employee\EmployeeList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\EmployeeList.Designer.cs">
+    <Compile Include="Pages\Employee\EmployeeList.Designer.cs">
       <DependentUpon>EmployeeList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\EmployeeRemove.cs">
+    <Compile Include="Pages\Employee\EmployeeRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\EmployeeRemove.Designer.cs">
+    <Compile Include="Pages\Employee\EmployeeRemove.Designer.cs">
       <DependentUpon>EmployeeRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee\EmployeeUpdate.cs">
+    <Compile Include="Pages\Employee\EmployeeUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee\EmployeeUpdate.Designer.cs">
+    <Compile Include="Pages\Employee\EmployeeUpdate.Designer.cs">
       <DependentUpon>EmployeeUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Author.cs" />
@@ -225,28 +225,28 @@
     <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Member\MemberAdd.cs">
+    <Compile Include="Pages\Member\MemberAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Member\MemberAdd.Designer.cs">
+    <Compile Include="Pages\Member\MemberAdd.Designer.cs">
       <DependentUpon>MemberAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Member\MemberList.cs">
+    <Compile Include="Pages\Member\MemberList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Member\MemberList.Designer.cs">
+    <Compile Include="Pages\Member\MemberList.Designer.cs">
       <DependentUpon>MemberList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Member\MemberRemove.cs">
+    <Compile Include="Pages\Member\MemberRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Member\MemberRemove.Designer.cs">
+    <Compile Include="Pages\Member\MemberRemove.Designer.cs">
       <DependentUpon>MemberRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Member\MemberUpdate.cs">
+    <Compile Include="Pages\Member\MemberUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Member\MemberUpdate.Designer.cs">
+    <Compile Include="Pages\Member\MemberUpdate.Designer.cs">
       <DependentUpon>MemberUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202304070733475_First-init.cs" />
@@ -326,172 +326,172 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ReportAuthor.cs">
+    <Compile Include="Pages\Reports\ReportAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\ReportAuthor.Designer.cs">
+    <Compile Include="Pages\Reports\ReportAuthor.Designer.cs">
       <DependentUpon>ReportAuthor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ReportEmployee.cs">
+    <Compile Include="Pages\Reports\ReportEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\ReportEmployee.Designer.cs">
+    <Compile Include="Pages\Reports\ReportEmployee.Designer.cs">
       <DependentUpon>ReportEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ReportGiveBook.cs">
+    <Compile Include="Pages\Reports\ReportGiveBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\ReportGiveBook.Designer.cs">
+    <Compile Include="Pages\Reports\ReportGiveBook.Designer.cs">
       <DependentUpon>ReportGiveBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\ReportMember.cs">
+    <Compile Include="Pages\Reports\ReportMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\ReportMember.Designer.cs">
+    <Compile Include="Pages\Reports\ReportMember.Designer.cs">
       <DependentUpon>ReportMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Author\AuthorAdd.cs">
+    <Compile Include="Pages\Specification\Author\AuthorAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Author\AuthorAdd.Designer.cs">
+    <Compile Include="Pages\Specification\Author\AuthorAdd.Designer.cs">
       <DependentUpon>AuthorAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Author\AuthorRemove.cs">
+    <Compile Include="Pages\Specification\Author\AuthorRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Author\AuthorRemove.Designer.cs">
+    <Compile Include="Pages\Specification\Author\AuthorRemove.Designer.cs">
       <DependentUpon>AuthorRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Author\AuthorUpdate.cs">
+    <Compile Include="Pages\Specification\Author\AuthorUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Author\AuthorUpdate.Designer.cs">
+    <Compile Include="Pages\Specification\Author\AuthorUpdate.Designer.cs">
       <DependentUpon>AuthorUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Author\SpecAuthor.cs">
+    <Compile Include="Pages\Specification\Author\SpecAuthor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Author\SpecAuthor.Designer.cs">
+    <Compile Include="Pages\Specification\Author\SpecAuthor.Designer.cs">
       <DependentUpon>SpecAuthor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Cabinet\CabinetAdd.cs">
+    <Compile Include="Pages\Specification\Cabinet\CabinetAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Cabinet\CabinetAdd.Designer.cs">
+    <Compile Include="Pages\Specification\Cabinet\CabinetAdd.Designer.cs">
       <DependentUpon>CabinetAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Cabinet\CabinetRemove.cs">
+    <Compile Include="Pages\Specification\Cabinet\CabinetRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Cabinet\CabinetRemove.Designer.cs">
+    <Compile Include="Pages\Specification\Cabinet\CabinetRemove.Designer.cs">
       <DependentUpon>CabinetRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Cabinet\CabinetUpdate.cs">
+    <Compile Include="Pages\Specification\Cabinet\CabinetUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Cabinet\CabinetUpdate.Designer.cs">
+    <Compile Include="Pages\Specification\Cabinet\CabinetUpdate.Designer.cs">
       <DependentUpon>CabinetUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Cabinet\SpecCabinet.cs">
+    <Compile Include="Pages\Specification\Cabinet\SpecCabinet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Cabinet\SpecCabinet.Designer.cs">
+    <Compile Include="Pages\Specification\Cabinet\SpecCabinet.Designer.cs">
       <DependentUpon>SpecCabinet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Category\CategoryAdd.cs">
+    <Compile Include="Pages\Specification\Category\CategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Category\CategoryAdd.Designer.cs">
+    <Compile Include="Pages\Specification\Category\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Category\CategoryList.cs">
+    <Compile Include="Pages\Specification\Category\CategoryList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Category\CategoryList.Designer.cs">
+    <Compile Include="Pages\Specification\Category\CategoryList.Designer.cs">
       <DependentUpon>CategoryList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Category\CategoryRemove.cs">
+    <Compile Include="Pages\Specification\Category\CategoryRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Category\CategoryRemove.Designer.cs">
+    <Compile Include="Pages\Specification\Category\CategoryRemove.Designer.cs">
       <DependentUpon>CategoryRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Category\CategoryUpdate.cs">
+    <Compile Include="Pages\Specification\Category\CategoryUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Category\CategoryUpdate.Designer.cs">
+    <Compile Include="Pages\Specification\Category\CategoryUpdate.Designer.cs">
       <DependentUpon>CategoryUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Hall\HallAdd.cs">
+    <Compile Include="Pages\Specification\Hall\HallAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Hall\HallAdd.Designer.cs">
+    <Compile Include="Pages\Specification\Hall\HallAdd.Designer.cs">
       <DependentUpon>HallAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Hall\HallRemove.cs">
+    <Compile Include="Pages\Specification\Hall\HallRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Hall\HallRemove.Designer.cs">
+    <Compile Include="Pages\Specification\Hall\HallRemove.Designer.cs">
       <DependentUpon>HallRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Hall\HallUpdate.cs">
+    <Compile Include="Pages\Specification\Hall\HallUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Hall\HallUpdate.Designer.cs">
+    <Compile Include="Pages\Specification\Hall\HallUpdate.Designer.cs">
       <DependentUpon>HallUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Hall\SpecHall.cs">
+    <Compile Include="Pages\Specification\Hall\SpecHall.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Hall\SpecHall.Designer.cs">
+    <Compile Include="Pages\Specification\Hall\SpecHall.Designer.cs">
       <DependentUpon>SpecHall.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Publisher\PublisherAdd.cs">
+    <Compile Include="Pages\Specification\Publisher\PublisherAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Publisher\PublisherAdd.Designer.cs">
+    <Compile Include="Pages\Specification\Publisher\PublisherAdd.Designer.cs">
       <DependentUpon>PublisherAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Publisher\PublisherRemove.cs">
+    <Compile Include="Pages\Specification\Publisher\PublisherRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Publisher\PublisherRemove.Designer.cs">
+    <Compile Include="Pages\Specification\Publisher\PublisherRemove.Designer.cs">
       <DependentUpon>PublisherRemove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Publisher\PublisherUpdate.cs">
+    <Compile Include="Pages\Specification\Publisher\PublisherUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Publisher\PublisherUpdate.Designer.cs">
+    <Compile Include="Pages\Specification\Publisher\PublisherUpdate.Designer.cs">
       <DependentUpon>PublisherUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Publisher\SpecPublisher.cs">
+    <Compile Include="Pages\Specification\Publisher\SpecPublisher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Publisher\SpecPublisher.Designer.cs">
+    <Compile Include="Pages\Specification\Publisher\SpecPublisher.Designer.cs">
       <DependentUpon>SpecPublisher.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Shelve\ShelveAdd.cs">
+    <Compile Include="Pages\Specification\Shelve\ShelveAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Shelve\ShelveAdd.Designer.cs">
+    <Compile Include="Pages\Specification\Shelve\ShelveAdd.Designer.cs">
       <DependentUpon>ShelveAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Shelve\ShelveDelete.cs">
+    <Compile Include="Pages\Specification\Shelve\ShelveDelete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Shelve\ShelveDelete.Designer.cs">
+    <Compile Include="Pages\Specification\Shelve\ShelveDelete.Designer.cs">
       <DependentUpon>ShelveDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Shelve\ShelveUpdate.cs">
+    <Compile Include="Pages\Specification\Shelve\ShelveUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Shelve\ShelveUpdate.Designer.cs">
+    <Compile Include="Pages\Specification\Shelve\ShelveUpdate.Designer.cs">
       <DependentUpon>ShelveUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Shelve\SpecShelve.cs">
+    <Compile Include="Pages\Specification\Shelve\SpecShelve.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Specification\Shelve\SpecShelve.Designer.cs">
+    <Compile Include="Pages\Specification\Shelve\SpecShelve.Designer.cs">
       <DependentUpon>SpecShelve.cs</DependentUpon>
     </Compile>
     <Compile Include="Welcome.cs">
@@ -500,37 +500,37 @@
     <Compile Include="Welcome.designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Book\BookAdd.resx">
+    <EmbeddedResource Include="Pages\Book\BookAdd.resx">
       <DependentUpon>BookAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book\BookList.resx">
+    <EmbeddedResource Include="Pages\Book\BookList.resx">
       <DependentUpon>BookList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book\BookRemove.resx">
+    <EmbeddedResource Include="Pages\Book\BookRemove.resx">
       <DependentUpon>BookRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book\BookUpdate.resx">
+    <EmbeddedResource Include="Pages\Book\BookUpdate.resx">
       <DependentUpon>BookUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book\LoanGiveBook.resx">
+    <EmbeddedResource Include="Pages\Loan\LoanGiveBook.resx">
       <DependentUpon>LoanGiveBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book\LoanList.resx">
+    <EmbeddedResource Include="Pages\Loan\LoanList.resx">
       <DependentUpon>LoanList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Book\LoanTakeBook.resx">
+    <EmbeddedResource Include="Pages\Loan\LoanTakeBook.resx">
       <DependentUpon>LoanTakeBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\EmployeeAdd.resx">
+    <EmbeddedResource Include="Pages\Employee\EmployeeAdd.resx">
       <DependentUpon>EmployeeAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\EmployeeList.resx">
+    <EmbeddedResource Include="Pages\Employee\EmployeeList.resx">
       <DependentUpon>EmployeeList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\EmployeeRemove.resx">
+    <EmbeddedResource Include="Pages\Employee\EmployeeRemove.resx">
       <DependentUpon>EmployeeRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee\EmployeeUpdate.resx">
+    <EmbeddedResource Include="Pages\Employee\EmployeeUpdate.resx">
       <DependentUpon>EmployeeUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
@@ -539,16 +539,16 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Member\MemberAdd.resx">
+    <EmbeddedResource Include="Pages\Member\MemberAdd.resx">
       <DependentUpon>MemberAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Member\MemberList.resx">
+    <EmbeddedResource Include="Pages\Member\MemberList.resx">
       <DependentUpon>MemberList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Member\MemberRemove.resx">
+    <EmbeddedResource Include="Pages\Member\MemberRemove.resx">
       <DependentUpon>MemberRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Member\MemberUpdate.resx">
+    <EmbeddedResource Include="Pages\Member\MemberUpdate.resx">
       <DependentUpon>MemberUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304070733475_First-init.resx">
@@ -615,88 +615,88 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ReportAuthor.resx">
+    <EmbeddedResource Include="Pages\Reports\ReportAuthor.resx">
       <DependentUpon>ReportAuthor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ReportEmployee.resx">
+    <EmbeddedResource Include="Pages\Reports\ReportEmployee.resx">
       <DependentUpon>ReportEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ReportGiveBook.resx">
+    <EmbeddedResource Include="Pages\Reports\ReportGiveBook.resx">
       <DependentUpon>ReportGiveBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ReportMember.resx">
+    <EmbeddedResource Include="Pages\Reports\ReportMember.resx">
       <DependentUpon>ReportMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Author\AuthorAdd.resx">
+    <EmbeddedResource Include="Pages\Specification\Author\AuthorAdd.resx">
       <DependentUpon>AuthorAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Author\AuthorRemove.resx">
+    <EmbeddedResource Include="Pages\Specification\Author\AuthorRemove.resx">
       <DependentUpon>AuthorRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Author\AuthorUpdate.resx">
+    <EmbeddedResource Include="Pages\Specification\Author\AuthorUpdate.resx">
       <DependentUpon>AuthorUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Author\SpecAuthor.resx">
+    <EmbeddedResource Include="Pages\Specification\Author\SpecAuthor.resx">
       <DependentUpon>SpecAuthor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Cabinet\CabinetAdd.resx">
+    <EmbeddedResource Include="Pages\Specification\Cabinet\CabinetAdd.resx">
       <DependentUpon>CabinetAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Cabinet\CabinetRemove.resx">
+    <EmbeddedResource Include="Pages\Specification\Cabinet\CabinetRemove.resx">
       <DependentUpon>CabinetRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Cabinet\CabinetUpdate.resx">
+    <EmbeddedResource Include="Pages\Specification\Cabinet\CabinetUpdate.resx">
       <DependentUpon>CabinetUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Cabinet\SpecCabinet.resx">
+    <EmbeddedResource Include="Pages\Specification\Cabinet\SpecCabinet.resx">
       <DependentUpon>SpecCabinet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Category\CategoryAdd.resx">
+    <EmbeddedResource Include="Pages\Specification\Category\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Category\CategoryList.resx">
+    <EmbeddedResource Include="Pages\Specification\Category\CategoryList.resx">
       <DependentUpon>CategoryList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Category\CategoryRemove.resx">
+    <EmbeddedResource Include="Pages\Specification\Category\CategoryRemove.resx">
       <DependentUpon>CategoryRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Category\CategoryUpdate.resx">
+    <EmbeddedResource Include="Pages\Specification\Category\CategoryUpdate.resx">
       <DependentUpon>CategoryUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Hall\HallAdd.resx">
+    <EmbeddedResource Include="Pages\Specification\Hall\HallAdd.resx">
       <DependentUpon>HallAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Hall\HallRemove.resx">
+    <EmbeddedResource Include="Pages\Specification\Hall\HallRemove.resx">
       <DependentUpon>HallRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Hall\HallUpdate.resx">
+    <EmbeddedResource Include="Pages\Specification\Hall\HallUpdate.resx">
       <DependentUpon>HallUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Hall\SpecHall.resx">
+    <EmbeddedResource Include="Pages\Specification\Hall\SpecHall.resx">
       <DependentUpon>SpecHall.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Publisher\PublisherAdd.resx">
+    <EmbeddedResource Include="Pages\Specification\Publisher\PublisherAdd.resx">
       <DependentUpon>PublisherAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Publisher\PublisherRemove.resx">
+    <EmbeddedResource Include="Pages\Specification\Publisher\PublisherRemove.resx">
       <DependentUpon>PublisherRemove.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Publisher\PublisherUpdate.resx">
+    <EmbeddedResource Include="Pages\Specification\Publisher\PublisherUpdate.resx">
       <DependentUpon>PublisherUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Publisher\SpecPublisher.resx">
+    <EmbeddedResource Include="Pages\Specification\Publisher\SpecPublisher.resx">
       <DependentUpon>SpecPublisher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Shelve\ShelveAdd.resx">
+    <EmbeddedResource Include="Pages\Specification\Shelve\ShelveAdd.resx">
       <DependentUpon>ShelveAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Shelve\ShelveDelete.resx">
+    <EmbeddedResource Include="Pages\Specification\Shelve\ShelveDelete.resx">
       <DependentUpon>ShelveDelete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Shelve\ShelveUpdate.resx">
+    <EmbeddedResource Include="Pages\Specification\Shelve\ShelveUpdate.resx">
       <DependentUpon>ShelveUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Shelve\SpecShelve.resx">
+    <EmbeddedResource Include="Pages\Specification\Shelve\SpecShelve.resx">
       <DependentUpon>SpecShelve.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
