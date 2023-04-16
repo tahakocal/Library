@@ -1,7 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Specification.Author
 {

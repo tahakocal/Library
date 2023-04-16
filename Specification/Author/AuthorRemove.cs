@@ -1,6 +1,6 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Specification.Author
 {
@@ -12,7 +12,7 @@ namespace LibraryAutomation.Specification.Author
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             var answer = MessageBox.Show("Silmek istediginizden emin misiniz ?", "Sil", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);

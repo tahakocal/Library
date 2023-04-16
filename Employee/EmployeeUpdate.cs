@@ -1,8 +1,8 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Employee
 {
@@ -12,11 +12,6 @@ namespace LibraryAutomation.Employee
         public EmployeeUpdate()
         {
             InitializeComponent();
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)

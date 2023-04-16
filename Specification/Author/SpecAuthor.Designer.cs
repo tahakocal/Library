@@ -49,6 +49,7 @@ namespace LibraryAutomation.Specification.Author
             this.button4.TabIndex = 14;
             this.button4.Text = "Tabloyu Güncelleştir";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -59,6 +60,7 @@ namespace LibraryAutomation.Specification.Author
             this.button3.TabIndex = 13;
             this.button3.Text = "Sil";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button2
             // 
@@ -69,6 +71,7 @@ namespace LibraryAutomation.Specification.Author
             this.button2.TabIndex = 12;
             this.button2.Text = "Güncelle";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -79,6 +82,7 @@ namespace LibraryAutomation.Specification.Author
             this.button1.TabIndex = 11;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 
@@ -106,6 +110,7 @@ namespace LibraryAutomation.Specification.Author
             this.Name = "SpecAuthor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yazar Listele";
+            this.Load += new System.EventHandler(this.SpecAuthor_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

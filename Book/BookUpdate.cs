@@ -1,8 +1,8 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Book
 {
@@ -53,12 +53,41 @@ namespace LibraryAutomation.Book
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || comboBox1.Text == "Seçiniz" || comboBox2.Text == "Seçiniz")
+            if (string.IsNullOrEmpty(textBox5.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(comboBox1.Text) || string.IsNullOrEmpty(comboBox2.Text) || string.IsNullOrEmpty(comboBox3.Text)
+                 || string.IsNullOrEmpty(comboBox4.Text) || string.IsNullOrEmpty(comboBox5.Text) || string.IsNullOrEmpty(comboBox6.Text)
+                 || comboBox1.Text == "Seçiniz" || comboBox2.Text == "Seçiniz"
+                 || comboBox3.Text == "Seçiniz" || comboBox4.Text == "Seçiniz" || comboBox5.Text == "Seçiniz"
+                 || comboBox6.Text == "Seçiniz")
             {
                 textBox2.BackColor = Color.White;
                 textBox5.BackColor = Color.White;
                 comboBox2.BackColor = Color.White;
                 comboBox1.BackColor = Color.White;
+                comboBox3.BackColor = Color.White;
+                comboBox4.BackColor = Color.White;
+                comboBox5.BackColor = Color.White;
+                comboBox6.BackColor = Color.White;
+
+                if (string.IsNullOrEmpty(comboBox6.Text) || comboBox6.Text == "Seçiniz")
+                {
+                    comboBox6.BackColor = Color.Red;
+                    comboBox6.Focus();
+                }
+                if (string.IsNullOrEmpty(comboBox5.Text) || comboBox5.Text == "Seçiniz")
+                {
+                    comboBox5.BackColor = Color.Red;
+                    comboBox5.Focus();
+                }
+                if (string.IsNullOrEmpty(comboBox4.Text) || comboBox4.Text == "Seçiniz")
+                {
+                    comboBox4.BackColor = Color.Red;
+                    comboBox4.Focus();
+                }
+                if (string.IsNullOrEmpty(comboBox3.Text) || comboBox3.Text == "Seçiniz")
+                {
+                    comboBox3.BackColor = Color.Red;
+                    comboBox3.Focus();
+                }
 
 
                 if (string.IsNullOrEmpty(textBox5.Text))

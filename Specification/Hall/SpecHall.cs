@@ -1,7 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Specification.Hall
 {
@@ -34,7 +34,6 @@ namespace LibraryAutomation.Specification.Hall
             HallUpdate update = new HallUpdate();
             update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             update.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            update.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             update.ShowDialog();
         }
 
@@ -43,7 +42,6 @@ namespace LibraryAutomation.Specification.Hall
             HallRemove remove = new HallRemove();
             remove.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             remove.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            remove.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             remove.ShowDialog();
         }
 

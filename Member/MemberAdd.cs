@@ -1,8 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Member
 {

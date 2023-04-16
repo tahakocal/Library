@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
-using LibraryAutomation.Specification.Publisher;
 
 namespace LibraryAutomation.Specification.Category
 {

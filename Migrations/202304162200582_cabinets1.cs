@@ -1,8 +1,7 @@
 ﻿namespace LibraryAutomation.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class cabinets1 : DbMigration
     {
         public override void Up()
@@ -28,7 +27,7 @@
             AddForeignKey("dbo.Books", "PublisherId", "dbo.Publishers", "Id", cascadeDelete: true);
             AddForeignKey("dbo.Books", "ShelveId", "dbo.Shelves", "Id", cascadeDelete: true);
         }
-        
+
         public override void Down()
         {
             DropForeignKey("dbo.Books", "ShelveId", "dbo.Shelves");

@@ -48,6 +48,7 @@ namespace LibraryAutomation.Member
             this.button4.TabIndex = 9;
             this.button4.Text = "Tabloyu Güncelleştir";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button3
             // 
@@ -58,6 +59,7 @@ namespace LibraryAutomation.Member
             this.button3.TabIndex = 8;
             this.button3.Text = "Sil";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button2
             // 
@@ -68,6 +70,7 @@ namespace LibraryAutomation.Member
             this.button2.TabIndex = 7;
             this.button2.Text = "Güncelle";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -78,6 +81,7 @@ namespace LibraryAutomation.Member
             this.button1.TabIndex = 6;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 
@@ -103,6 +107,7 @@ namespace LibraryAutomation.Member
             this.Name = "MemberList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Üye Listele";
+            this.Load += new System.EventHandler(this.MemberList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

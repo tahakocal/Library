@@ -1,8 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Specification.Publisher
 {
@@ -17,9 +16,9 @@ namespace LibraryAutomation.Specification.Publisher
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text) )
+            if (string.IsNullOrEmpty(textBox1.Text))
             {
-                
+
                 textBox1.BackColor = Color.White;
 
                 if (string.IsNullOrEmpty(textBox1.Text))

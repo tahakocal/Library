@@ -33,9 +33,7 @@ namespace LibraryAutomation.Specification.Hall
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HallAdd));
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -50,14 +48,6 @@ namespace LibraryAutomation.Specification.Hall
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(109, 110);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 22);
-            this.textBox2.TabIndex = 25;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(109, 63);
@@ -65,15 +55,6 @@ namespace LibraryAutomation.Specification.Hall
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 22);
             this.textBox1.TabIndex = 24;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 16);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Salon Adi";
             // 
             // label1
             // 
@@ -90,9 +71,7 @@ namespace LibraryAutomation.Specification.Hall
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(297, 360);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -107,9 +86,7 @@ namespace LibraryAutomation.Specification.Hall
         #endregion
 
         private Button button1;
-        public TextBox textBox2;
         public TextBox textBox1;
-        private Label label2;
         private Label label1;
     }
 }

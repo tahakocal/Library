@@ -1,7 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Specification.Author
 {
@@ -12,11 +12,6 @@ namespace LibraryAutomation.Specification.Author
         public SpecAuthor()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -31,13 +26,13 @@ namespace LibraryAutomation.Specification.Author
                 }).ToList();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             AuthorAdd add = new AuthorAdd();
             add.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             AuthorUpdate update = new AuthorUpdate();
             update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -47,7 +42,7 @@ namespace LibraryAutomation.Specification.Author
             update.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             AuthorRemove remove = new AuthorRemove();
             remove.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -57,7 +52,7 @@ namespace LibraryAutomation.Specification.Author
             remove.ShowDialog();
         }
 
-        private void SpecAuthor_Load(object sender, EventArgs e)
+        private void SpecAuthor_Load_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Authors
                 .Select(x => new

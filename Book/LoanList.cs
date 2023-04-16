@@ -1,8 +1,8 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Book
 {
@@ -64,7 +64,7 @@ namespace LibraryAutomation.Book
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)

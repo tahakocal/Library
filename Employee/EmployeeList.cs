@@ -1,8 +1,8 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace LibraryAutomation.Employee
 {
@@ -14,12 +14,8 @@ namespace LibraryAutomation.Employee
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            ;
-        }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             EmployeeRemove remove = new EmployeeRemove();
             remove.textBox4.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -29,7 +25,7 @@ namespace LibraryAutomation.Employee
             remove.ShowDialog();
         }
 
-        private void EmployeeList_Load(object sender, EventArgs e)
+        private void EmployeeList_Load_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Employees
                 .Include(x => x.Section)
@@ -44,7 +40,7 @@ namespace LibraryAutomation.Employee
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             EmployeeUpdate update = new EmployeeUpdate();
             update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -54,7 +50,7 @@ namespace LibraryAutomation.Employee
             update.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Employees
                 .Include(x => x.Section)
@@ -68,7 +64,7 @@ namespace LibraryAutomation.Employee
                 }).ToList();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             EmployeeAdd add = new EmployeeAdd();
             add.ShowDialog();

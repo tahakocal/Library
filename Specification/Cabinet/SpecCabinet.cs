@@ -1,5 +1,4 @@
 ﻿using LibraryAutomation.Entities;
-using LibraryAutomation.Specification.Hall;
 using System;
 using System.Linq;
 using System.Windows.Forms;

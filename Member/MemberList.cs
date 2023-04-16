@@ -1,7 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Member
 {
@@ -26,7 +26,7 @@ namespace LibraryAutomation.Member
                 }).ToList();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             MemberUpdate update = new MemberUpdate();
             update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -36,7 +36,7 @@ namespace LibraryAutomation.Member
             update.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Members
                 .Select(x => new
@@ -49,7 +49,7 @@ namespace LibraryAutomation.Member
                 }).ToList();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             MemberRemove remove = new MemberRemove();
             remove.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -59,7 +59,7 @@ namespace LibraryAutomation.Member
             remove.ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             MemberAdd add = new MemberAdd();
             add.ShowDialog();

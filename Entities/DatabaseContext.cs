@@ -19,7 +19,7 @@ namespace LibraryAutomation.Entities
         public virtual DbSet<Shelve> Shelves { get; set; }
         public virtual DbSet<Hall> Halls { get; set; }
         public virtual DbSet<Publisher> Publishers { get; set; }
-        public virtual DbSet<Cabinet> Cabinets{ get; set; }
+        public virtual DbSet<Cabinet> Cabinets { get; set; }
 
 
     }

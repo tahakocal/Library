@@ -1,8 +1,7 @@
 ﻿namespace LibraryAutomation.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class cabinets : DbMigration
     {
         public override void Up()
@@ -10,13 +9,13 @@
             CreateTable(
                 "dbo.Cabinets",
                 c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        CabinetNo = c.Int(nullable: false),
-                        CreatedDate = c.DateTime(nullable: false),
-                    })
+                {
+                    Id = c.Int(nullable: false, identity: true),
+                    CabinetNo = c.Int(nullable: false),
+                    CreatedDate = c.DateTime(nullable: false),
+                })
                 .PrimaryKey(t => t.Id);
-            
+
             AddColumn("dbo.Books", "ShelveId", c => c.Int());
             AddColumn("dbo.Books", "PublisherId", c => c.Int());
             AddColumn("dbo.Books", "HallId", c => c.Int());
@@ -30,7 +29,7 @@
             AddForeignKey("dbo.Books", "PublisherId", "dbo.Publishers", "Id");
             AddForeignKey("dbo.Books", "ShelveId", "dbo.Shelves", "Id");
         }
-        
+
         public override void Down()
         {
             DropForeignKey("dbo.Books", "ShelveId", "dbo.Shelves");

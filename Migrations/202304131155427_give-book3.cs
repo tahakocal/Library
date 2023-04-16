@@ -1,8 +1,7 @@
 ﻿namespace LibraryAutomation.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class givebook3 : DbMigration
     {
         public override void Up()
@@ -14,7 +13,7 @@
             AddForeignKey("dbo.RentBooks", "MemberId", "dbo.Members", "Id", cascadeDelete: true);
             DropColumn("dbo.RentBooks", "UserId");
         }
-        
+
         public override void Down()
         {
             AddColumn("dbo.RentBooks", "UserId", c => c.Int(nullable: false));

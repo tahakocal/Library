@@ -1,8 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Specification.Hall
 {
@@ -17,16 +16,10 @@ namespace LibraryAutomation.Specification.Hall
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox3.Text))
+            if (string.IsNullOrEmpty(textBox2.Text))
             {
-                textBox3.BackColor = Color.White;
-                textBox2.BackColor = Color.White;
 
-                if (string.IsNullOrEmpty(textBox3.Text))
-                {
-                    textBox3.BackColor = Color.Red;
-                    textBox3.Focus();
-                }
+                textBox2.BackColor = Color.White;
 
                 if (string.IsNullOrEmpty(textBox2.Text))
                 {

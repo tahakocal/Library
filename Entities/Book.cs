@@ -28,7 +28,7 @@
         public virtual Shelve Shelve { get; set; }
 
 
-       
+
 
         public int HallId { get; set; }
 
