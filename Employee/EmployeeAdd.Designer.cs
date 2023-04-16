@@ -121,7 +121,7 @@ namespace LibraryAutomation.Employee
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EmployeeAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EmployeeAdd";
+            this.Text = "Çalışan Ekle";
             this.Load += new System.EventHandler(this.EmployeeAdd_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

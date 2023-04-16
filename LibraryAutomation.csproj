@@ -361,17 +361,35 @@
     <Compile Include="Specification\Author\SpecAuthor.Designer.cs">
       <DependentUpon>SpecAuthor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Specification\Book\SpecBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Specification\Book\SpecBook.Designer.cs">
-      <DependentUpon>SpecBook.cs</DependentUpon>
-    </Compile>
     <Compile Include="Specification\Cabinet\SpecCabinet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Specification\Cabinet\SpecCabinet.Designer.cs">
       <DependentUpon>SpecCabinet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryAdd.Designer.cs">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryList.Designer.cs">
+      <DependentUpon>CategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryRemove.Designer.cs">
+      <DependentUpon>CategoryRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Category\CategoryUpdate.Designer.cs">
+      <DependentUpon>CategoryUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Specification\Hall\HallAdd.cs">
       <SubType>Form</SubType>
@@ -463,8 +481,14 @@
     <EmbeddedResource Include="Book\BookUpdate.resx">
       <DependentUpon>BookUpdate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Book\LoanGiveBook.resx">
+      <DependentUpon>LoanGiveBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Book\LoanList.resx">
       <DependentUpon>LoanList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book\LoanTakeBook.resx">
+      <DependentUpon>LoanTakeBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee\EmployeeAdd.resx">
       <DependentUpon>EmployeeAdd.cs</DependentUpon>
@@ -575,11 +599,20 @@
     <EmbeddedResource Include="Specification\Author\SpecAuthor.resx">
       <DependentUpon>SpecAuthor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Specification\Book\SpecBook.resx">
-      <DependentUpon>SpecBook.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Specification\Cabinet\SpecCabinet.resx">
       <DependentUpon>SpecCabinet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Category\CategoryAdd.resx">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Category\CategoryList.resx">
+      <DependentUpon>CategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Category\CategoryRemove.resx">
+      <DependentUpon>CategoryRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Category\CategoryUpdate.resx">
+      <DependentUpon>CategoryUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Specification\Hall\HallAdd.resx">
       <DependentUpon>HallAdd.cs</DependentUpon>
@@ -642,6 +675,7 @@
     <Content Include="Resources\librarywelcome.jpg" />
     <Content Include="Resources\librayHomePage.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

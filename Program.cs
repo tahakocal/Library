@@ -4,6 +4,7 @@ using LibraryAutomation.Book;
 using LibraryAutomation.Employee;
 using LibraryAutomation.Member;
 using LibraryAutomation.Specification.Author;
+using LibraryAutomation.Specification.Category;
 using LibraryAutomation.Specification.Hall;
 using LibraryAutomation.Specification.Publisher;
 using LibraryAutomation.Specification.Shelve;
@@ -20,7 +21,7 @@ namespace LibraryAutomation
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            Application.Run(new SpecShelve());
+            Application.Run(new CategoryList());
         }
     }
 }

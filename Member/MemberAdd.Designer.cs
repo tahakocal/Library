@@ -119,7 +119,7 @@ namespace LibraryAutomation.Member
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MemberAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MemberAdd";
+            this.Text = "Üye Ekle";
             this.ResumeLayout(false);
             this.PerformLayout();
 

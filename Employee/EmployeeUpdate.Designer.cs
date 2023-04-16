@@ -142,7 +142,7 @@ namespace LibraryAutomation.Employee
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EmployeeUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EmployeeUpdate";
+            this.Text = "Çalışan Güncelle";
             this.Load += new System.EventHandler(this.EmployeeUpdate_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

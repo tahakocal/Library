@@ -117,6 +117,7 @@ namespace LibraryAutomation.Specification.Shelve
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ShelveUpdate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ShelveUpdate";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -65,8 +65,8 @@ namespace LibraryAutomation
             this.personelToolStripMenuItem,
             this.kitapKayıtToolStripMenuItem,
             this.kitapÖdünçAlmaToolStripMenuItem,
-            this.raporlaToolStripMenuItem,
-            this.tanımlamalarToolStripMenuItem});
+            this.tanımlamalarToolStripMenuItem,
+            this.raporlaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1193, 28);
@@ -84,7 +84,7 @@ namespace LibraryAutomation
             // üyeEkleToolStripMenuItem
             // 
             this.üyeEkleToolStripMenuItem.Name = "üyeEkleToolStripMenuItem";
-            this.üyeEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.üyeEkleToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.üyeEkleToolStripMenuItem.Text = "Üye İşlemleri";
             // 
             // personelToolStripMenuItem
@@ -98,7 +98,7 @@ namespace LibraryAutomation
             // personelEkleToolStripMenuItem
             // 
             this.personelEkleToolStripMenuItem.Name = "personelEkleToolStripMenuItem";
-            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.personelEkleToolStripMenuItem.Text = "Personel İşlemleri";
             // 
             // kitapKayıtToolStripMenuItem
@@ -181,37 +181,37 @@ namespace LibraryAutomation
             // kitapTürleriToolStripMenuItem
             // 
             this.kitapTürleriToolStripMenuItem.Name = "kitapTürleriToolStripMenuItem";
-            this.kitapTürleriToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
-            this.kitapTürleriToolStripMenuItem.Text = "Kitap Türleri";
+            this.kitapTürleriToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.kitapTürleriToolStripMenuItem.Text = "Kategoriler";
             // 
             // yayınEviToolStripMenuItem
             // 
             this.yayınEviToolStripMenuItem.Name = "yayınEviToolStripMenuItem";
-            this.yayınEviToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.yayınEviToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.yayınEviToolStripMenuItem.Text = "Yayın Evi";
             // 
             // yazarToolStripMenuItem
             // 
             this.yazarToolStripMenuItem.Name = "yazarToolStripMenuItem";
-            this.yazarToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.yazarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.yazarToolStripMenuItem.Text = "Yazar";
             // 
             // dolaplarToolStripMenuItem
             // 
             this.dolaplarToolStripMenuItem.Name = "dolaplarToolStripMenuItem";
-            this.dolaplarToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.dolaplarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dolaplarToolStripMenuItem.Text = "Dolaplar";
             // 
             // salonlarToolStripMenuItem
             // 
             this.salonlarToolStripMenuItem.Name = "salonlarToolStripMenuItem";
-            this.salonlarToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.salonlarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.salonlarToolStripMenuItem.Text = "Salonlar";
             // 
             // raflarToolStripMenuItem
             // 
             this.raflarToolStripMenuItem.Name = "raflarToolStripMenuItem";
-            this.raflarToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.raflarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.raflarToolStripMenuItem.Text = "Raflar";
             // 
             // HomePage
@@ -226,7 +226,7 @@ namespace LibraryAutomation
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = " Anasayfa";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

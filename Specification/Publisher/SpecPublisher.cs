@@ -14,7 +14,7 @@ namespace LibraryAutomation.Specification.Publisher
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Publishers
                 .Select(x => new
@@ -24,13 +24,13 @@ namespace LibraryAutomation.Specification.Publisher
                 }).ToList();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             PublisherAdd add = new PublisherAdd();
             add.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             PublisherUpdate update = new PublisherUpdate();
             update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -38,14 +38,15 @@ namespace LibraryAutomation.Specification.Publisher
             update.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             PublisherRemove remove = new PublisherRemove();
             remove.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             remove.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             remove.ShowDialog();
         }
-        private void SpecPublisher_Load(object sender, EventArgs e)
+
+        private void SpecPublisher_Load_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Publishers
                 .Select(x => new

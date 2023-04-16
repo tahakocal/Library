@@ -208,7 +208,6 @@ D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Author.A
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Author.AuthorRemove.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Author.AuthorUpdate.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Author.SpecAuthor.resources
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Book.SpecBook.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Cabinet.SpecCabinet.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Hall.HallAdd.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Hall.HallRemove.resources
@@ -231,3 +230,9 @@ D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.pdb
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Migrations.givebook.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Book.LoanList.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Migrations.givebook3.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Book.LoanGiveBook.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Book.LoanTakeBook.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category.CategoryAdd.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category.CategoryList.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category.CategoryRemove.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category.CategoryUpdate.resources

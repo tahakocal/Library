@@ -5,8 +5,8 @@ using LibraryAutomation.Employee;
 using LibraryAutomation.Member;
 using LibraryAutomation.Reports;
 using LibraryAutomation.Specification.Author;
-using LibraryAutomation.Specification.Book;
 using LibraryAutomation.Specification.Cabinet;
+using LibraryAutomation.Specification.Category;
 using LibraryAutomation.Specification.Hall;
 using LibraryAutomation.Specification.Publisher;
 using LibraryAutomation.Specification.Shelve;
@@ -117,8 +117,8 @@ namespace LibraryAutomation
 
         private void kitapTürleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SpecBook specBook = new SpecBook();
-            specBook.Show();
+            CategoryList categoryList = new CategoryList();
+            categoryList.Show();
         }
 
         private void yayınEviToolStripMenuItem_Click(object sender, EventArgs e)
