@@ -48,7 +48,6 @@ namespace LibraryAutomation.Specification.Hall
                         var getData = _db.Halls.Find(toInt);
 
                         getData.HallNo = hallNo;
-                        getData.HallName = textBox3.Text;
                         getData.CreatedDate = DateTime.Now;
 
 

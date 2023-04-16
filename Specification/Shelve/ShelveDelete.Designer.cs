@@ -33,10 +33,8 @@ namespace LibraryAutomation.Specification.Shelve
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -49,6 +47,7 @@ namespace LibraryAutomation.Specification.Shelve
             this.button1.TabIndex = 53;
             this.button1.Text = "Sil";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label4
             // 
@@ -58,15 +57,7 @@ namespace LibraryAutomation.Specification.Shelve
             this.label4.Size = new System.Drawing.Size(18, 16);
             this.label4.TabIndex = 52;
             this.label4.Text = "Id";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(99, 179);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 22);
-            this.textBox3.TabIndex = 51;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox2
             // 
@@ -76,6 +67,7 @@ namespace LibraryAutomation.Specification.Shelve
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(125, 22);
             this.textBox2.TabIndex = 50;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -85,15 +77,7 @@ namespace LibraryAutomation.Specification.Shelve
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 22);
             this.textBox1.TabIndex = 49;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 182);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 16);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Raf Adı";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -103,6 +87,7 @@ namespace LibraryAutomation.Specification.Shelve
             this.label1.Size = new System.Drawing.Size(49, 16);
             this.label1.TabIndex = 47;
             this.label1.Text = "Raf No";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ShelveDelete
             // 
@@ -111,10 +96,8 @@ namespace LibraryAutomation.Specification.Shelve
             this.ClientSize = new System.Drawing.Size(260, 360);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ShelveDelete";
@@ -129,10 +112,8 @@ namespace LibraryAutomation.Specification.Shelve
 
         private Button button1;
         private Label label4;
-        public TextBox textBox3;
         public TextBox textBox2;
         public TextBox textBox1;
-        private Label label2;
         private Label label1;
     }
 }

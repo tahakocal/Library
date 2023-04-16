@@ -202,6 +202,7 @@
     <Compile Include="Entities\Author.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Book.cs" />
+    <Compile Include="Entities\Cabinet.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\DatabaseContext.cs" />
     <Compile Include="Entities\Employee.cs" />
@@ -304,6 +305,18 @@
     <Compile Include="Migrations\202304131155427_give-book3.designer.cs">
       <DependentUpon>202304131155427_give-book3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304162157579_cabinets.cs" />
+    <Compile Include="Migrations\202304162157579_cabinets.designer.cs">
+      <DependentUpon>202304162157579_cabinets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304162200582_cabinets1.cs" />
+    <Compile Include="Migrations\202304162200582_cabinets1.designer.cs">
+      <DependentUpon>202304162200582_cabinets1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304162301251_books.cs" />
+    <Compile Include="Migrations\202304162301251_books.designer.cs">
+      <DependentUpon>202304162301251_books.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -360,6 +373,24 @@
     </Compile>
     <Compile Include="Specification\Author\SpecAuthor.Designer.cs">
       <DependentUpon>SpecAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Cabinet\CabinetAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Cabinet\CabinetAdd.Designer.cs">
+      <DependentUpon>CabinetAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Cabinet\CabinetRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Cabinet\CabinetRemove.Designer.cs">
+      <DependentUpon>CabinetRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Specification\Cabinet\CabinetUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Specification\Cabinet\CabinetUpdate.Designer.cs">
+      <DependentUpon>CabinetUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Specification\Cabinet\SpecCabinet.cs">
       <SubType>Form</SubType>
@@ -562,6 +593,15 @@
     <EmbeddedResource Include="Migrations\202304131155427_give-book3.resx">
       <DependentUpon>202304131155427_give-book3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304162157579_cabinets.resx">
+      <DependentUpon>202304162157579_cabinets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304162200582_cabinets1.resx">
+      <DependentUpon>202304162200582_cabinets1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304162301251_books.resx">
+      <DependentUpon>202304162301251_books.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -598,6 +638,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Specification\Author\SpecAuthor.resx">
       <DependentUpon>SpecAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Cabinet\CabinetAdd.resx">
+      <DependentUpon>CabinetAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Cabinet\CabinetRemove.resx">
+      <DependentUpon>CabinetRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Specification\Cabinet\CabinetUpdate.resx">
+      <DependentUpon>CabinetUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Specification\Cabinet\SpecCabinet.resx">
       <DependentUpon>SpecCabinet.cs</DependentUpon>

@@ -13,14 +13,13 @@ namespace LibraryAutomation.Specification.Hall
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Halls
                 .Select(x => new
                 {
                     x.Id,
                     x.HallNo,
-                    x.HallName,
                 }).ToList();
         }
 
@@ -48,15 +47,15 @@ namespace LibraryAutomation.Specification.Hall
             remove.ShowDialog();
         }
 
-        private void SpecHall_Load(object sender, EventArgs e)
+        private void SpecHall_Load_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Halls
                 .Select(x => new
                 {
                     x.Id,
                     x.HallNo,
-                    x.HallName,
                 }).ToList();
         }
+
     }
 }

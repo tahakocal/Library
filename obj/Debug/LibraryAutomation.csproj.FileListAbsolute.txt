@@ -236,3 +236,9 @@ D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category.CategoryList.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category.CategoryRemove.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Category.CategoryUpdate.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Migrations.cabinets.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Migrations.cabinets1.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Migrations.books.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Cabinet.CabinetAdd.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Cabinet.CabinetRemove.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Specification.Cabinet.CabinetUpdate.resources

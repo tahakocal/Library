@@ -42,11 +42,6 @@ namespace LibraryAutomation
             this.kitapListeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapÖdünçAlmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapVerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.raporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.üyeleriRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelleriRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yazarlarıRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tanımlamalarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapTürleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yayınEviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +49,11 @@ namespace LibraryAutomation
             this.dolaplarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salonlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.raflarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.üyeleriRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelleriRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yazarlarıRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,8 +84,9 @@ namespace LibraryAutomation
             // üyeEkleToolStripMenuItem
             // 
             this.üyeEkleToolStripMenuItem.Name = "üyeEkleToolStripMenuItem";
-            this.üyeEkleToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.üyeEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.üyeEkleToolStripMenuItem.Text = "Üye İşlemleri";
+            this.üyeEkleToolStripMenuItem.Click += new System.EventHandler(this.üyeEkleToolStripMenuItem_Click_1);
             // 
             // personelToolStripMenuItem
             // 
@@ -98,8 +99,9 @@ namespace LibraryAutomation
             // personelEkleToolStripMenuItem
             // 
             this.personelEkleToolStripMenuItem.Name = "personelEkleToolStripMenuItem";
-            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.personelEkleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.personelEkleToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelEkleToolStripMenuItem.Click += new System.EventHandler(this.personelEkleToolStripMenuItem_Click_1);
             // 
             // kitapKayıtToolStripMenuItem
             // 
@@ -112,8 +114,9 @@ namespace LibraryAutomation
             // kitapListeleToolStripMenuItem
             // 
             this.kitapListeleToolStripMenuItem.Name = "kitapListeleToolStripMenuItem";
-            this.kitapListeleToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.kitapListeleToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.kitapListeleToolStripMenuItem.Text = "Kitap Listele";
+            this.kitapListeleToolStripMenuItem.Click += new System.EventHandler(this.kitapListeleToolStripMenuItem_Click_1);
             // 
             // kitapÖdünçAlmaToolStripMenuItem
             // 
@@ -128,6 +131,62 @@ namespace LibraryAutomation
             this.kitapVerToolStripMenuItem.Name = "kitapVerToolStripMenuItem";
             this.kitapVerToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.kitapVerToolStripMenuItem.Text = "Kitap Ödünç İşlemleri";
+            this.kitapVerToolStripMenuItem.Click += new System.EventHandler(this.kitapVerToolStripMenuItem_Click_1);
+            // 
+            // tanımlamalarToolStripMenuItem
+            // 
+            this.tanımlamalarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kitapTürleriToolStripMenuItem,
+            this.yayınEviToolStripMenuItem,
+            this.yazarToolStripMenuItem,
+            this.dolaplarToolStripMenuItem,
+            this.salonlarToolStripMenuItem,
+            this.raflarToolStripMenuItem});
+            this.tanımlamalarToolStripMenuItem.Name = "tanımlamalarToolStripMenuItem";
+            this.tanımlamalarToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.tanımlamalarToolStripMenuItem.Text = "Tanımlamalar";
+            // 
+            // kitapTürleriToolStripMenuItem
+            // 
+            this.kitapTürleriToolStripMenuItem.Name = "kitapTürleriToolStripMenuItem";
+            this.kitapTürleriToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.kitapTürleriToolStripMenuItem.Text = "Kategoriler";
+            this.kitapTürleriToolStripMenuItem.Click += new System.EventHandler(this.kitapTürleriToolStripMenuItem_Click_1);
+            // 
+            // yayınEviToolStripMenuItem
+            // 
+            this.yayınEviToolStripMenuItem.Name = "yayınEviToolStripMenuItem";
+            this.yayınEviToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.yayınEviToolStripMenuItem.Text = "Yayın Evi";
+            this.yayınEviToolStripMenuItem.Click += new System.EventHandler(this.yayınEviToolStripMenuItem_Click_1);
+            // 
+            // yazarToolStripMenuItem
+            // 
+            this.yazarToolStripMenuItem.Name = "yazarToolStripMenuItem";
+            this.yazarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.yazarToolStripMenuItem.Text = "Yazar";
+            this.yazarToolStripMenuItem.Click += new System.EventHandler(this.yazarToolStripMenuItem_Click_1);
+            // 
+            // dolaplarToolStripMenuItem
+            // 
+            this.dolaplarToolStripMenuItem.Name = "dolaplarToolStripMenuItem";
+            this.dolaplarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dolaplarToolStripMenuItem.Text = "Dolaplar";
+            this.dolaplarToolStripMenuItem.Click += new System.EventHandler(this.dolaplarToolStripMenuItem_Click_1);
+            // 
+            // salonlarToolStripMenuItem
+            // 
+            this.salonlarToolStripMenuItem.Name = "salonlarToolStripMenuItem";
+            this.salonlarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.salonlarToolStripMenuItem.Text = "Salonlar";
+            this.salonlarToolStripMenuItem.Click += new System.EventHandler(this.salonlarToolStripMenuItem_Click_1);
+            // 
+            // raflarToolStripMenuItem
+            // 
+            this.raflarToolStripMenuItem.Name = "raflarToolStripMenuItem";
+            this.raflarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.raflarToolStripMenuItem.Text = "Raflar";
+            this.raflarToolStripMenuItem.Click += new System.EventHandler(this.raflarToolStripMenuItem_Click_1);
             // 
             // raporlaToolStripMenuItem
             // 
@@ -165,60 +224,10 @@ namespace LibraryAutomation
             this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
             this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem.Text = "Ödünç Verilen Kitapları Raporla";
             // 
-            // tanımlamalarToolStripMenuItem
-            // 
-            this.tanımlamalarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kitapTürleriToolStripMenuItem,
-            this.yayınEviToolStripMenuItem,
-            this.yazarToolStripMenuItem,
-            this.dolaplarToolStripMenuItem,
-            this.salonlarToolStripMenuItem,
-            this.raflarToolStripMenuItem});
-            this.tanımlamalarToolStripMenuItem.Name = "tanımlamalarToolStripMenuItem";
-            this.tanımlamalarToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
-            this.tanımlamalarToolStripMenuItem.Text = "Tanımlamalar";
-            // 
-            // kitapTürleriToolStripMenuItem
-            // 
-            this.kitapTürleriToolStripMenuItem.Name = "kitapTürleriToolStripMenuItem";
-            this.kitapTürleriToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.kitapTürleriToolStripMenuItem.Text = "Kategoriler";
-            // 
-            // yayınEviToolStripMenuItem
-            // 
-            this.yayınEviToolStripMenuItem.Name = "yayınEviToolStripMenuItem";
-            this.yayınEviToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.yayınEviToolStripMenuItem.Text = "Yayın Evi";
-            // 
-            // yazarToolStripMenuItem
-            // 
-            this.yazarToolStripMenuItem.Name = "yazarToolStripMenuItem";
-            this.yazarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.yazarToolStripMenuItem.Text = "Yazar";
-            // 
-            // dolaplarToolStripMenuItem
-            // 
-            this.dolaplarToolStripMenuItem.Name = "dolaplarToolStripMenuItem";
-            this.dolaplarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.dolaplarToolStripMenuItem.Text = "Dolaplar";
-            // 
-            // salonlarToolStripMenuItem
-            // 
-            this.salonlarToolStripMenuItem.Name = "salonlarToolStripMenuItem";
-            this.salonlarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.salonlarToolStripMenuItem.Text = "Salonlar";
-            // 
-            // raflarToolStripMenuItem
-            // 
-            this.raflarToolStripMenuItem.Name = "raflarToolStripMenuItem";
-            this.raflarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.raflarToolStripMenuItem.Text = "Raflar";
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LibraryAutomation.Properties.Resources.librayHomePage;
             this.ClientSize = new System.Drawing.Size(1193, 569);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

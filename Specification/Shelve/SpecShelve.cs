@@ -21,7 +21,6 @@ namespace LibraryAutomation.Specification.Shelve
                 {
                     x.Id,
                     x.ShelveNo,
-                    x.ShelveName,
                     x.CreatedDate
                 }).ToList();
         }
@@ -37,7 +36,6 @@ namespace LibraryAutomation.Specification.Shelve
             ShelveUpdate update = new ShelveUpdate();
             update.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             update.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            update.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             update.ShowDialog();
         }
 
@@ -46,7 +44,6 @@ namespace LibraryAutomation.Specification.Shelve
             ShelveDelete remove = new ShelveDelete();
             remove.textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             remove.textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            remove.textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             remove.ShowDialog();
         }
 
@@ -57,7 +54,6 @@ namespace LibraryAutomation.Specification.Shelve
                 {
                     x.Id,
                     x.ShelveNo,
-                    x.ShelveName,
                     x.CreatedDate
                 }).ToList();
         }

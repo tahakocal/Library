@@ -31,10 +31,9 @@ namespace LibraryAutomation.Specification.Shelve
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShelveAdd));
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -49,14 +48,6 @@ namespace LibraryAutomation.Specification.Shelve
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(90, 138);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 22);
-            this.textBox2.TabIndex = 31;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(90, 91);
@@ -64,15 +55,6 @@ namespace LibraryAutomation.Specification.Shelve
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 22);
             this.textBox1.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 16);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Raf Adı";
             // 
             // label1
             // 
@@ -89,13 +71,13 @@ namespace LibraryAutomation.Specification.Shelve
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(256, 360);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ShelveAdd";
-            this.Text = "ShelveAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Raf Ekle";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,9 +86,7 @@ namespace LibraryAutomation.Specification.Shelve
         #endregion
 
         private Button button1;
-        public TextBox textBox2;
         public TextBox textBox1;
-        private Label label2;
         private Label label1;
     }
 }

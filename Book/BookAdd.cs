@@ -61,11 +61,27 @@ namespace LibraryAutomation.Book
                     {
                         bool rented;
 
-                        var allCategories = _db.Categories.ToList();
-                        var categoryId = allCategories.FirstOrDefault(x => x.CategoryName == comboBox2.Text).Id;
+                        var shelveNo = Convert.ToInt32(comboBox4.Text);
+                        var hallNo = Convert.ToInt32(comboBox5.Text);
+                        var cabinNo = Convert.ToInt32(comboBox6.Text);
 
                         var authors = _db.Authors.ToList();
                         var authorId = authors.FirstOrDefault(x => x.AuthorName == comboBox1.Text).Id;
+
+                        var allCategories = _db.Categories.ToList();
+                        var categoryId = allCategories.FirstOrDefault(x => x.CategoryName == comboBox2.Text).Id;
+
+                        var publishers = _db.Publishers.ToList();
+                        var publisherId = publishers.FirstOrDefault(x => x.PublisherName == comboBox3.Text).Id;
+
+                        var shelves = _db.Shelves.ToList();
+                        var shelveId = shelves.FirstOrDefault(x => x.ShelveNo == shelveNo).Id;
+
+                        var halls = _db.Halls.ToList();
+                        var hallId = halls.FirstOrDefault(x => x.HallNo == hallNo).Id;
+
+                        var cabinets= _db.Cabinets.ToList();
+                        var cabinetId= cabinets.FirstOrDefault(x => x.CabinetNo == cabinNo).Id;
 
                         //if (radioButton1.Checked)
                         //{
@@ -82,6 +98,10 @@ namespace LibraryAutomation.Book
                             Description = textBox5.Text,
                             CategoryId = categoryId,
                             AuthorId = authorId,
+                            CabinetId = cabinetId,
+                            HallId = hallId,
+                            ShelveId = shelveId,
+                            PublisherId = publisherId,
                             Rented = false,
                             CreatedDate = DateTime.Now,
                         };
@@ -118,6 +138,28 @@ namespace LibraryAutomation.Book
             foreach (var category in categories)
             {
                 comboBox2.Items.Add(category.CategoryName);
+            }
+
+            var publisher = _db.Publishers.ToList();
+            foreach (var publish in publisher)
+            {
+                comboBox3.Items.Add(publish.PublisherName);
+            }
+
+            var shelves = _db.Shelves.ToList();
+            foreach (var shelf in shelves)
+            {
+                comboBox4.Items.Add(shelf.ShelveNo);
+            }
+            var halls = _db.Halls.ToList();
+            foreach (var hall in halls)
+            {
+                comboBox5.Items.Add(hall.HallNo);
+            }
+            var cabinets = _db.Cabinets.ToList();
+            foreach (var cabinet in cabinets)
+            {
+                comboBox6.Items.Add(cabinet.CabinetNo);
             }
         }
     }

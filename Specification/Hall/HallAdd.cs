@@ -46,7 +46,6 @@ namespace LibraryAutomation.Specification.Hall
                         Entities.Hall hall = new Entities.Hall()
                         {
                             HallNo = hallno,
-                            HallName = textBox2.Text,
                             CreatedDate = DateTime.Now,
                         };
 

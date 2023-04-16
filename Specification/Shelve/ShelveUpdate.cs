@@ -16,16 +16,9 @@ namespace LibraryAutomation.Specification.Shelve
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox3.Text) || string.IsNullOrEmpty(textBox2.Text))
+            if ( string.IsNullOrEmpty(textBox2.Text))
             {
-                textBox3.BackColor = Color.White;
                 textBox2.BackColor = Color.White;
-
-                if (string.IsNullOrEmpty(textBox3.Text))
-                {
-                    textBox3.BackColor = Color.Red;
-                    textBox3.Focus();
-                }
 
                 if (string.IsNullOrEmpty(textBox2.Text))
                 {
@@ -47,7 +40,6 @@ namespace LibraryAutomation.Specification.Shelve
                         var getData = _db.Shelves.Find(toInt);
 
                         getData.ShelveNo = shelveNo;
-                        getData.ShelveName = textBox3.Text;
                         getData.CreatedDate = DateTime.Now;
 
 
