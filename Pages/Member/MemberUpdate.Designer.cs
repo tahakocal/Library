@@ -141,6 +141,7 @@ namespace LibraryAutomation.Pages.Member
             this.Name = "MemberUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Üye Güncelle";
+            this.Load += new System.EventHandler(this.MemberUpdate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

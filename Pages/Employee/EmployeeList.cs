@@ -1,8 +1,8 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace LibraryAutomation.Pages.Employee
 {

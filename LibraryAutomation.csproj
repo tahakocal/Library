@@ -157,23 +157,23 @@
     <Compile Include="Pages\Book\BookUpdate.Designer.cs">
       <DependentUpon>BookUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Loan\LoanGiveBook.cs">
+    <Compile Include="Pages\RentBook\GiveBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\Loan\LoanGiveBook.Designer.cs">
-      <DependentUpon>LoanGiveBook.cs</DependentUpon>
+    <Compile Include="Pages\RentBook\GiveBook.Designer.cs">
+      <DependentUpon>GiveBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Loan\LoanList.cs">
+    <Compile Include="Pages\RentBook\RentList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\Loan\LoanList.Designer.cs">
-      <DependentUpon>LoanList.cs</DependentUpon>
+    <Compile Include="Pages\RentBook\RentList.Designer.cs">
+      <DependentUpon>RentList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Loan\LoanTakeBook.cs">
+    <Compile Include="Pages\RentBook\TakeBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\Loan\LoanTakeBook.Designer.cs">
-      <DependentUpon>LoanTakeBook.cs</DependentUpon>
+    <Compile Include="Pages\RentBook\TakeBook.Designer.cs">
+      <DependentUpon>TakeBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Employee\EmployeeAdd.cs">
       <SubType>Form</SubType>
@@ -213,16 +213,16 @@
     <Compile Include="Entities\Section.cs" />
     <Compile Include="Entities\Shelve.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="HomePage.cs">
+    <Compile Include="Pages\HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomePage.designer.cs">
+    <Compile Include="Pages\HomePage.designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Pages\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.designer.cs">
+    <Compile Include="Pages\Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Member\MemberAdd.cs">
@@ -320,10 +320,10 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.cs">
+    <Compile Include="Pages\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
+    <Compile Include="Pages\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Reports\ReportAuthor.cs">
@@ -494,10 +494,10 @@
     <Compile Include="Pages\Specification\Shelve\SpecShelve.Designer.cs">
       <DependentUpon>SpecShelve.cs</DependentUpon>
     </Compile>
-    <Compile Include="Welcome.cs">
+    <Compile Include="Pages\Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Welcome.designer.cs">
+    <Compile Include="Pages\Welcome.designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Pages\Book\BookAdd.resx">
@@ -512,14 +512,14 @@
     <EmbeddedResource Include="Pages\Book\BookUpdate.resx">
       <DependentUpon>BookUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Loan\LoanGiveBook.resx">
-      <DependentUpon>LoanGiveBook.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\RentBook\GiveBook.resx">
+      <DependentUpon>GiveBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Loan\LoanList.resx">
-      <DependentUpon>LoanList.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\RentBook\RentList.resx">
+      <DependentUpon>RentList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Loan\LoanTakeBook.resx">
-      <DependentUpon>LoanTakeBook.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\RentBook\TakeBook.resx">
+      <DependentUpon>TakeBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Employee\EmployeeAdd.resx">
       <DependentUpon>EmployeeAdd.cs</DependentUpon>
@@ -533,10 +533,10 @@
     <EmbeddedResource Include="Pages\Employee\EmployeeUpdate.resx">
       <DependentUpon>EmployeeUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomePage.resx">
+    <EmbeddedResource Include="Pages\HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Pages\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Member\MemberAdd.resx">
@@ -612,7 +612,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="Pages\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Reports\ReportAuthor.resx">
@@ -699,7 +699,7 @@
     <EmbeddedResource Include="Pages\Specification\Shelve\SpecShelve.resx">
       <DependentUpon>SpecShelve.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Welcome.resx">
+    <EmbeddedResource Include="Pages\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

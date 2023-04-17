@@ -172,8 +172,6 @@ D:\My Codes\LibraryAutomation\bin\Debug\System.Runtime.CompilerServices.Unsafe.x
 D:\My Codes\LibraryAutomation\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.csproj.AssemblyReference.cache
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.csproj.SuggestedBindingRedirects.cache
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.HomePage.resources
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Login.resources
 D:\My Codes\LibraryAutomation\obj\Debug\Library.Migrations.Firstinit.resources
 D:\My Codes\LibraryAutomation\obj\Debug\Library.Migrations.s.resources
 D:\My Codes\LibraryAutomation\obj\Debug\Library.Migrations.s1.resources
@@ -187,8 +185,6 @@ D:\My Codes\LibraryAutomation\obj\Debug\Library.Migrations.sections2.resources
 D:\My Codes\LibraryAutomation\obj\Debug\Library.Migrations.added.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Migrations.newframework2.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Properties.Resources.resources
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Register.resources
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Welcome.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.csproj.GenerateResource.cache
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.csproj.CoreCompileInputs.cache
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.csproj.CopyComplete
@@ -203,9 +199,6 @@ D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Book.BookAdd.res
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Book.BookList.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Book.BookRemove.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Book.BookUpdate.resources
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Loan.LoanGiveBook.resources
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Loan.LoanList.resources
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Loan.LoanTakeBook.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Employee.EmployeeAdd.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Employee.EmployeeList.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Employee.EmployeeRemove.resources
@@ -242,3 +235,10 @@ D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Sh
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Shelve.ShelveDelete.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Shelve.ShelveUpdate.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Shelve.SpecShelve.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.RentBook.GiveBook.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.RentBook.RentList.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.RentBook.TakeBook.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.HomePage.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Login.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Register.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Welcome.resources

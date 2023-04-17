@@ -1,6 +1,6 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Pages.Specification.Publisher
 {

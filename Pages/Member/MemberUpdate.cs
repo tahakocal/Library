@@ -1,7 +1,7 @@
-﻿using System;
+﻿using LibraryAutomation.Entities;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using LibraryAutomation.Entities;
 
 namespace LibraryAutomation.Pages.Member
 {
@@ -80,6 +80,11 @@ namespace LibraryAutomation.Pages.Member
                     this.Hide();
                 }
             }
+        }
+
+        private void MemberUpdate_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
