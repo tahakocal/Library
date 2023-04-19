@@ -41,6 +41,7 @@ namespace LibraryAutomation.Pages.RentBook
                     x.Book.Author,
                     x.CreatedDate
                 }).ToList();
+
             dataGridView3.DataSource = _db.RentBooks
                 .Include(x => x.Book)
                 .Include(x => x.Member)

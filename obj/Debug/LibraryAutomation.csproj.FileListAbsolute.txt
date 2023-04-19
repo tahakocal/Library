@@ -242,3 +242,7 @@ D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.HomePage.resourc
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Login.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Register.resources
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Welcome.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Section.SectionAdd.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Section.SectionList.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Section.SectionRemove.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Specification.Section.SectionUpdate.resources

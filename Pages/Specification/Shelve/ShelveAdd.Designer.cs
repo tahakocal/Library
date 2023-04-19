@@ -38,10 +38,10 @@ namespace LibraryAutomation.Pages.Specification.Shelve
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(67, 245);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(123, 221);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.Size = new System.Drawing.Size(176, 45);
             this.button1.TabIndex = 32;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,31 +49,34 @@ namespace LibraryAutomation.Pages.Specification.Shelve
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(90, 91);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(147, 111);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 22);
+            this.textBox1.Size = new System.Drawing.Size(291, 30);
             this.textBox1.TabIndex = 30;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 94);
+            this.label1.Location = new System.Drawing.Point(29, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 28;
             this.label1.Text = "Raf No";
             // 
             // ShelveAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(256, 360);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(480, 366);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ShelveAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Raf Ekle";

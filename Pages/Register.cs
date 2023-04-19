@@ -81,5 +81,11 @@ namespace LibraryAutomation.Pages
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Welcome welcome = new Welcome();
+            welcome.Show();
+            this.Hide();
+        }
     }
 }

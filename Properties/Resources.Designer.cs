@@ -9,6 +9,9 @@
 //------------------------------------------------------------------------------
 
 namespace LibraryAutomation.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -36,7 +39,7 @@ namespace LibraryAutomation.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WindowsFormsApp1.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LibraryAutomation.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -54,6 +57,26 @@ namespace LibraryAutomation.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap agenda {
+            get {
+                object obj = ResourceManager.GetObject("agenda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap door {
+            get {
+                object obj = ResourceManager.GetObject("door", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -93,6 +116,46 @@ namespace LibraryAutomation.Properties {
         internal static System.Drawing.Bitmap librayHomePage {
             get {
                 object obj = ResourceManager.GetObject("librayHomePage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu_bar {
+            get {
+                object obj = ResourceManager.GetObject("menu-bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap open_book {
+            get {
+                object obj = ResourceManager.GetObject("open-book", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teamwork {
+            get {
+                object obj = ResourceManager.GetObject("teamwork", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user {
+            get {
+                object obj = ResourceManager.GetObject("user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -10,6 +10,7 @@ using LibraryAutomation.Pages.Specification.Publisher;
 using LibraryAutomation.Pages.Specification.Shelve;
 using System;
 using System.Windows.Forms;
+using LibraryAutomation.Pages.Specification.Section;
 
 namespace LibraryAutomation.Pages
 {
@@ -78,6 +79,29 @@ namespace LibraryAutomation.Pages
         {
             SpecShelve shelve = new SpecShelve();
             shelve.Show();
+        }
+
+        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Çıkış yapmak istediğinize emin misiniz ?", "Çıkış",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            
+            
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bölümlerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SectionList section = new SectionList();
+            section.Show();
         }
     }
 }

@@ -36,10 +36,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(70, 246);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(145, 244);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.Size = new System.Drawing.Size(176, 45);
             this.button1.TabIndex = 35;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,30 +47,34 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 92);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(173, 111);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 22);
+            this.textBox1.Size = new System.Drawing.Size(291, 30);
             this.textBox1.TabIndex = 34;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 95);
+            this.label1.Location = new System.Drawing.Point(27, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(93, 25);
             this.label1.TabIndex = 33;
             this.label1.Text = "Dolap No";
             // 
             // CabinetAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(490, 362);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CabinetAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dolap Ekle";

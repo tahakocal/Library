@@ -38,7 +38,7 @@ namespace LibraryAutomation.Pages.Book
                 }).ToList();
         }
 
-        private void BookList_Load_1(object sender, EventArgs e)
+        public void BookList_Load_1(object sender, EventArgs e)
         {
             dataGridView1.DataSource = _db.Books
                 .Include(x => x.Author)

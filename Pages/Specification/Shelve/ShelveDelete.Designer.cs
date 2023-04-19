@@ -30,6 +30,7 @@ namespace LibraryAutomation.Pages.Specification.Shelve
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShelveDelete));
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -39,10 +40,10 @@ namespace LibraryAutomation.Pages.Specification.Shelve
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 241);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(115, 260);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.Size = new System.Drawing.Size(176, 45);
             this.button1.TabIndex = 53;
             this.button1.Text = "Sil";
             this.button1.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@ namespace LibraryAutomation.Pages.Specification.Shelve
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 102);
+            this.label4.Location = new System.Drawing.Point(34, 82);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 16);
+            this.label4.Size = new System.Drawing.Size(28, 25);
             this.label4.TabIndex = 52;
             this.label4.Text = "Id";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -61,47 +63,51 @@ namespace LibraryAutomation.Pages.Specification.Shelve
             // textBox2
             // 
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(99, 133);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Location = new System.Drawing.Point(161, 151);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 22);
+            this.textBox2.Size = new System.Drawing.Size(291, 30);
             this.textBox2.TabIndex = 50;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(98, 96);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(160, 79);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 22);
+            this.textBox1.Size = new System.Drawing.Size(291, 30);
             this.textBox1.TabIndex = 49;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 135);
+            this.label1.Location = new System.Drawing.Point(34, 154);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 47;
             this.label1.Text = "Raf No";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ShelveDelete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 360);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(475, 406);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ShelveDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ShelveDelete";
+            this.Text = "Raf Sil";
             this.ResumeLayout(false);
             this.PerformLayout();
 

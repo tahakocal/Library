@@ -41,10 +41,10 @@ namespace LibraryAutomation.Pages.Book
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(21, 310);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(40, 605);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(166, 39);
+            this.button4.Size = new System.Drawing.Size(260, 76);
             this.button4.TabIndex = 9;
             this.button4.Text = "Tabloyu Güncelleştir";
             this.button4.UseVisualStyleBackColor = true;
@@ -52,10 +52,10 @@ namespace LibraryAutomation.Pages.Book
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(592, 310);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(952, 605);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 39);
+            this.button3.Size = new System.Drawing.Size(254, 76);
             this.button3.TabIndex = 8;
             this.button3.Text = "Sil";
             this.button3.UseVisualStyleBackColor = true;
@@ -63,10 +63,10 @@ namespace LibraryAutomation.Pages.Book
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(411, 310);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(638, 605);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 39);
+            this.button2.Size = new System.Drawing.Size(274, 76);
             this.button2.TabIndex = 7;
             this.button2.Text = "Güncelle";
             this.button2.UseVisualStyleBackColor = true;
@@ -74,10 +74,10 @@ namespace LibraryAutomation.Pages.Book
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(239, 310);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(366, 605);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 39);
+            this.button1.Size = new System.Drawing.Size(245, 76);
             this.button1.TabIndex = 6;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -88,26 +88,28 @@ namespace LibraryAutomation.Pages.Book
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 10);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 20);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(1202, 576);
             this.dataGridView1.TabIndex = 5;
             // 
             // BookList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 360);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1259, 686);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "BookList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kitap Liste";
@@ -123,6 +125,6 @@ namespace LibraryAutomation.Pages.Book
         private Button button3;
         private Button button2;
         private Button button1;
-        private DataGridView dataGridView1;
+        public DataGridView dataGridView1;
     }
 }

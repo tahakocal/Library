@@ -39,10 +39,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(21, 320);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(30, 598);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(166, 39);
+            this.button4.Size = new System.Drawing.Size(273, 76);
             this.button4.TabIndex = 24;
             this.button4.Text = "Tabloyu Güncelleştir";
             this.button4.UseVisualStyleBackColor = true;
@@ -50,10 +50,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(592, 320);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(932, 598);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 39);
+            this.button3.Size = new System.Drawing.Size(273, 76);
             this.button3.TabIndex = 23;
             this.button3.Text = "Sil";
             this.button3.UseVisualStyleBackColor = true;
@@ -61,10 +61,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(411, 320);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(640, 598);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 39);
+            this.button2.Size = new System.Drawing.Size(273, 76);
             this.button2.TabIndex = 22;
             this.button2.Text = "Güncelle";
             this.button2.UseVisualStyleBackColor = true;
@@ -72,10 +72,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(239, 320);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(359, 598);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 39);
+            this.button1.Size = new System.Drawing.Size(273, 76);
             this.button1.TabIndex = 21;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -86,25 +86,28 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 20);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 12);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(1249, 576);
             this.dataGridView1.TabIndex = 20;
             // 
             // CategoryList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 382);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1283, 690);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CategoryList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categori Listele";

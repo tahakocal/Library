@@ -39,6 +39,7 @@ namespace LibraryAutomation.Pages
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -102,12 +103,24 @@ namespace LibraryAutomation.Pages
             this.label3.TabIndex = 5;
             this.label3.Text = "Kullanıcı Adı : admin Şifre : admin123";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(695, 22);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 39);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Geri";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LibraryAutomation.Properties.Resources.libraryLogin;
             this.ClientSize = new System.Drawing.Size(800, 360);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -131,5 +144,6 @@ namespace LibraryAutomation.Pages
         private TextBox textBox1;
         private TextBox textBox2;
         private Label label3;
+        private Button button2;
     }
 }

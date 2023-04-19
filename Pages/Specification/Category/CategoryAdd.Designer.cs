@@ -36,10 +36,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(79, 252);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(203, 240);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
+            this.button1.Size = new System.Drawing.Size(176, 45);
             this.button1.TabIndex = 35;
             this.button1.Text = "Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,30 +47,34 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 130);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(212, 114);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 22);
+            this.textBox1.Size = new System.Drawing.Size(363, 30);
             this.textBox1.TabIndex = 34;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 132);
+            this.label1.Location = new System.Drawing.Point(29, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 16);
+            this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 33;
             this.label1.Text = "Kategori Adı";
             // 
             // CategoryAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(603, 365);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CategoryAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Kategori Ekle";
