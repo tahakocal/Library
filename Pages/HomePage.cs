@@ -7,10 +7,10 @@ using LibraryAutomation.Pages.Specification.Cabinet;
 using LibraryAutomation.Pages.Specification.Category;
 using LibraryAutomation.Pages.Specification.Hall;
 using LibraryAutomation.Pages.Specification.Publisher;
+using LibraryAutomation.Pages.Specification.Section;
 using LibraryAutomation.Pages.Specification.Shelve;
 using System;
 using System.Windows.Forms;
-using LibraryAutomation.Pages.Specification.Section;
 
 namespace LibraryAutomation.Pages
 {
@@ -89,8 +89,8 @@ namespace LibraryAutomation.Pages
             {
                 Application.Exit();
             }
-            
-            
+
+
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)

@@ -27,7 +27,7 @@ namespace LibraryAutomation.Pages.Book
                 {
                     x.Id,
                     x.Title,
-                    x.Author.AuthorName,
+                    AuthorName = x.Author.AuthorName + " " + x.Author.AuthorSurname,
                     x.Category.CategoryName,
                     x.Description,
                     x.Publisher.PublisherName,
@@ -51,7 +51,7 @@ namespace LibraryAutomation.Pages.Book
                 {
                     x.Id,
                     x.Title,
-                    x.Author.AuthorName,
+                    AuthorName = x.Author.AuthorName + " " + x.Author.AuthorSurname,
                     x.Category.CategoryName,
                     x.Description,
                     x.Publisher.PublisherName,
@@ -113,6 +113,35 @@ namespace LibraryAutomation.Pages.Book
                 remove.radioButton2.Checked = true;
             }
             remove.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        public void updateTable()
+        {
+            dataGridView1.DataSource = _db.Books
+                .Include(x => x.Author)
+                .Include(x => x.Category)
+                .Include(x => x.Shelve)
+                .Include(x => x.Hall)
+                .Include(x => x.Cabinet)
+                .Include(x => x.Publisher)
+                .Select(x => new
+                {
+                    x.Id,
+                    x.Title,
+                    V = x.Author.AuthorName + " " + x.Author.AuthorSurname,
+                    x.Category.CategoryName,
+                    x.Description,
+                    x.Publisher.PublisherName,
+                    x.Shelve.ShelveNo,
+                    x.Hall.HallNo,
+                    x.Cabinet.CabinetNo,
+                    x.Rented,
+                }).ToList();
         }
     }
 }

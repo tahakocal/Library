@@ -20,7 +20,7 @@ namespace LibraryAutomation.Pages.Book
             var authors = _db.Authors.ToList();
             foreach (var auth in authors)
             {
-                comboBox1.Items.Add(auth.AuthorName);
+                comboBox1.Items.Add(auth.AuthorName + " " + auth.AuthorSurname);
             }
 
             var categories = _db.Categories.ToList();
@@ -129,7 +129,8 @@ namespace LibraryAutomation.Pages.Book
                         var cabinNo = Convert.ToInt32(comboBox6.Text);
 
                         var authors = _db.Authors.ToList();
-                        var authorId = authors.FirstOrDefault(x => x.AuthorName == comboBox1.Text).Id;
+                        var authorSplitName = (comboBox1.Text).Split(' ')[0];
+                        var authorId = authors.FirstOrDefault(x => x.AuthorName == authorSplitName).Id;
 
                         var allCategories = _db.Categories.ToList();
                         var categoryId = allCategories.FirstOrDefault(x => x.CategoryName == comboBox2.Text).Id;
