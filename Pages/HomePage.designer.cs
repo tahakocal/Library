@@ -56,6 +56,7 @@ namespace LibraryAutomation.Pages
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -257,7 +258,8 @@ namespace LibraryAutomation.Pages
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 542);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
@@ -267,11 +269,21 @@ namespace LibraryAutomation.Pages
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.Image = global::LibraryAutomation.Properties.Resources.Octicons_mark_github_svg;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(80, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(100, 20);
             this.toolStripStatusLabel1.Text = "Taha Koçal";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.IsLink = true;
+            this.toolStripStatusLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(202, 20);
+            this.toolStripStatusLabel2.Text = "https://github.com/tahakocal";
             // 
             // HomePage
             // 
@@ -325,5 +337,6 @@ namespace LibraryAutomation.Pages
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripMenuItem bölümlerToolStripMenuItem;
+        private ToolStripStatusLabel toolStripStatusLabel2;
     }
 }

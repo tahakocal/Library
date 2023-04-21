@@ -759,6 +759,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="bookshelf.ico" />
+    <None Include="Resources\Octicons-mark-github.svg.png" />
     <None Include="Resources\png-transparent-computer-icons-report-icon-angle-text-cost.png" />
     <None Include="Resources\user.png" />
     <None Include="Resources\teamwork.png" />
