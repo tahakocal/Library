@@ -110,15 +110,6 @@ namespace LibraryAutomation.Pages.Book
                         var cabinets = _db.Cabinets.ToList();
                         var cabinetId = cabinets.FirstOrDefault(x => x.CabinetNo == cabinNo).Id;
 
-                        //if (radioButton1.Checked)
-                        //{
-                        //    rented = true;
-                        //}
-                        //else
-                        //{
-                        //    rented = false;
-                        //}
-
                         Entities.Book book = new Entities.Book()
                         {
                             Title = textBox2.Text,
