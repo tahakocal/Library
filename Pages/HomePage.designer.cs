@@ -212,34 +212,38 @@ namespace LibraryAutomation.Pages
             this.personelleriRaporlaToolStripMenuItem,
             this.yazarlarıRaporlaToolStripMenuItem,
             this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem});
+            this.raporlaToolStripMenuItem.Image = global::LibraryAutomation.Properties.Resources.png_transparent_computer_icons_report_icon_angle_text_cost;
             this.raporlaToolStripMenuItem.Name = "raporlaToolStripMenuItem";
-            this.raporlaToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.raporlaToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.raporlaToolStripMenuItem.Text = "Raporlama";
-            this.raporlaToolStripMenuItem.Visible = false;
             // 
             // üyeleriRaporlaToolStripMenuItem
             // 
             this.üyeleriRaporlaToolStripMenuItem.Name = "üyeleriRaporlaToolStripMenuItem";
             this.üyeleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
             this.üyeleriRaporlaToolStripMenuItem.Text = "Üyeleri Raporla";
+            this.üyeleriRaporlaToolStripMenuItem.Click += new System.EventHandler(this.üyeleriRaporlaToolStripMenuItem_Click);
             // 
             // personelleriRaporlaToolStripMenuItem
             // 
             this.personelleriRaporlaToolStripMenuItem.Name = "personelleriRaporlaToolStripMenuItem";
             this.personelleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
             this.personelleriRaporlaToolStripMenuItem.Text = "Personelleri Raporla";
+            this.personelleriRaporlaToolStripMenuItem.Click += new System.EventHandler(this.personelleriRaporlaToolStripMenuItem_Click);
             // 
             // yazarlarıRaporlaToolStripMenuItem
             // 
             this.yazarlarıRaporlaToolStripMenuItem.Name = "yazarlarıRaporlaToolStripMenuItem";
             this.yazarlarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
             this.yazarlarıRaporlaToolStripMenuItem.Text = "Yazarları Raporla";
+            this.yazarlarıRaporlaToolStripMenuItem.Click += new System.EventHandler(this.yazarlarıRaporlaToolStripMenuItem_Click);
             // 
             // ödünçVerilenKitaplarıRaporlaToolStripMenuItem
             // 
             this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem.Name = "ödünçVerilenKitaplarıRaporlaToolStripMenuItem";
             this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
             this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem.Text = "Ödünç Verilen Kitapları Raporla";
+            this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem.Click += new System.EventHandler(this.ödünçVerilenKitaplarıRaporlaToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
