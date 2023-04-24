@@ -70,12 +70,15 @@ namespace LibraryAutomation.Pages
 
                     _db.Users.Add(user);
                     _db.SaveChanges();
-                    MessageBox.Show("Kayıt olundu", "Başarılı", MessageBoxButtons.OK);
+                    MessageBox.Show("Kayıt olundu", "Başarılı", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Hide();
+                    Welcome welcome = new Welcome();
+                    welcome.Show();
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Kayıt olurken hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK);
+                    MessageBox.Show("Kayıt olurken hata ile karşılaşıldı. Lütfen tekrar deneyiniz.", "Hata", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
 
             }

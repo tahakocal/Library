@@ -37,8 +37,6 @@ namespace LibraryAutomation.Pages.RentBook
                     x.Name,
                     x.Surname,
                     x.Email,
-                    x.Book.Title,
-                    x.Book.Author,
                     x.CreatedDate
                 }).ToList();
 
@@ -118,8 +116,6 @@ namespace LibraryAutomation.Pages.RentBook
                     x.Name,
                     x.Surname,
                     x.Email,
-                    x.Book.Title,
-                    x.Book.Author,
                     x.CreatedDate
                 }).ToList();
             dataGridView3.DataSource = _db.RentBooks

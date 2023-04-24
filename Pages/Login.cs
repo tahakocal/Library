@@ -48,7 +48,7 @@ namespace LibraryAutomation.Pages
                 }
                 else
                 {
-                    MessageBox.Show("Kullanıcı adı veya şifre hatalı", "Hata", MessageBoxButtons.OK);
+                    MessageBox.Show("Kullanıcı adı veya şifre hatalı", "Hata", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
         }

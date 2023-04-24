@@ -12,9 +12,13 @@ namespace LibraryAutomation
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             Application.Run(new Welcome());
+
+            // GÝRÝÞ YAPMA ÝÞLEMLERÝNÝ ATLAMAK ÝÇÝN 
+
+            //      Application.Run(new HomePage());
+
+            // KULLANABÝLÝRSÝNÝZ
         }
     }
 }
