@@ -4,7 +4,7 @@ namespace LibraryAutomation.Entities
 {
     public class DatabaseContext : DbContext
     {
-        public DatabaseContext() : base(@"Data Source=93.177.102.219;Initial Catalog=LibraryDatabaseNew;User ID=taha;Password=60s9KwSr$HG7m;")
+        public DatabaseContext() : base(@"Data Source=93.177.102.219;Initial Catalog=LibraryDatabaseNew;User ID=taha;Password=J39q6$0Lw@05;")
         {
 
         }
