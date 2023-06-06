@@ -12,7 +12,7 @@ namespace LibraryAutomation
         [STAThread]
         static void Main()
         {
-            Application.Run(new Welcome());
+            Application.Run(new HomePage());
 
             // GÝRÝÞ YAPMA ÝÞLEMLERÝNÝ ATLAMAK ÝÇÝN 
 

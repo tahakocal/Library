@@ -13,6 +13,7 @@ using LibraryAutomation.Pages.Specification.Shelve;
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using LibraryAutomation.Pages.Report;
 
 namespace LibraryAutomation.Pages
 {
@@ -108,22 +109,63 @@ namespace LibraryAutomation.Pages
 
         private void üyeleriRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            ReportMember section = new ReportMember();
+            section.ShowDialog();
+
         }
 
         private void personelleriRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            ReportEmployee section = new ReportEmployee();
+            section.ShowDialog();
         }
 
         private void yazarlarıRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            ReportAuthor section = new ReportAuthor();
+            section.ShowDialog();
         }
 
-        private void ödünçVerilenKitaplarıRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void kitaplariRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            ReportBook section = new ReportBook();
+            section.ShowDialog();
+        }
+
+        private void salonlarıRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportHall section = new ReportHall();
+            section.ShowDialog();
+        }
+
+        private void raflarıRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportShelve section = new ReportShelve();
+            section.ShowDialog();
+        }
+
+        private void bölümleriRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportSectıon section = new ReportSectıon();
+            section.ShowDialog();
+        }
+
+        private void yayıncılarıRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportPublısher section = new ReportPublısher();
+            section.ShowDialog();
+        }
+
+        private void kategorileriRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportCategory section = new ReportCategory();
+            section.ShowDialog();
+        }
+
+        private void dolaplarıRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportCabinet section = new ReportCabinet();
+            section.ShowDialog();
         }
     }
 }

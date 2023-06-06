@@ -16,6 +16,22 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\tahak\OneDrive\Masaüstü\S\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +51,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E2015CBE713BB684697A1FCBAD044F85DB23CB72</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LibraryAutomation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -94,9 +122,23 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Extensions.Primitives.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -137,6 +179,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LibraryDatabaseNewDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDatabaseNewDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Book\BookAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,6 +369,66 @@
       <DependentUpon>202304162301251_books.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Pages\Report\ReportAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportAuthor.Designer.cs">
+      <DependentUpon>ReportAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportBook.Designer.cs">
+      <DependentUpon>ReportBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportCabinet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportCabinet.Designer.cs">
+      <DependentUpon>ReportCabinet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportCategory.Designer.cs">
+      <DependentUpon>ReportCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportEmployee.Designer.cs">
+      <DependentUpon>ReportEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportHall.Designer.cs">
+      <DependentUpon>ReportHall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportMember.Designer.cs">
+      <DependentUpon>ReportMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportPublısher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportPublısher.Designer.cs">
+      <DependentUpon>ReportPublısher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportSectıon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportSectıon.Designer.cs">
+      <DependentUpon>ReportSectıon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\ReportShelve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportShelve.Designer.cs">
+      <DependentUpon>ReportShelve.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Specification\Section\SectionAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -353,30 +460,6 @@
     </Compile>
     <Compile Include="Pages\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Report\ReportAuthor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pages\Report\ReportAuthor.Designer.cs">
-      <DependentUpon>ReportAuthor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Report\ReportEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pages\Report\ReportEmployee.Designer.cs">
-      <DependentUpon>ReportEmployee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Report\ReportGiveBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pages\Report\ReportGiveBook.Designer.cs">
-      <DependentUpon>ReportGiveBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Report\ReportMember.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pages\Report\ReportMember.Designer.cs">
-      <DependentUpon>ReportMember.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Specification\Author\AuthorAdd.cs">
       <SubType>Form</SubType>
@@ -630,6 +713,36 @@
     <EmbeddedResource Include="Migrations\202304162301251_books.resx">
       <DependentUpon>202304162301251_books.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportAuthor.resx">
+      <DependentUpon>ReportAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportBook.resx">
+      <DependentUpon>ReportBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportCabinet.resx">
+      <DependentUpon>ReportCabinet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportCategory.resx">
+      <DependentUpon>ReportCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportEmployee.resx">
+      <DependentUpon>ReportEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportHall.resx">
+      <DependentUpon>ReportHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportMember.resx">
+      <DependentUpon>ReportMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportPublısher.resx">
+      <DependentUpon>ReportPublısher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportSectıon.resx">
+      <DependentUpon>ReportSectıon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportShelve.resx">
+      <DependentUpon>ReportShelve.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\Specification\Section\SectionAdd.resx">
       <DependentUpon>SectionAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -654,18 +767,6 @@
     </Compile>
     <EmbeddedResource Include="Pages\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Report\ReportAuthor.resx">
-      <DependentUpon>ReportAuthor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Report\ReportEmployee.resx">
-      <DependentUpon>ReportEmployee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Report\ReportGiveBook.resx">
-      <DependentUpon>ReportGiveBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Report\ReportMember.resx">
-      <DependentUpon>ReportMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Specification\Author\AuthorAdd.resx">
       <DependentUpon>AuthorAdd.cs</DependentUpon>
@@ -742,6 +843,28 @@
     <EmbeddedResource Include="Pages\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\Author.rdlc" />
+    <EmbeddedResource Include="Report\Book.rdlc" />
+    <EmbeddedResource Include="Report\Cabinet.rdlc" />
+    <EmbeddedResource Include="Report\Category.rdlc" />
+    <EmbeddedResource Include="Report\Employee.rdlc" />
+    <EmbeddedResource Include="Report\Hall.rdlc" />
+    <EmbeddedResource Include="Report\Member.rdlc" />
+    <EmbeddedResource Include="Report\Publisher.rdlc" />
+    <EmbeddedResource Include="Report\Section.rdlc" />
+    <EmbeddedResource Include="Report\Shelve.rdlc" />
+    <None Include="LibraryAutomation_TemporaryKey.pfx" />
+    <None Include="LibraryDatabaseNewDataSet.xsc">
+      <DependentUpon>LibraryDatabaseNewDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryDatabaseNewDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDatabaseNewDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryDatabaseNewDataSet.xss">
+      <DependentUpon>LibraryDatabaseNewDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -772,7 +895,18 @@
     <Content Include="Resources\librarywelcome.jpg" />
     <Content Include="Resources\librayHomePage.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

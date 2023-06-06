@@ -1,4 +1,4 @@
-﻿namespace LibraryAutomation.Pages.Reports
+﻿namespace LibraryAutomation.Pages.Report
 {
     partial class ReportMember
     {
@@ -29,11 +29,62 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.libraryDatabaseNewDataSet = new LibraryAutomation.LibraryDatabaseNewDataSet();
+            this.membersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.membersTableAdapter = new LibraryAutomation.LibraryDatabaseNewDataSetTableAdapters.MembersTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseNewDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.membersBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "LibraryAutomation.Report.Member.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // libraryDatabaseNewDataSet
+            // 
+            this.libraryDatabaseNewDataSet.DataSetName = "LibraryDatabaseNewDataSet";
+            this.libraryDatabaseNewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // membersBindingSource
+            // 
+            this.membersBindingSource.DataMember = "Members";
+            this.membersBindingSource.DataSource = this.libraryDatabaseNewDataSet;
+            // 
+            // membersTableAdapter
+            // 
+            this.membersTableAdapter.ClearBeforeFill = true;
+            // 
+            // ReportMember
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reportViewer1);
+            this.Name = "ReportMember";
             this.Text = "ReportMember";
+            this.Load += new System.EventHandler(this.ReportMember_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseNewDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private LibraryDatabaseNewDataSet libraryDatabaseNewDataSet;
+        private System.Windows.Forms.BindingSource membersBindingSource;
+        private LibraryDatabaseNewDataSetTableAdapters.MembersTableAdapter membersTableAdapter;
     }
 }
