@@ -1,6 +1,7 @@
 ﻿using LibraryAutomation.Entities;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LibraryAutomation.Pages.Member
@@ -50,19 +51,29 @@ namespace LibraryAutomation.Pages.Member
                 {
                     try
                     {
-                        Entities.Member member = new Entities.Member()
+                        var list = _db.Members.Where(x => x.Email.Equals(textBox3.Text)).ToList();
+                        if (list != null)
                         {
-                            Name = textBox1.Text,
-                            Surname = textBox2.Text,
-                            Email = textBox3.Text,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni mail adresi zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Member member = new Entities.Member()
+                            {
+                                Name = textBox1.Text,
+                                Surname = textBox2.Text,
+                                Email = textBox3.Text,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Members.Add(member);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Members.Add(member);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {

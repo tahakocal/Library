@@ -1,6 +1,7 @@
 ﻿using LibraryAutomation.Entities;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LibraryAutomation.Pages.Specification.Cabinet
@@ -37,17 +38,27 @@ namespace LibraryAutomation.Pages.Specification.Cabinet
                     {
                         var cabinetNo = Convert.ToInt32(textBox1.Text);
 
-                        Entities.Cabinet cabinet = new Entities.Cabinet()
+                        var list = _db.Cabinets.Where(x => x.CabinetNo.Equals(cabinetNo)).ToList();
+                        if (list != null)
                         {
-                            CabinetNo = cabinetNo,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Cabinet cabinet = new Entities.Cabinet()
+                            {
+                                CabinetNo = cabinetNo,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Cabinets.Add(cabinet);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Cabinets.Add(cabinet);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {

@@ -55,5 +55,28 @@ namespace LibraryAutomation.Pages.Specification.Cabinet
                     x.CabinetNo,
                 }).ToList();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            var conver = Convert.ToInt32(txtAdara.Text);
+            var books = _db.Cabinets.Where(x => x.CabinetNo.Equals(conver)).ToList();
+
+            dataGridView1.DataSource = books.Select(x => new
+            {
+                x.Id,
+                x.CabinetNo,
+                x.CreatedDate
+            }).ToList();
+        }
     }
 }

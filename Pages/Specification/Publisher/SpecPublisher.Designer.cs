@@ -36,7 +36,12 @@ namespace LibraryAutomation.Pages.Specification.Publisher
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnAra = new System.Windows.Forms.Button();
+            this.txtAdara = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -99,13 +104,57 @@ namespace LibraryAutomation.Pages.Specification.Publisher
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1360, 576);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.btnAra);
+            this.groupBox1.Controls.Add(this.txtAdara);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Location = new System.Drawing.Point(1390, 20);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(238, 150);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Birebir Arama";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 37);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(96, 22);
+            this.radioButton1.TabIndex = 7;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Yayıncı Adı";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // btnAra
+            // 
+            this.btnAra.Location = new System.Drawing.Point(65, 95);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(117, 29);
+            this.btnAra.TabIndex = 4;
+            this.btnAra.Text = "Ara";
+            this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
+            // 
+            // txtAdara
+            // 
+            this.txtAdara.Location = new System.Drawing.Point(102, 37);
+            this.txtAdara.Name = "txtAdara";
+            this.txtAdara.Size = new System.Drawing.Size(120, 24);
+            this.txtAdara.TabIndex = 2;
             // 
             // SpecPublisher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1409, 691);
+            this.ClientSize = new System.Drawing.Size(1639, 691);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -119,6 +168,8 @@ namespace LibraryAutomation.Pages.Specification.Publisher
             this.Text = "Yayıncı Listele";
             this.Load += new System.EventHandler(this.SpecPublisher_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -130,5 +181,9 @@ namespace LibraryAutomation.Pages.Specification.Publisher
         private Button button2;
         private Button button1;
         private DataGridView dataGridView1;
+        private GroupBox groupBox1;
+        private RadioButton radioButton1;
+        private Button btnAra;
+        private TextBox txtAdara;
     }
 }

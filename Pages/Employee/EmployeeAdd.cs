@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Pages.Employee
 {
@@ -53,20 +54,29 @@ namespace LibraryAutomation.Pages.Employee
                     {
                         var allSections = _db.Sections.ToList();
                         var sectionId = allSections.FirstOrDefault(x => x.SectionName == comboBox1.Text).Id;
-
-                        Entities.Employee employee = new Entities.Employee()
+                        var list = _db.Employees.Where(x => x.Surname.Equals(textBox2.Text)).ToList();
+                        if (list != null)
                         {
-                            Name = textBox1.Text,
-                            Surname = textBox2.Text,
-                            SectionId = sectionId,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni isim soyisim de birisi zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Employee employee = new Entities.Employee()
+                            {
+                                Name = textBox1.Text,
+                                Surname = textBox2.Text,
+                                SectionId = sectionId,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Employees.Add(employee);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Employees.Add(employee);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {

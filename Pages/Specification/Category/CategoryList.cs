@@ -54,5 +54,21 @@ namespace LibraryAutomation.Pages.Specification.Category
                     x.CategoryName,
                 }).ToList();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            var books = _db.Categories.Where(x => x.CategoryName.Contains(txtAdara.Text)).ToList();
+
+            dataGridView1.DataSource = books.Select(x => new
+            {
+                x.Id,
+                x.CategoryName,
+            }).ToList();
+        }
     }
 }

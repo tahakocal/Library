@@ -1,6 +1,7 @@
 ﻿using LibraryAutomation.Entities;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LibraryAutomation.Pages.Specification.Author
@@ -48,19 +49,29 @@ namespace LibraryAutomation.Pages.Specification.Author
                 {
                     try
                     {
-                        Entities.Author author = new Entities.Author()
+                        var list = _db.Authors.Where(x => x.AuthorName.Equals(textBox1.Text)).ToList();
+                        if (list != null)
                         {
-                            AuthorName = textBox1.Text,
-                            AuthorSurname = textBox2.Text,
-                            AuthorDescription = textBox3.Text,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Author author = new Entities.Author()
+                            {
+                                AuthorName = textBox1.Text,
+                                AuthorSurname = textBox2.Text,
+                                AuthorDescription = textBox3.Text,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Authors.Add(author);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Authors.Add(author);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {

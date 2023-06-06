@@ -3,6 +3,7 @@ using System;
 using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Pages.Book
 {
@@ -81,14 +82,6 @@ namespace LibraryAutomation.Pages.Book
             update.comboBox5.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
             update.comboBox6.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
 
-            //if (dataGridView1.CurrentRow.Cells[5].Value.Equals(true))
-            //{
-            //    update.radioButton1.Checked = true;
-            //}
-            //else
-            //{
-            //    update.radioButton2.Checked = true;
-            //}
             update.ShowDialog();
         }
 
@@ -142,6 +135,58 @@ namespace LibraryAutomation.Pages.Book
                     x.Cabinet.CabinetNo,
                     x.Rented,
                 }).ToList();
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                var books = _db.Books.Where(x => x.Title.Contains(txtAdara.Text)).ToList();
+
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Title,
+                    AuthorName = x.Author.AuthorName + " " + x.Author.AuthorSurname,
+                    x.Category.CategoryName,
+                    x.Description,
+                    x.Publisher.PublisherName,
+                    x.Shelve.ShelveNo,
+                    x.Hall.HallNo,
+                    x.Cabinet.CabinetNo,
+                    x.Rented,
+                }).ToList();
+            }else if (radioButton2.Checked)
+            {
+                var books = _db.Books.Where(x => x.Author.AuthorName.Contains(txtSoyadara.Text)).ToList();
+
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Title,
+                    AuthorName = x.Author.AuthorName + " " + x.Author.AuthorSurname,
+                    x.Category.CategoryName,
+                    x.Description,
+                    x.Publisher.PublisherName,
+                    x.Shelve.ShelveNo,
+                    x.Hall.HallNo,
+                    x.Cabinet.CabinetNo,
+                    x.Rented,
+                }).ToList();
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtAdara.Enabled = true;
+            txtSoyadara.Enabled = false;
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            txtSoyadara.Enabled = true;
+            txtAdara.Enabled = false;
         }
     }
 }

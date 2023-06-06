@@ -64,5 +64,16 @@ namespace LibraryAutomation.Pages.Specification.Section
                     x.CreatedDate
                 }).ToList();
         }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            var books = _db.Sections.Where(x => x.SectionName.Contains(txtAdara.Text)).ToList();
+
+            dataGridView1.DataSource = books.Select(x => new
+            {
+                x.Id,
+                x.SectionName,
+            }).ToList();
+        }
     }
 }

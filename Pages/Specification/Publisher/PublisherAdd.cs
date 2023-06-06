@@ -1,6 +1,7 @@
 ﻿using LibraryAutomation.Entities;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LibraryAutomation.Pages.Specification.Publisher
@@ -35,17 +36,28 @@ namespace LibraryAutomation.Pages.Specification.Publisher
                 {
                     try
                     {
-                        Entities.Publisher publisher = new Entities.Publisher()
-                        {
-                            PublisherName = textBox1.Text,
-                            CreatedDate = DateTime.Now,
-                        };
 
-                        _db.Publishers.Add(publisher);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                        var list = _db.Publishers.Where(x => x.PublisherName.Equals(textBox1.Text)).ToList();
+                        if (list != null)
+                        {
+                            MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Publisher publisher = new Entities.Publisher()
+                            {
+                                PublisherName = textBox1.Text,
+                                CreatedDate = DateTime.Now,
+                            };
+
+                            _db.Publishers.Add(publisher);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {

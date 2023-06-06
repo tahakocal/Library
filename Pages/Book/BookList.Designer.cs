@@ -36,7 +36,14 @@ namespace LibraryAutomation.Pages.Book
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnAra = new System.Windows.Forms.Button();
+            this.txtSoyadara = new System.Windows.Forms.TextBox();
+            this.txtAdara = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -101,12 +108,78 @@ namespace LibraryAutomation.Pages.Book
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.btnAra);
+            this.groupBox1.Controls.Add(this.txtSoyadara);
+            this.groupBox1.Controls.Add(this.txtAdara);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.Location = new System.Drawing.Point(1232, 20);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(238, 199);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Birebir Arama";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(13, 84);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(64, 22);
+            this.radioButton2.TabIndex = 8;
+            this.radioButton2.Text = "Yazar";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(13, 37);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(83, 22);
+            this.radioButton1.TabIndex = 7;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Kitap Adı";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // btnAra
+            // 
+            this.btnAra.Location = new System.Drawing.Point(69, 139);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(117, 29);
+            this.btnAra.TabIndex = 4;
+            this.btnAra.Text = "Ara";
+            this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
+            // 
+            // txtSoyadara
+            // 
+            this.txtSoyadara.Enabled = false;
+            this.txtSoyadara.Location = new System.Drawing.Point(102, 84);
+            this.txtSoyadara.Name = "txtSoyadara";
+            this.txtSoyadara.Size = new System.Drawing.Size(120, 24);
+            this.txtSoyadara.TabIndex = 3;
+            // 
+            // txtAdara
+            // 
+            this.txtAdara.Enabled = false;
+            this.txtAdara.Location = new System.Drawing.Point(102, 37);
+            this.txtAdara.Name = "txtAdara";
+            this.txtAdara.Size = new System.Drawing.Size(120, 24);
+            this.txtAdara.TabIndex = 2;
+            // 
             // BookList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1259, 686);
+            this.ClientSize = new System.Drawing.Size(1482, 686);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -120,6 +193,8 @@ namespace LibraryAutomation.Pages.Book
             this.Text = "Kitap Liste";
             this.Load += new System.EventHandler(this.BookList_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -131,5 +206,11 @@ namespace LibraryAutomation.Pages.Book
         private Button button2;
         private Button button1;
         public DataGridView dataGridView1;
+        private GroupBox groupBox1;
+        private Button btnAra;
+        private TextBox txtSoyadara;
+        private TextBox txtAdara;
+        private RadioButton radioButton2;
+        private RadioButton radioButton1;
     }
 }

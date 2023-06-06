@@ -63,5 +63,49 @@ namespace LibraryAutomation.Pages.Specification.Author
                     x.AuthorDescription,
                 }).ToList();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtAdara.Enabled = true;
+            txtSoyadara.Enabled = false;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            txtSoyadara.Enabled = true;
+            txtAdara.Enabled = false;
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                var books = _db.Authors.Where(x => x.AuthorName.Contains(txtAdara.Text)).ToList();
+
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.AuthorName,
+                    x.AuthorSurname,
+                    x.AuthorDescription,
+                }).ToList();
+            }
+            else if (radioButton2.Checked)
+            {
+                var books = _db.Authors.Where(x => x.AuthorDescription.Contains(txtSoyadara.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.AuthorName,
+                    x.AuthorSurname,
+                    x.AuthorDescription,
+                }).ToList();
+            }
+        }
     }
 }

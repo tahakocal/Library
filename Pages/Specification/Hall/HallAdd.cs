@@ -1,6 +1,7 @@
 ﻿using LibraryAutomation.Entities;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LibraryAutomation.Pages.Specification.Hall
@@ -35,18 +36,27 @@ namespace LibraryAutomation.Pages.Specification.Hall
                     try
                     {
                         var hallno = Convert.ToInt32(textBox1.Text);
-
-                        Entities.Hall hall = new Entities.Hall()
+                        var list = _db.Halls.Where(x => x.HallNo.Equals(hallno)).ToList();
+                        if (list != null)
                         {
-                            HallNo = hallno,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Hall hall = new Entities.Hall()
+                            {
+                                HallNo = hallno,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Halls.Add(hall);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Halls.Add(hall);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {

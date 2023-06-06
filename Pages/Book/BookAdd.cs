@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Pages.Book
 {
@@ -110,25 +111,35 @@ namespace LibraryAutomation.Pages.Book
                         var cabinets = _db.Cabinets.ToList();
                         var cabinetId = cabinets.FirstOrDefault(x => x.CabinetNo == cabinNo).Id;
 
-                        Entities.Book book = new Entities.Book()
+                        var list = _db.Books.Where(x => x.Title.Equals(textBox2.Text)).ToList();
+                        if (list != null)
                         {
-                            Title = textBox2.Text,
-                            Description = textBox5.Text,
-                            CategoryId = categoryId,
-                            AuthorId = authorId,
-                            CabinetId = cabinetId,
-                            HallId = hallId,
-                            ShelveId = shelveId,
-                            PublisherId = publisherId,
-                            Rented = false,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni isim de kitap zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Book book = new Entities.Book()
+                            {
+                                Title = textBox2.Text,
+                                Description = textBox5.Text,
+                                CategoryId = categoryId,
+                                AuthorId = authorId,
+                                CabinetId = cabinetId,
+                                HallId = hallId,
+                                ShelveId = shelveId,
+                                PublisherId = publisherId,
+                                Rented = false,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Books.Add(book);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Books.Add(book);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {

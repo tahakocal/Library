@@ -55,5 +55,21 @@ namespace LibraryAutomation.Pages.Specification.Publisher
                     x.PublisherName,
                 }).ToList();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            var books = _db.Publishers.Where(x => x.PublisherName.Contains(txtAdara.Text)).ToList();
+
+            dataGridView1.DataSource = books.Select(x => new
+            {
+                x.Id,
+                x.PublisherName,
+            }).ToList();
+        }
     }
 }

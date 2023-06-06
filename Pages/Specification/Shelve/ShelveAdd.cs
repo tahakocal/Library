@@ -1,6 +1,7 @@
 ﻿using LibraryAutomation.Entities;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LibraryAutomation.Pages.Specification.Shelve
@@ -38,17 +39,28 @@ namespace LibraryAutomation.Pages.Specification.Shelve
                     {
                         var shelveNo = Convert.ToInt32(textBox1.Text);
 
-                        Entities.Shelve shelve = new Entities.Shelve()
+                        var list = _db.Shelves.Where(x => x.ShelveNo.Equals(shelveNo)).ToList();
+                        if (list != null)
                         {
-                            ShelveNo = shelveNo,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Shelve shelve = new Entities.Shelve()
+                            {
+                                ShelveNo = shelveNo,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Shelves.Add(shelve);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Shelves.Add(shelve);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
+
                     }
                     catch (Exception exception)
                     {

@@ -1,6 +1,7 @@
 ﻿using LibraryAutomation.Entities;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LibraryAutomation.Pages.Specification.Section
@@ -35,17 +36,27 @@ namespace LibraryAutomation.Pages.Specification.Section
                 {
                     try
                     {
-                        Entities.Section section = new Entities.Section()
+                        var list = _db.Sections.Where(x => x.SectionName.Equals(textBox1.Text)).ToList();
+                        if (list != null)
                         {
-                            SectionName = textBox1.Text,
-                            CreatedDate = DateTime.Now,
-                        };
+                            MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Entities.Section section = new Entities.Section()
+                            {
+                                SectionName = textBox1.Text,
+                                CreatedDate = DateTime.Now,
+                            };
 
-                        _db.Sections.Add(section);
-                        _db.SaveChanges();
-                        MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-                        this.Hide();
+                            _db.Sections.Add(section);
+                            _db.SaveChanges();
+                            MessageBox.Show("Başarıyla eklendi", "Başarılı", MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                            this.Hide();
+                        }
                     }
                     catch (Exception exception)
                     {
