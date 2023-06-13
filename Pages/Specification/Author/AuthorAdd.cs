@@ -49,8 +49,8 @@ namespace LibraryAutomation.Pages.Specification.Author
                 {
                     try
                     {
-                        var list = _db.Authors.Where(x => x.AuthorName.Equals(textBox1.Text)).ToList();
-                        if (list != null)
+                        var list = _db.Authors.Where(x => x.AuthorName == textBox1.Text).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

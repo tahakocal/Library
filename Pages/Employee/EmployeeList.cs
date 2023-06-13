@@ -1,4 +1,5 @@
 ﻿using LibraryAutomation.Entities;
+using LibraryAutomation.Migrations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
@@ -79,7 +80,7 @@ namespace LibraryAutomation.Pages.Employee
         {
             if (radioButton1.Checked)
             {
-                var books = _db.Employees.Where(x => x.Name.Contains(txtAdara.Text)).ToList();
+                var books = _db.Employees.Where(x => x.Name == txtAdara.Text).ToList();
 
                 dataGridView1.DataSource = books.Select(x => new
                 {
@@ -92,7 +93,7 @@ namespace LibraryAutomation.Pages.Employee
             }
             else if (radioButton2.Checked)
             {
-                var books = _db.Employees.Where(x => x.Section.SectionName.Contains(txtSoyadara.Text)).ToList();
+                var books = _db.Employees.Where(x => x.Section.SectionName == txtSoyadara.Text).ToList();
 
                 dataGridView1.DataSource = books.Select(x => new
                 {
@@ -116,6 +117,47 @@ namespace LibraryAutomation.Pages.Employee
             txtSoyadara.Enabled = true;
             txtAdara.Enabled = false;
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "İle Başlayan")
+            {
+                var books = _db.Employees.Where(x => x.Surname.StartsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.Surname,
+                    x.Section.SectionName,
+                    x.CreatedDate
+                }).ToList();
+            }
+            else if (comboBox1.Text == "İle Biten")
+            {
+                var books = _db.Employees.Where(x => x.Surname.EndsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.Surname,
+                    x.Section.SectionName,
+                    x.CreatedDate
+                }).ToList();
+
+            }
+            else if (comboBox1.Text == "İçeren")
+            {
+                var books = _db.Employees.Where(x => x.Surname.Contains(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.Surname,
+                    x.Section.SectionName,
+                    x.CreatedDate
+                }).ToList();
+            }
         }
     }
 }

@@ -27,7 +27,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -429,6 +430,12 @@
     <Compile Include="Pages\Report\ReportShelve.Designer.cs">
       <DependentUpon>ReportShelve.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Report\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Specification\Section\SectionAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -743,6 +750,9 @@
     <EmbeddedResource Include="Pages\Report\ReportShelve.resx">
       <DependentUpon>ReportShelve.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\Specification\Section\SectionAdd.resx">
       <DependentUpon>SectionAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -851,8 +861,10 @@
     <EmbeddedResource Include="Report\Hall.rdlc" />
     <EmbeddedResource Include="Report\Member.rdlc" />
     <EmbeddedResource Include="Report\Publisher.rdlc" />
+    <EmbeddedResource Include="Report\RentBook.rdlc" />
     <EmbeddedResource Include="Report\Section.rdlc" />
     <EmbeddedResource Include="Report\Shelve.rdlc" />
+    <EmbeddedResource Include="Report\TEST.rdlc" />
     <None Include="LibraryAutomation_TemporaryKey.pfx" />
     <None Include="LibraryDatabaseNewDataSet.xsc">
       <DependentUpon>LibraryDatabaseNewDataSet.xsd</DependentUpon>

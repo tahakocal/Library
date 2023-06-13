@@ -54,8 +54,8 @@ namespace LibraryAutomation.Pages.Employee
                     {
                         var allSections = _db.Sections.ToList();
                         var sectionId = allSections.FirstOrDefault(x => x.SectionName == comboBox1.Text).Id;
-                        var list = _db.Employees.Where(x => x.Surname.Equals(textBox2.Text)).ToList();
-                        if (list != null)
+                        var list = _db.Employees.Where(x => x.Surname == textBox2.Text).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni isim soyisim de birisi zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Pages.Specification.Publisher
 {
@@ -37,8 +38,8 @@ namespace LibraryAutomation.Pages.Specification.Publisher
                     try
                     {
 
-                        var list = _db.Publishers.Where(x => x.PublisherName.Equals(textBox1.Text)).ToList();
-                        if (list != null)
+                        var list = _db.Publishers.Where(x => x.PublisherName == textBox1.Text).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

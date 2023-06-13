@@ -85,7 +85,7 @@ namespace LibraryAutomation.Pages.Specification.Author
         {
             if (radioButton1.Checked)
             {
-                var books = _db.Authors.Where(x => x.AuthorName.Contains(txtAdara.Text)).ToList();
+                var books = _db.Authors.Where(x => x.AuthorName == txtAdara.Text).ToList();
 
                 dataGridView1.DataSource = books.Select(x => new
                 {
@@ -97,7 +97,45 @@ namespace LibraryAutomation.Pages.Specification.Author
             }
             else if (radioButton2.Checked)
             {
-                var books = _db.Authors.Where(x => x.AuthorDescription.Contains(txtSoyadara.Text)).ToList();
+                var books = _db.Authors.Where(x => x.AuthorDescription == txtSoyadara.Text).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.AuthorName,
+                    x.AuthorSurname,
+                    x.AuthorDescription,
+                }).ToList();
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "İle Başlayan")
+            {
+                var books = _db.Authors.Where(x => x.AuthorSurname.StartsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.AuthorName,
+                    x.AuthorSurname,
+                    x.AuthorDescription,
+                }).ToList();
+            }
+            else if (comboBox1.Text == "İle Biten")
+            {
+                var books = _db.Authors.Where(x => x.AuthorSurname.EndsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.AuthorName,
+                    x.AuthorSurname,
+                    x.AuthorDescription,
+                }).ToList();
+
+            }
+            else if (comboBox1.Text == "İçeren")
+            {
+                var books = _db.Authors.Where(x => x.AuthorSurname.Contains(textBox2.Text)).ToList();
                 dataGridView1.DataSource = books.Select(x => new
                 {
                     x.Id,

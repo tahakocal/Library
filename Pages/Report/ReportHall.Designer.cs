@@ -30,16 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportHall));
+            this.hallsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.libraryDatabaseNewDataSet = new LibraryAutomation.LibraryDatabaseNewDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeesTableAdapter = new LibraryAutomation.LibraryDatabaseNewDataSetTableAdapters.EmployeesTableAdapter();
-            this.hallsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hallsTableAdapter = new LibraryAutomation.LibraryDatabaseNewDataSetTableAdapters.HallsTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseNewDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // hallsBindingSource
+            // 
+            this.hallsBindingSource.DataMember = "Halls";
+            this.hallsBindingSource.DataSource = this.libraryDatabaseNewDataSet;
+            // 
+            // libraryDatabaseNewDataSet
+            // 
+            this.libraryDatabaseNewDataSet.DataSetName = "LibraryDatabaseNewDataSet";
+            this.libraryDatabaseNewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -49,15 +60,11 @@
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "LibraryAutomation.Report.Hall.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.Size = new System.Drawing.Size(1395, 722);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // libraryDatabaseNewDataSet
-            // 
-            this.libraryDatabaseNewDataSet.DataSetName = "LibraryDatabaseNewDataSet";
-            this.libraryDatabaseNewDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // employeesBindingSource
             // 
@@ -68,27 +75,25 @@
             // 
             this.employeesTableAdapter.ClearBeforeFill = true;
             // 
-            // hallsBindingSource
-            // 
-            this.hallsBindingSource.DataMember = "Halls";
-            this.hallsBindingSource.DataSource = this.libraryDatabaseNewDataSet;
-            // 
             // hallsTableAdapter
             // 
             this.hallsTableAdapter.ClearBeforeFill = true;
             // 
             // ReportHall
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1395, 722);
             this.Controls.Add(this.reportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ReportHall";
-            this.Text = "ReportHall";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Salon Raporla";
             this.Load += new System.EventHandler(this.ReportHall_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryDatabaseNewDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hallsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

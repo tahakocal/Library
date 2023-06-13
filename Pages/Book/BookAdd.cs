@@ -111,8 +111,8 @@ namespace LibraryAutomation.Pages.Book
                         var cabinets = _db.Cabinets.ToList();
                         var cabinetId = cabinets.FirstOrDefault(x => x.CabinetNo == cabinNo).Id;
 
-                        var list = _db.Books.Where(x => x.Title.Equals(textBox2.Text)).ToList();
-                        if (list != null)
+                        var list = _db.Books.Where(x => x.Title == textBox2.Text).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni isim de kitap zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
@@ -190,6 +190,16 @@ namespace LibraryAutomation.Pages.Book
             {
                 comboBox6.Items.Add(cabinet.CabinetNo);
             }
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

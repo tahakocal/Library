@@ -36,8 +36,8 @@ namespace LibraryAutomation.Pages.Specification.Hall
                     try
                     {
                         var hallno = Convert.ToInt32(textBox1.Text);
-                        var list = _db.Halls.Where(x => x.HallNo.Equals(hallno)).ToList();
-                        if (list != null)
+                        var list = _db.Halls.Where(x => x.HallNo == hallno).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

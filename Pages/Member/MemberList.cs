@@ -86,7 +86,7 @@ namespace LibraryAutomation.Pages.Member
         {
             if (radioButton1.Checked)
             {
-                var books = _db.Members.Where(x => x.Name.Contains(txtAdara.Text)).ToList();
+                var books = _db.Members.Where(x => x.Name == txtAdara.Text).ToList();
 
                 dataGridView1.DataSource = books.Select(x => new
                 {
@@ -99,7 +99,48 @@ namespace LibraryAutomation.Pages.Member
             }
             else if (radioButton2.Checked)
             {
-                var books = _db.Members.Where(x => x.Email.Contains(txtSoyadara.Text)).ToList();
+                var books = _db.Members.Where(x => x.Email == txtSoyadara.Text).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.Surname,
+                    x.Email,
+                    x.CreatedDate
+                }).ToList();
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "İle Başlayan")
+            {
+                var books = _db.Members.Where(x => x.Surname.StartsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.Surname,
+                    x.Email,
+                    x.CreatedDate
+                }).ToList();
+            }
+            else if (comboBox1.Text == "İle Biten")
+            {
+                var books = _db.Members.Where(x => x.Surname.EndsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.Surname,
+                    x.Email,
+                    x.CreatedDate
+                }).ToList();
+
+            }
+            else if (comboBox1.Text == "İçeren")
+            {
+                var books = _db.Members.Where(x => x.Surname.Contains(textBox2.Text)).ToList();
                 dataGridView1.DataSource = books.Select(x => new
                 {
                     x.Id,

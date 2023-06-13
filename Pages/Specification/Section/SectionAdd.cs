@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Pages.Specification.Section
 {
@@ -36,8 +37,8 @@ namespace LibraryAutomation.Pages.Specification.Section
                 {
                     try
                     {
-                        var list = _db.Sections.Where(x => x.SectionName.Equals(textBox1.Text)).ToList();
-                        if (list != null)
+                        var list = _db.Sections.Where(x => x.SectionName == textBox1.Text).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

@@ -141,7 +141,7 @@ namespace LibraryAutomation.Pages.Book
         {
             if (radioButton1.Checked)
             {
-                var books = _db.Books.Where(x => x.Title.Contains(txtAdara.Text)).ToList();
+                var books = _db.Books.Where(x => x.Title == txtAdara.Text).ToList();
 
                 dataGridView1.DataSource = books.Select(x => new
                 {
@@ -156,9 +156,10 @@ namespace LibraryAutomation.Pages.Book
                     x.Cabinet.CabinetNo,
                     x.Rented,
                 }).ToList();
-            }else if (radioButton2.Checked)
+            }
+            else if (radioButton2.Checked)
             {
-                var books = _db.Books.Where(x => x.Author.AuthorName.Contains(txtSoyadara.Text)).ToList();
+                var books = _db.Books.Where(x => x.Author.AuthorName == txtSoyadara.Text).ToList();
 
                 dataGridView1.DataSource = books.Select(x => new
                 {
@@ -187,6 +188,62 @@ namespace LibraryAutomation.Pages.Book
         {
             txtSoyadara.Enabled = true;
             txtAdara.Enabled = false;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "İle Başlayan")
+            {
+                var books = _db.Books.Where(x => x.Title.StartsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Title,
+                    AuthorName = x.Author.AuthorName + " " + x.Author.AuthorSurname,
+                    x.Category.CategoryName,
+                    x.Description,
+                    x.Publisher.PublisherName,
+                    x.Shelve.ShelveNo,
+                    x.Hall.HallNo,
+                    x.Cabinet.CabinetNo,
+                    x.Rented,
+                }).ToList();
+            }
+            else if (comboBox1.Text == "İle Biten")
+            {
+                var books = _db.Books.Where(x => x.Title.EndsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Title,
+                    AuthorName = x.Author.AuthorName + " " + x.Author.AuthorSurname,
+                    x.Category.CategoryName,
+                    x.Description,
+                    x.Publisher.PublisherName,
+                    x.Shelve.ShelveNo,
+                    x.Hall.HallNo,
+                    x.Cabinet.CabinetNo,
+                    x.Rented,
+                }).ToList();
+
+            }
+            else if (comboBox1.Text == "İçeren")
+            {
+                var books = _db.Books.Where(x => x.Title.Contains(textBox2.Text)).ToList();
+                dataGridView1.DataSource = books.Select(x => new
+                {
+                    x.Id,
+                    x.Title,
+                    AuthorName = x.Author.AuthorName + " " + x.Author.AuthorSurname,
+                    x.Category.CategoryName,
+                    x.Description,
+                    x.Publisher.PublisherName,
+                    x.Shelve.ShelveNo,
+                    x.Hall.HallNo,
+                    x.Cabinet.CabinetNo,
+                    x.Rented,
+                }).ToList();
+            }
         }
     }
 }

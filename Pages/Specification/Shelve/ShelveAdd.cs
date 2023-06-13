@@ -39,8 +39,8 @@ namespace LibraryAutomation.Pages.Specification.Shelve
                     {
                         var shelveNo = Convert.ToInt32(textBox1.Text);
 
-                        var list = _db.Shelves.Where(x => x.ShelveNo.Equals(shelveNo)).ToList();
-                        if (list != null)
+                        var list = _db.Shelves.Where(x => x.ShelveNo == shelveNo).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

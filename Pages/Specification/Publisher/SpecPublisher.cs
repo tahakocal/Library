@@ -63,13 +63,48 @@ namespace LibraryAutomation.Pages.Specification.Publisher
 
         private void btnAra_Click(object sender, EventArgs e)
         {
-            var books = _db.Publishers.Where(x => x.PublisherName.Contains(txtAdara.Text)).ToList();
+            var books = _db.Publishers.Where(x => x.PublisherName == txtAdara.Text).ToList();
 
             dataGridView1.DataSource = books.Select(x => new
             {
                 x.Id,
                 x.PublisherName,
             }).ToList();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "İle Başlayan")
+            {
+                var books = _db.Publishers.Where(x => x.PublisherName.StartsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = _db.Publishers
+                    .Select(x => new
+                    {
+                        x.Id,
+                        x.PublisherName,
+                    }).ToList();
+            }
+            else if (comboBox1.Text == "İle Biten")
+            {
+                var books = _db.Publishers.Where(x => x.PublisherName.EndsWith(textBox2.Text)).ToList();
+                dataGridView1.DataSource = _db.Publishers
+                    .Select(x => new
+                    {
+                        x.Id,
+                        x.PublisherName,
+                    }).ToList();
+
+            }
+            else if (comboBox1.Text == "İçeren")
+            {
+                var books = _db.Publishers.Where(x => x.PublisherName.Contains(textBox2.Text)).ToList();
+                dataGridView1.DataSource = _db.Publishers
+                    .Select(x => new
+                    {
+                        x.Id,
+                        x.PublisherName,
+                    }).ToList();
+            }
         }
     }
 }

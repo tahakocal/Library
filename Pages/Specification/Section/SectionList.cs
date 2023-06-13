@@ -67,7 +67,7 @@ namespace LibraryAutomation.Pages.Specification.Section
 
         private void btnAra_Click(object sender, EventArgs e)
         {
-            var books = _db.Sections.Where(x => x.SectionName.Contains(txtAdara.Text)).ToList();
+            var books = _db.Sections.Where(x => x.SectionName == txtAdara.Text).ToList();
 
             dataGridView1.DataSource = books.Select(x => new
             {

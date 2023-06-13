@@ -66,7 +66,7 @@ namespace LibraryAutomation.Pages.Specification.Shelve
         private void btnAra_Click(object sender, EventArgs e)
         {
             var conver = Convert.ToInt32(txtAdara.Text);
-            var books = _db.Shelves.Where(x => x.ShelveNo.Equals(conver)).ToList();
+            var books = _db.Shelves.Where(x => x.ShelveNo == conver).ToList();
 
             dataGridView1.DataSource = books.Select(x => new
             {

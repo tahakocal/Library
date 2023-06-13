@@ -3,6 +3,7 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LibraryAutomation.Pages.Specification.Cabinet
 {
@@ -38,8 +39,8 @@ namespace LibraryAutomation.Pages.Specification.Cabinet
                     {
                         var cabinetNo = Convert.ToInt32(textBox1.Text);
 
-                        var list = _db.Cabinets.Where(x => x.CabinetNo.Equals(cabinetNo)).ToList();
-                        if (list != null)
+                        var list = _db.Cabinets.Where(x => x.CabinetNo == cabinetNo).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni veri zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

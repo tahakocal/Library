@@ -51,8 +51,8 @@ namespace LibraryAutomation.Pages.Member
                 {
                     try
                     {
-                        var list = _db.Members.Where(x => x.Email.Equals(textBox3.Text)).ToList();
-                        if (list != null)
+                        var list = _db.Members.Where(x => x.Email == textBox2.Text).ToList();
+                        if (list.Count != 0)
                         {
                             MessageBox.Show("Ayni mail adresi zaten var", "Hata", MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);

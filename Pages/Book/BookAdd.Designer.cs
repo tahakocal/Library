@@ -55,7 +55,7 @@ namespace LibraryAutomation.Pages.Book
             this.textBox5.Location = new System.Drawing.Point(205, 273);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(233, 30);
+            this.textBox5.Size = new System.Drawing.Size(233, 26);
             this.textBox5.TabIndex = 32;
             // 
             // label4
@@ -64,7 +64,7 @@ namespace LibraryAutomation.Pages.Book
             this.label4.Location = new System.Drawing.Point(52, 276);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 25);
+            this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 31;
             this.label4.Text = "Açıklama";
             // 
@@ -74,7 +74,7 @@ namespace LibraryAutomation.Pages.Book
             this.label3.Location = new System.Drawing.Point(52, 202);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 25);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 28;
             this.label3.Text = "Kategori";
             // 
@@ -84,7 +84,7 @@ namespace LibraryAutomation.Pages.Book
             this.label2.Location = new System.Drawing.Point(52, 132);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 25);
+            this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 27;
             this.label2.Text = "Yazar Adı";
             // 
@@ -94,7 +94,7 @@ namespace LibraryAutomation.Pages.Book
             this.label1.Location = new System.Drawing.Point(53, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 25);
+            this.label1.Size = new System.Drawing.Size(72, 20);
             this.label1.TabIndex = 26;
             this.label1.Text = "Kitap Adı";
             // 
@@ -103,7 +103,7 @@ namespace LibraryAutomation.Pages.Book
             this.textBox2.Location = new System.Drawing.Point(205, 65);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 30);
+            this.textBox2.Size = new System.Drawing.Size(233, 26);
             this.textBox2.TabIndex = 24;
             // 
             // button1
@@ -123,7 +123,7 @@ namespace LibraryAutomation.Pages.Book
             this.comboBox1.Location = new System.Drawing.Point(205, 129);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 33);
+            this.comboBox1.Size = new System.Drawing.Size(233, 28);
             this.comboBox1.TabIndex = 33;
             this.comboBox1.Text = "Seçiniz";
             // 
@@ -133,7 +133,7 @@ namespace LibraryAutomation.Pages.Book
             this.comboBox2.Location = new System.Drawing.Point(205, 199);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(233, 33);
+            this.comboBox2.Size = new System.Drawing.Size(233, 28);
             this.comboBox2.TabIndex = 34;
             this.comboBox2.Text = "Seçiniz";
             // 
@@ -143,7 +143,7 @@ namespace LibraryAutomation.Pages.Book
             this.label5.Location = new System.Drawing.Point(53, 348);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 25);
+            this.label5.Size = new System.Drawing.Size(59, 20);
             this.label5.TabIndex = 35;
             this.label5.Text = "Yayıncı";
             // 
@@ -153,7 +153,7 @@ namespace LibraryAutomation.Pages.Book
             this.label6.Location = new System.Drawing.Point(53, 429);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 25);
+            this.label6.Size = new System.Drawing.Size(35, 20);
             this.label6.TabIndex = 37;
             this.label6.Text = "Raf";
             // 
@@ -163,7 +163,7 @@ namespace LibraryAutomation.Pages.Book
             this.label7.Location = new System.Drawing.Point(53, 504);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 25);
+            this.label7.Size = new System.Drawing.Size(50, 20);
             this.label7.TabIndex = 39;
             this.label7.Text = "Salon";
             // 
@@ -173,7 +173,7 @@ namespace LibraryAutomation.Pages.Book
             this.label8.Location = new System.Drawing.Point(53, 583);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 25);
+            this.label8.Size = new System.Drawing.Size(51, 20);
             this.label8.TabIndex = 41;
             this.label8.Text = "Dolap";
             // 
@@ -183,7 +183,7 @@ namespace LibraryAutomation.Pages.Book
             this.comboBox3.Location = new System.Drawing.Point(205, 348);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(233, 33);
+            this.comboBox3.Size = new System.Drawing.Size(233, 28);
             this.comboBox3.TabIndex = 43;
             this.comboBox3.Text = "Seçiniz";
             // 
@@ -193,9 +193,10 @@ namespace LibraryAutomation.Pages.Book
             this.comboBox4.Location = new System.Drawing.Point(205, 421);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(233, 33);
+            this.comboBox4.Size = new System.Drawing.Size(233, 28);
             this.comboBox4.TabIndex = 44;
             this.comboBox4.Text = "Seçiniz";
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox5
             // 
@@ -203,7 +204,7 @@ namespace LibraryAutomation.Pages.Book
             this.comboBox5.Location = new System.Drawing.Point(205, 496);
             this.comboBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(233, 33);
+            this.comboBox5.Size = new System.Drawing.Size(233, 28);
             this.comboBox5.TabIndex = 45;
             this.comboBox5.Text = "Seçiniz";
             // 
@@ -213,13 +214,14 @@ namespace LibraryAutomation.Pages.Book
             this.comboBox6.Location = new System.Drawing.Point(205, 575);
             this.comboBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(233, 33);
+            this.comboBox6.Size = new System.Drawing.Size(233, 28);
             this.comboBox6.TabIndex = 46;
             this.comboBox6.Text = "Seçiniz";
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // BookAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(504, 760);

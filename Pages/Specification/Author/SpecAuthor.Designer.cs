@@ -42,8 +42,13 @@ namespace LibraryAutomation.Pages.Specification.Author
             this.btnAra = new System.Windows.Forms.Button();
             this.txtSoyadara = new System.Windows.Forms.TextBox();
             this.txtAdara = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -59,7 +64,7 @@ namespace LibraryAutomation.Pages.Specification.Author
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1009, 605);
+            this.button3.Location = new System.Drawing.Point(894, 605);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(241, 76);
@@ -70,7 +75,7 @@ namespace LibraryAutomation.Pages.Specification.Author
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(726, 605);
+            this.button2.Location = new System.Drawing.Point(605, 605);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(241, 76);
@@ -81,7 +86,7 @@ namespace LibraryAutomation.Pages.Specification.Author
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(448, 605);
+            this.button1.Location = new System.Drawing.Point(331, 605);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(241, 76);
@@ -104,7 +109,7 @@ namespace LibraryAutomation.Pages.Specification.Author
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1277, 576);
+            this.dataGridView1.Size = new System.Drawing.Size(1129, 576);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -116,9 +121,9 @@ namespace LibraryAutomation.Pages.Specification.Author
             this.groupBox1.Controls.Add(this.txtSoyadara);
             this.groupBox1.Controls.Add(this.txtAdara);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(1309, 20);
+            this.groupBox1.Location = new System.Drawing.Point(1159, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(238, 199);
+            this.groupBox1.Size = new System.Drawing.Size(243, 199);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Birebir Arama";
@@ -128,7 +133,7 @@ namespace LibraryAutomation.Pages.Specification.Author
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(7, 85);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 18);
+            this.radioButton2.Size = new System.Drawing.Size(86, 22);
             this.radioButton2.TabIndex = 8;
             this.radioButton2.Text = "Açıklama";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -173,12 +178,56 @@ namespace LibraryAutomation.Pages.Specification.Author
             this.txtAdara.Size = new System.Drawing.Size(120, 24);
             this.txtAdara.TabIndex = 2;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox2.Location = new System.Drawing.Point(1159, 236);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(238, 148);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Benzer Arama";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "İle Başlayan",
+            "İle Biten",
+            "İçeren"});
+            this.comboBox1.Location = new System.Drawing.Point(48, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.Text = "İle Başlayan";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 18);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Soyad";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(102, 79);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(120, 24);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // SpecAuthor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1559, 698);
+            this.ClientSize = new System.Drawing.Size(1411, 698);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -195,6 +244,8 @@ namespace LibraryAutomation.Pages.Specification.Author
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -212,5 +263,9 @@ namespace LibraryAutomation.Pages.Specification.Author
         private Button btnAra;
         private TextBox txtSoyadara;
         private TextBox txtAdara;
+        private GroupBox groupBox2;
+        private ComboBox comboBox1;
+        private Label label1;
+        private TextBox textBox2;
     }
 }

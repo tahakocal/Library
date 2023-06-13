@@ -63,7 +63,7 @@ namespace LibraryAutomation.Pages.Specification.Hall
         private void btnAra_Click(object sender, EventArgs e)
         {
             var conver = Convert.ToInt32(txtAdara.Text);
-            var books = _db.Halls.Where(x => x.HallNo.Equals(conver)).ToList();
+            var books = _db.Halls.Where(x => x.HallNo == conver).ToList();
 
             dataGridView1.DataSource = books.Select(x => new
             {
