@@ -1,8 +1,8 @@
-using LibraryAutomation.Entities;
 using LibraryAutomation.Pages.Book;
 using LibraryAutomation.Pages.Employee;
 using LibraryAutomation.Pages.Member;
 using LibraryAutomation.Pages.RentBook;
+using LibraryAutomation.Pages.Report;
 using LibraryAutomation.Pages.Specification.Author;
 using LibraryAutomation.Pages.Specification.Cabinet;
 using LibraryAutomation.Pages.Specification.Category;
@@ -11,9 +11,7 @@ using LibraryAutomation.Pages.Specification.Publisher;
 using LibraryAutomation.Pages.Specification.Section;
 using LibraryAutomation.Pages.Specification.Shelve;
 using System;
-using System.Linq;
 using System.Windows.Forms;
-using LibraryAutomation.Pages.Report;
 
 namespace LibraryAutomation.Pages
 {
@@ -165,6 +163,12 @@ namespace LibraryAutomation.Pages
         private void dolaplarıRaporlaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ReportCabinet section = new ReportCabinet();
+            section.ShowDialog();
+        }
+
+        private void ödünçVerilenKitapRapırlaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportRentBook section = new ReportRentBook();
             section.ShowDialog();
         }
     }

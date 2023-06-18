@@ -28,7 +28,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -418,6 +418,12 @@
     <Compile Include="Pages\Report\ReportPublısher.Designer.cs">
       <DependentUpon>ReportPublısher.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Report\ReportRentBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\ReportRentBook.Designer.cs">
+      <DependentUpon>ReportRentBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Report\ReportSectıon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -429,12 +435,6 @@
     </Compile>
     <Compile Include="Pages\Report\ReportShelve.Designer.cs">
       <DependentUpon>ReportShelve.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Report\test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pages\Report\test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Specification\Section\SectionAdd.cs">
       <SubType>Form</SubType>
@@ -744,14 +744,14 @@
     <EmbeddedResource Include="Pages\Report\ReportPublısher.resx">
       <DependentUpon>ReportPublısher.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Report\ReportRentBook.resx">
+      <DependentUpon>ReportRentBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\Report\ReportSectıon.resx">
       <DependentUpon>ReportSectıon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Report\ReportShelve.resx">
       <DependentUpon>ReportShelve.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Report\test.resx">
-      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Specification\Section\SectionAdd.resx">
       <DependentUpon>SectionAdd.cs</DependentUpon>
@@ -864,7 +864,6 @@
     <EmbeddedResource Include="Report\RentBook.rdlc" />
     <EmbeddedResource Include="Report\Section.rdlc" />
     <EmbeddedResource Include="Report\Shelve.rdlc" />
-    <EmbeddedResource Include="Report\TEST.rdlc" />
     <None Include="LibraryAutomation_TemporaryKey.pfx" />
     <None Include="LibraryDatabaseNewDataSet.xsc">
       <DependentUpon>LibraryDatabaseNewDataSet.xsd</DependentUpon>

@@ -304,4 +304,4 @@ D:\My Codes\LibraryAutomation\bin\Debug\LibraryAutomation.exe.manifest
 D:\My Codes\LibraryAutomation\bin\Debug\LibraryAutomation.application
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.exe.manifest
 D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.application
-D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Report.test.resources
+D:\My Codes\LibraryAutomation\obj\Debug\LibraryAutomation.Pages.Report.ReportRentBook.resources

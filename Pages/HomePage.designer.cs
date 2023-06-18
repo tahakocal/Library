@@ -63,6 +63,7 @@ namespace LibraryAutomation.Pages
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ödünçVerilenKitapRapırlaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +81,8 @@ namespace LibraryAutomation.Pages
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1192, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(894, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -224,7 +226,8 @@ namespace LibraryAutomation.Pages
             this.bölümleriRaporlaToolStripMenuItem,
             this.yayıncılarıRaporlaToolStripMenuItem,
             this.kategorileriRaporlaToolStripMenuItem,
-            this.dolaplarıRaporlaToolStripMenuItem});
+            this.dolaplarıRaporlaToolStripMenuItem,
+            this.ödünçVerilenKitapRapırlaToolStripMenuItem});
             this.raporlaToolStripMenuItem.Image = global::LibraryAutomation.Properties.Resources.png_transparent_computer_icons_report_icon_angle_text_cost;
             this.raporlaToolStripMenuItem.Name = "raporlaToolStripMenuItem";
             this.raporlaToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
@@ -233,70 +236,70 @@ namespace LibraryAutomation.Pages
             // üyeleriRaporlaToolStripMenuItem
             // 
             this.üyeleriRaporlaToolStripMenuItem.Name = "üyeleriRaporlaToolStripMenuItem";
-            this.üyeleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.üyeleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.üyeleriRaporlaToolStripMenuItem.Text = "Üyeleri Raporla";
             this.üyeleriRaporlaToolStripMenuItem.Click += new System.EventHandler(this.üyeleriRaporlaToolStripMenuItem_Click);
             // 
             // personelleriRaporlaToolStripMenuItem
             // 
             this.personelleriRaporlaToolStripMenuItem.Name = "personelleriRaporlaToolStripMenuItem";
-            this.personelleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.personelleriRaporlaToolStripMenuItem.Text = "Personelleri Raporla";
             this.personelleriRaporlaToolStripMenuItem.Click += new System.EventHandler(this.personelleriRaporlaToolStripMenuItem_Click);
             // 
             // yazarlarıRaporlaToolStripMenuItem
             // 
             this.yazarlarıRaporlaToolStripMenuItem.Name = "yazarlarıRaporlaToolStripMenuItem";
-            this.yazarlarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yazarlarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.yazarlarıRaporlaToolStripMenuItem.Text = "Yazarları Raporla";
             this.yazarlarıRaporlaToolStripMenuItem.Click += new System.EventHandler(this.yazarlarıRaporlaToolStripMenuItem_Click);
             // 
             // kitaplariRaporlaToolStripMenuItem
             // 
             this.kitaplariRaporlaToolStripMenuItem.Name = "kitaplariRaporlaToolStripMenuItem";
-            this.kitaplariRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kitaplariRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.kitaplariRaporlaToolStripMenuItem.Text = "Kitaplari Raporla";
             this.kitaplariRaporlaToolStripMenuItem.Click += new System.EventHandler(this.kitaplariRaporlaToolStripMenuItem_Click);
             // 
             // salonlarıRaporlaToolStripMenuItem
             // 
             this.salonlarıRaporlaToolStripMenuItem.Name = "salonlarıRaporlaToolStripMenuItem";
-            this.salonlarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salonlarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.salonlarıRaporlaToolStripMenuItem.Text = "Salonları Raporla";
             this.salonlarıRaporlaToolStripMenuItem.Click += new System.EventHandler(this.salonlarıRaporlaToolStripMenuItem_Click);
             // 
             // raflarıRaporlaToolStripMenuItem
             // 
             this.raflarıRaporlaToolStripMenuItem.Name = "raflarıRaporlaToolStripMenuItem";
-            this.raflarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.raflarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.raflarıRaporlaToolStripMenuItem.Text = "Rafları Raporla";
             this.raflarıRaporlaToolStripMenuItem.Click += new System.EventHandler(this.raflarıRaporlaToolStripMenuItem_Click);
             // 
             // bölümleriRaporlaToolStripMenuItem
             // 
             this.bölümleriRaporlaToolStripMenuItem.Name = "bölümleriRaporlaToolStripMenuItem";
-            this.bölümleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bölümleriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.bölümleriRaporlaToolStripMenuItem.Text = "Bölümleri Raporla";
             this.bölümleriRaporlaToolStripMenuItem.Click += new System.EventHandler(this.bölümleriRaporlaToolStripMenuItem_Click);
             // 
             // yayıncılarıRaporlaToolStripMenuItem
             // 
             this.yayıncılarıRaporlaToolStripMenuItem.Name = "yayıncılarıRaporlaToolStripMenuItem";
-            this.yayıncılarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yayıncılarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.yayıncılarıRaporlaToolStripMenuItem.Text = "Yayıncıları Raporla";
             this.yayıncılarıRaporlaToolStripMenuItem.Click += new System.EventHandler(this.yayıncılarıRaporlaToolStripMenuItem_Click);
             // 
             // kategorileriRaporlaToolStripMenuItem
             // 
             this.kategorileriRaporlaToolStripMenuItem.Name = "kategorileriRaporlaToolStripMenuItem";
-            this.kategorileriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kategorileriRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.kategorileriRaporlaToolStripMenuItem.Text = "Kategorileri Raporla";
             this.kategorileriRaporlaToolStripMenuItem.Click += new System.EventHandler(this.kategorileriRaporlaToolStripMenuItem_Click);
             // 
             // dolaplarıRaporlaToolStripMenuItem
             // 
             this.dolaplarıRaporlaToolStripMenuItem.Name = "dolaplarıRaporlaToolStripMenuItem";
-            this.dolaplarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dolaplarıRaporlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.dolaplarıRaporlaToolStripMenuItem.Text = "Dolapları Raporla";
             this.dolaplarıRaporlaToolStripMenuItem.Click += new System.EventHandler(this.dolaplarıRaporlaToolStripMenuItem_Click);
             // 
@@ -314,10 +317,11 @@ namespace LibraryAutomation.Pages
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 543);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 437);
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
             this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-            this.statusStrip1.Size = new System.Drawing.Size(1192, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(894, 25);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -339,19 +343,26 @@ namespace LibraryAutomation.Pages
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(165, 20);
             this.toolStripStatusLabel2.Text = "https://github.com/tahakocal";
             // 
+            // ödünçVerilenKitapRapırlaToolStripMenuItem
+            // 
+            this.ödünçVerilenKitapRapırlaToolStripMenuItem.Name = "ödünçVerilenKitapRapırlaToolStripMenuItem";
+            this.ödünçVerilenKitapRapırlaToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.ödünçVerilenKitapRapırlaToolStripMenuItem.Text = "Ödünç Verilen Kitap Rapırla";
+            this.ödünçVerilenKitapRapırlaToolStripMenuItem.Click += new System.EventHandler(this.ödünçVerilenKitapRapırlaToolStripMenuItem_Click);
+            // 
             // HomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::LibraryAutomation.Properties.Resources.librayHomePage;
-            this.ClientSize = new System.Drawing.Size(1192, 568);
+            this.ClientSize = new System.Drawing.Size(894, 462);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Anasayfa";
@@ -398,5 +409,6 @@ namespace LibraryAutomation.Pages
         private ToolStripMenuItem yayıncılarıRaporlaToolStripMenuItem;
         private ToolStripMenuItem kategorileriRaporlaToolStripMenuItem;
         private ToolStripMenuItem dolaplarıRaporlaToolStripMenuItem;
+        private ToolStripMenuItem ödünçVerilenKitapRapırlaToolStripMenuItem;
     }
 }

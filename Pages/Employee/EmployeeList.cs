@@ -1,5 +1,4 @@
 ﻿using LibraryAutomation.Entities;
-using LibraryAutomation.Migrations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;

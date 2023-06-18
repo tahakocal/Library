@@ -1,7 +1,6 @@
 using LibraryAutomation.Pages;
 using System;
 using System.Windows.Forms;
-using LibraryAutomation.Pages.Report;
 
 namespace LibraryAutomation
 {
@@ -13,7 +12,7 @@ namespace LibraryAutomation
         [STAThread]
         static void Main()
         {
-            Application.Run(new HomePage());
+            Application.Run(new Welcome());
 
             // GÝRÝÞ YAPMA ÝÞLEMLERÝNÝ ATLAMAK ÝÇÝN 
 
